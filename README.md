@@ -11,3 +11,20 @@ As you progress through the rooms, the way through to the next gets more and mor
 
 ---
 Hytale mod source code for the mod created by Paralaxe, Ev0, Riprod, and Lordimass for the Hytale Modding mod jam in June 2026.
+
+
+---
+# Getting Starts (developing)
+
+1. Init Gradle `./gradlew generateVSCodeConfig`
+2. Run server `./gradlew runServer`
+
+If you are on windows, use `./gradlew.bat` instead
+
+The project is split into 4 parts
+1. Defensive - hold all of the logic for the turrets, defenses, etc
+2. Offensive - hold all of the logic for the enemies, npcs, and spawning
+3. Progression - hold all of the logic for the progression
+4. World - hold all of the world logic and gridwave setup
+
+Each of these are treated as their own plugins. So go crazy, just stay in your folder!
