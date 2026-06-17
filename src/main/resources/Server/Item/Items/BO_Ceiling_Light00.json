@@ -29,8 +29,12 @@
       "RotationMode": "FacingPlayer",
       "BlockPreviewVisibility": "AlwaysVisible"
     },
-    "BlockListAssetId": "BO_WallpaperType",
-    "IgnoreSupportWhenPlaced": true
+    "IgnoreSupportWhenPlaced": true,
+    "Light": {
+      "Color": "#aa8"
+    },
+    "CubeShadingMode": "Fullbright",
+    "Opacity": "Transparent"
   },
   "Icon": "Icons/ItemsGenerated/BO_Ceiling_Light00.png",
   "IconProperties": {
