@@ -3,6 +3,9 @@ package com.perl.blackout;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import com.hypixel.hytale.server.npc.NPCPlugin;
+import com.hypixel.hytale.server.npc.corecomponents.combat.builders.BuilderHeadMotionAim;
+import com.perl.blackout.defensive.motion.builders.BuilderHeadMotionTurretAim;
 import com.riprod.patchly.PatchManager;
 
 public final class BlackoutPlugin extends JavaPlugin {

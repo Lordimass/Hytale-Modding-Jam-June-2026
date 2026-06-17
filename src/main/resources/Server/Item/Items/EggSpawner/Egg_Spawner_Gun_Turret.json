@@ -1,0 +1,42 @@
+{
+  "TranslationProperties": {
+    "Name": "blackout.items.Egg_Spawner_Gun_Turret.name",
+    "Description": "blackout.items.Egg_Spawner_Gun_Turret.description"
+  },
+  "Quality": "Tool",
+  "PlayerAnimationsId": "Block",
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "SpawnNPC",
+          "EntityId": "Gun_Turret",
+          "SpawnOffset": {
+            "X": 0,
+            "Y": 0.5,
+            "Z": 0
+          }
+        },
+        {
+          "Type": "ConsumeItem"
+        }
+      ]
+    }
+  },
+  "Model": "NPC/Turrets/Gun_Turret/Gun_Turret.blockymodel",
+  "Texture": "NPC/Turrets/Gun_Turret/Gun_Turret_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Egg_Spawner_Gun_Turret.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      20,
+      25,
+      8
+    ],
+    "Translation": [
+      -2,
+      -19
+    ]
+  },
+  "Tags": {}
+}

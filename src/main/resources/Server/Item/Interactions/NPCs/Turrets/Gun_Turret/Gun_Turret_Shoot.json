@@ -1,0 +1,18 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Turret",
+    "ItemAnimationId": "Shoot"
+  },
+  "Next": {
+    "Type": "LaunchProjectile",
+    "RunTime": 0.5,
+    "Effects": {
+      "WorldSoundEventId": "SFX_Unarmed_Swing"
+    },
+    "ProjectileId": "Skeleton_Archer_Arrow",
+    "Tags": {
+      "AimingReference": []
+    }
+  }
+}
