@@ -7,11 +7,15 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import org.joml.Vector3d;
 
+import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.math.util.ChunkUtil;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.modules.time.WorldTimeResource;
+import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
+import com.hypixel.hytale.server.core.modules.entitystats.EntityStatValue;
+import com.hypixel.hytale.server.core.modules.entitystats.asset.DefaultEntityStatTypes;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
@@ -34,7 +38,6 @@ public final class WaveGameManager {
     private final WaveConfig config;
     private final EnemySpawnService enemySpawnService = new EnemySpawnService();
     private final ObjectiveService objectiveService = new ObjectiveService();
-    private final PlayerSpawnService playerSpawnService = new PlayerSpawnService();
     private final Map<World, WaveGame> games = new ConcurrentHashMap<>();
     private final Random random = new Random();
 
@@ -44,26 +47,6 @@ public final class WaveGameManager {
 
     public WaveGame getGame(World world) {
         return games.get(world);
-    }
-
-    public void onPlayerAddedToWorld(PlayerRef playerRef, Player player, World world) {
-        if (!matchesInstance(world)) {
-            return;
-        }
-        WaveGame game = ensureGame(world);
-
-        if (!game.isInitialized()) {
-            return;
-        }
-        Vector3d spawn = game.getPlayerSpawn();
-        if (spawn == null) {
-            return;
-        }
-        var playerEntityRef = playerRef.getReference();
-        world.execute(() -> {
-            Store<EntityStore> store = world.getEntityStore().getStore();
-            playerSpawnService.teleport(playerEntityRef, store, world, spawn);
-        });
     }
 
     public void onPlayerRemovedFromWorld(PlayerRef playerRef, Player player, World world) {
@@ -129,12 +112,6 @@ public final class WaveGameManager {
         game.setPlayerSpawn(spawn);
         objectiveService.spawnObjective(game, store, config.objective);
 
-        for (PlayerRef playerRef : world.getPlayerRefs()) {
-            if (playerRef != null && playerRef.isValid()) {
-                playerSpawnService.teleport(playerRef.getReference(), store, world, spawn);
-            }
-        }
-
         game.startPhase(WavePhase.PREP, System.currentTimeMillis());
         game.setInitialized(true);
         WaveMessages.broadcast(world, "Prepare!",
@@ -148,6 +125,11 @@ public final class WaveGameManager {
         WaveGame game = games.get(world);
         if (game == null || !game.isInitialized() || game.getPhase() == WavePhase.ENDED) {
             return;
+        }
+
+        topUpOxygen(store, game.getObjectiveRef());
+        for (Ref<EntityStore> enemy : game.getEnemies()) {
+            topUpOxygen(store, enemy);
         }
 
         if (game.isObjectiveSpawned() && objectiveService.isDestroyed(game, store)) {
@@ -187,7 +169,6 @@ public final class WaveGameManager {
             Store<EntityStore> store = world.getEntityStore().getStore();
             setTime(world, store, TIME_MIDNIGHT);
             enemySpawnService.spawnFloorEnemies(game, store, world, floor, config.objective.position);
-            objectiveService.applyTargeting(game, store);
         });
     }
 
@@ -222,7 +203,22 @@ public final class WaveGameManager {
                 config.playerSpawn.y, PLAYER_SPAWN_SEARCH_RADIUS, random);
     }
 
-    private void setTime(World world, Store<EntityStore> store, double dayTime) {
+    /** Tops an entity's oxygen back to full if it has dropped, preventing environmental drowning damage. */
+    private void topUpOxygen(Store<EntityStore> store, Ref<EntityStore> ref) {
+        if (ref == null || !ref.isValid()) {
+            return;
+        }
+        EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
+        if (stats == null) {
+            return;
+        }
+        EntityStatValue oxygen = stats.get(DefaultEntityStatTypes.getOxygen());
+        if (oxygen != null && oxygen.get() < oxygen.getMax()) {
+            stats.maximizeStatValue(DefaultEntityStatTypes.getOxygen());
+        }
+    }
+
+    private static void setTime(World world, Store<EntityStore> store, double dayTime) {
         WorldTimeResource time = store.getResource(WorldTimeResource.getResourceType());
         if (time != null) {
             time.setDayTime(dayTime, world, store);

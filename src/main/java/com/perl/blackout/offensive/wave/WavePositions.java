@@ -49,7 +49,7 @@ public final class WavePositions {
             int z = (int) Math.floor(centerZ + Math.sin(angle) * dist);
             if (isOpen(world, x, yi, z)) {
                 return new Vector3d(x + 0.5, y, z + 0.5);
-            }
+            }   
         }
         return new Vector3d(centerX + 0.5, y, centerZ + 0.5);
     }

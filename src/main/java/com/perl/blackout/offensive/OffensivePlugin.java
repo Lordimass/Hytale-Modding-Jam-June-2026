@@ -49,7 +49,6 @@ public class OffensivePlugin extends JavaPlugin {
 
         getEntityStoreRegistry().registerSystem(new WaveSystem());
 
-        getEventRegistry().registerGlobal(AddPlayerToWorldEvent.class, this::onPlayerAddedToWorld);
         getEventRegistry().registerGlobal(RemovedPlayerFromWorldEvent.class, this::onPlayerRemovedFromWorld);
         getEventRegistry().registerGlobal(RemoveWorldEvent.class, event -> {
             if (waveGameManager != null) {
@@ -67,19 +66,6 @@ public class OffensivePlugin extends JavaPlugin {
         }
         instance = null;
         super.shutdown();
-    }
-
-    private void onPlayerAddedToWorld(AddPlayerToWorldEvent event) {
-        if (waveGameManager == null) {
-            return;
-        }
-        var holder = event.getHolder();
-        PlayerRef playerRef = holder.getComponent(PlayerRef.getComponentType());
-        Player player = holder.getComponent(Player.getComponentType());
-        if (playerRef == null || player == null) {
-            return;
-        }
-        waveGameManager.onPlayerAddedToWorld(playerRef, player, event.getWorld());
     }
 
     private void onPlayerRemovedFromWorld(RemovedPlayerFromWorldEvent event) {
