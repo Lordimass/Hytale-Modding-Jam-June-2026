@@ -11,11 +11,11 @@
     "HitSoundLayer": "SFX_Wood_Break"
   },
   "BlockType": {
-    "CustomModel": "Items/Icons/ItemsGenerated/bo_parking_bollard.blockymodel",
+    "CustomModel": "Blocks/bo_parking_bollard/bo_parking_bollard.blockymodel",
     "DrawType": "Model",
     "CustomModelTexture": [
       {
-        "Texture": "Items/Icons/ItemsGenerated/bo_parking_bumper_texture.png"
+        "Texture": "Blocks/bo_parking_bumper/bo_parking_bumper_texture.png"
       }
     ],
     "PlacementSettings": {

@@ -2,7 +2,7 @@
   "BlockType": {
     "Textures": [
       {
-        "All": "Items/Icons/ItemsGenerated/bo_grass_apt_texture.png"
+        "All": "BlockTextures/bo_grass_apt_texture.png"
       }
     ],
     "Material": "Solid",
@@ -15,7 +15,7 @@
       "AllowRotationKey": true,
       "BlockPreviewVisibility": "AlwaysVisible"
     },
-    "CustomModel": "Items/Icons/ItemsGenerated/bo_wallpaper_00.blockymodel",
+    "CustomModel": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
     "DrawType": "Cube"
   },
   "TranslationProperties": {

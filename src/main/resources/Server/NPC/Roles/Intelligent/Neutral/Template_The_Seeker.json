@@ -210,11 +210,6 @@
               },
               "Actions": [
                 {
-                  "Type": "ApplyEntityEffect",
-                  "UseTarget": false,
-                  "EntityEffect": "BO_Seeker_Peaceful_Invulnerability"
-                },
-                {
                   "Type": "Inventory",
                   "Operation": "EquipHotbar",
                   "Slot": 0,
@@ -328,11 +323,6 @@
                   "Type": "ReleaseTarget"
                 },
                 {
-                  "Type": "ApplyEntityEffect",
-                  "UseTarget": false,
-                  "EntityEffect": "BO_Seeker_Peaceful_Invulnerability"
-                },
-                {
                   "Type": "State",
                   "State": "Peaceful"
                 }
@@ -418,11 +408,6 @@
               "Actions": [
                 {
                   "Type": "ReleaseTarget"
-                },
-                {
-                  "Type": "ApplyEntityEffect",
-                  "UseTarget": false,
-                  "EntityEffect": "BO_Seeker_Peaceful_Invulnerability"
                 },
                 {
                   "Type": "State",
@@ -543,6 +528,7 @@
               }
             },
             {
+              "$Comment": "Bright enough to calm down even mid-fight: drop the target and return to peaceful.",
               "Sensor": {
                 "Type": "Light",
                 "LightRange": {
@@ -554,11 +540,6 @@
                   "Type": "ReleaseTarget"
                 },
                 {
-                  "Type": "ApplyEntityEffect",
-                  "UseTarget": false,
-                  "EntityEffect": "BO_Seeker_Peaceful_Invulnerability"
-                },
-                {
                   "Type": "State",
                   "State": "Peaceful"
                 }
@@ -568,25 +549,36 @@
               "Reference": "Component_Instruction_Clear_Status_Animation"
             },
             {
+              "$Comment": "Commit to the swing once the target is in reach. Blocking with a pre/post delay (like the wolf) so the attack animation and damage actually resolve instead of being cut short by the seek motion below.",
               "Continue": true,
               "Sensor": {
                 "Type": "Target",
                 "Range": {
                   "Compute": "AttackDistance + 1"
-                },
-                "Filters": [
-                  {
-                    "Type": "LineOfSight"
-                  }
-                ]
+                }
               },
+              "ActionsBlocking": true,
               "Actions": [
+                {
+                  "Type": "Timeout",
+                  "Delay": [
+                    0.3,
+                    0.3
+                  ]
+                },
                 {
                   "Type": "Attack",
                   "Attack": "Root_NPC_Attack_Melee",
                   "AttackPauseRange": [
                     0.6,
                     1
+                  ]
+                },
+                {
+                  "Type": "Timeout",
+                  "Delay": [
+                    0.4,
+                    0.4
                   ]
                 }
               ],

@@ -1,7 +1,13 @@
 {
-  "Texture": "Items/Icons/ItemsGenerated/the_seeker_texture.png",
-  "Model": "Items/Icons/ItemsGenerated/the_seeker.blockymodel",
+  "Texture": "NPC/Intelligent/Seeker/the_seeker_texture.png",
+  "Model": "NPC/Intelligent/Seeker/the_seeker.blockymodel",
+  "EyeHeight": 1.7,
   "HitBox": {
+    "Min": {
+      "Y": 0,
+      "X": -1,
+      "Z": -1
+    },
     "Max": {
       "Y": 2,
       "X": 1,

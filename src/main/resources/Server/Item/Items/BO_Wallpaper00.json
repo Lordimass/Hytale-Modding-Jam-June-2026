@@ -22,7 +22,7 @@
       "DrawType": "CubeWithModel",
       "CustomModelTexture": [
         {
-          "Texture": "Items/Icons/ItemsGenerated/bo_wallpaper_00_texture.png"
+          "Texture": "Blocks/bo_wallpaper/bo_wallpaper_00_texture.png"
         }
       ],
       "BlockType": "BO_Wallpaper00"
@@ -31,7 +31,7 @@
       "DrawType": "CubeWithModel",
       "CustomModelTexture": [
         {
-          "Texture": "Items/Icons/ItemsGenerated/bo_wallpaper_00_texture.png"
+          "Texture": "Blocks/bo_wallpaper/bo_wallpaper_00_texture.png"
         }
       ],
       "BlockType": "BO_Wallpaper00"
