@@ -31,6 +31,26 @@
       {
         "Texture": "BlockTextures/bo_crafting_machine_texture.png"
       }
-    ]
+    ],
+    "Bench": {
+      "Type": "Crafting",
+      "Id": "BO_CraftingMachine",
+      "Categories": [
+        {
+          "Id": "BO_Tools",
+          "Name": "Tools",
+          "Icon": "Icons/CraftingCategories/Workbench/Tools.png"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed"
+    },
+    "BlockEntity": {
+      "Components": {
+        "BenchBlock": {}
+      }
+    }
   }
 }

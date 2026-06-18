@@ -28,15 +28,20 @@ public final class WaveConfig {
 
     /** Substring matched case-insensitively against a world's name to detect a Backrooms instance. */
     public String instanceWorldMatch = "Backrooms";
-    /** Grace period (seconds) when first entering the instance. */
-    public int prepDurationSeconds = 10;
-    /** Duration (seconds) of each attack and rest round. */
-    public int roundDurationSeconds = 60;
-    /** Fixed spawn point used for every player entering the instance. */
+    /** Daytime rest period (seconds): the grace on entry and the lull between attack waves. */
+    public int restDurationSeconds = 30;
+    /** Night-time attack period (seconds): how long each wave of enemies hunts before daybreak. */
+    public int attackDurationSeconds = 60;
+    /** Horizontal distance (blocks) from a player that enemies spawn at the start of an attack. */
+    public double enemySpawnDistance = 20.0;
+    /** Random +/- variation (blocks) applied to {@link #enemySpawnDistance} per enemy. */
+    public double enemySpawnDistanceJitter = 6.0;
+    /**
+     * Fallback anchor used only to preload a chunk while the instance finishes loading, and to
+     * place enemies when no players can be located. Real spawns are relative to players.
+     */
     public Position playerSpawn = new Position(20.0, 10.0, 30.0);
-    /** The defended crafting machine / objective. */
-    public Objective objective = new Objective();
-    /** Per-floor enemy configuration. */
+    /** Per-floor enemy configuration. The floor (level) is the future progression axis for the Key. */
     public List<Floor> floors = defaultFloors();
 
     public static final class Position {
@@ -54,25 +59,10 @@ public final class WaveConfig {
         }
     }
 
-    public static final class Objective {
-        /**
-         * NPC role id spawned as the objective. Must be a damageable role (NOT the Seeker, which is
-         * invulnerable while peaceful). Defaults to a vulnerable base creature as a placeholder until
-         * a dedicated stationary {@code BO_CraftingMachine} role exists.
-         */
-        public String npcRole = "Cow";
-        /** Health applied to the objective on spawn (capped by the role's MaxHealth, e.g. Cow = 103). */
-        public float maxHealth = 100.0f;
-        /** World position the objective is spawned at. */
-        public Position position = new Position(25.0, 10.0, 30.0);
-    }
-
     public static final class Floor {
         public int floor = 0;
-        /** Y level enemies spawn at for this floor. */
+        /** Y level used for enemy spawns only as a fallback when no player position is available. */
         public double floorY = 10.0;
-        /** Max horizontal radius (blocks) around the objective that enemies spawn within. */
-        public double enemySpawnRadius = 24.0;
         public List<EnemyGroup> enemies = new ArrayList<>();
     }
 

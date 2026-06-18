@@ -3,7 +3,7 @@ package com.perl.blackout.offensive.wave;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import org.joml.Vector3d;
+import org.joml.Vector3i;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -13,32 +13,32 @@ import java.util.List;
 /**
  * Runtime state for one wave game, tied to a single Backrooms instance world.
  *
- * <p>One game is shared by every player in the instance: they share the round timer and the
- * single defended objective.
+ * <p>One game is shared by every player in the instance: they share the round timer. The defended
+ * bench is optional — it only exists while a player has a {@code BO_CraftingMachine} placed.
  */
 public final class WaveGame {
 
     private final World world;
-    private final float objectiveMaxHealth;
     private final int floor;
 
-    private volatile WavePhase phase = WavePhase.PREP;
+    private volatile WavePhase phase = WavePhase.REST;
     private volatile long phaseStartMs;
     private int round = 0;
 
-    /** Becomes true only once the instance world has loaded and the objective + spawn are set up. */
+    /** Becomes true only once the instance world has loaded and the game has been set up. */
     private volatile boolean initialized = false;
 
+    /** The optional bench NPC (spawned from a placed crafting machine) that enemies prefer to target. */
     @Nullable
-    private volatile Vector3d playerSpawn;
+    private volatile Ref<EntityStore> benchNpcRef;
+    /** Block position of the placed crafting machine backing {@link #benchNpcRef}. */
     @Nullable
-    private volatile Ref<EntityStore> objectiveRef;
+    private volatile Vector3i benchBlockPos;
 
     private final List<Ref<EntityStore>> enemies = Collections.synchronizedList(new ArrayList<>());
 
-    public WaveGame(World world, float objectiveMaxHealth, int floor) {
+    public WaveGame(World world, int floor) {
         this.world = world;
-        this.objectiveMaxHealth = objectiveMaxHealth;
         this.floor = floor;
         this.phaseStartMs = System.currentTimeMillis();
     }
@@ -47,20 +47,12 @@ public final class WaveGame {
         return world;
     }
 
-    public float getObjectiveMaxHealth() {
-        return objectiveMaxHealth;
-    }
-
     public int getFloor() {
         return floor;
     }
 
     public WavePhase getPhase() {
         return phase;
-    }
-
-    public long getPhaseStartMs() {
-        return phaseStartMs;
     }
 
     public long getPhaseElapsedMs(long now) {
@@ -88,27 +80,33 @@ public final class WaveGame {
         return ++round;
     }
 
-    @Nullable
-    public Vector3d getPlayerSpawn() {
-        return playerSpawn;
-    }
+    // ── Bench (optional defended objective) ──
 
-    public void setPlayerSpawn(Vector3d playerSpawn) {
-        this.playerSpawn = playerSpawn;
+    @Nullable
+    public Ref<EntityStore> getBenchNpcRef() {
+        return benchNpcRef;
     }
 
     @Nullable
-    public Ref<EntityStore> getObjectiveRef() {
-        return objectiveRef;
+    public Vector3i getBenchBlockPos() {
+        return benchBlockPos;
     }
 
-    public void setObjectiveRef(Ref<EntityStore> objectiveRef) {
-        this.objectiveRef = objectiveRef;
+    public boolean hasBench() {
+        return benchNpcRef != null;
     }
 
-    public boolean isObjectiveSpawned() {
-        return objectiveRef != null;
+    public void setBench(Ref<EntityStore> npcRef, Vector3i blockPos) {
+        this.benchNpcRef = npcRef;
+        this.benchBlockPos = blockPos;
     }
+
+    public void clearBench() {
+        this.benchNpcRef = null;
+        this.benchBlockPos = null;
+    }
+
+    // ── Enemies ──
 
     public void addEnemy(Ref<EntityStore> enemy) {
         enemies.add(enemy);

@@ -15,8 +15,8 @@ import javax.annotation.Nullable;
 
 /**
  * The offensive / enemies sub-plugin. Hosts the wave system (main game loop): players entering the
- * Backrooms instance defend a stationary crafting machine against waves of enemies that spawn at
- * night and are despawned during the day.
+ * Backrooms instance face an endless day/night cycle of enemy waves. They may place a crafting
+ * machine, which the enemies prefer to attack, and craft a Key on it.
  */
 public class OffensivePlugin extends JavaPlugin {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
@@ -49,6 +49,7 @@ public class OffensivePlugin extends JavaPlugin {
 
         getEntityStoreRegistry().registerSystem(new WaveSystem());
 
+        getEventRegistry().registerGlobal(AddPlayerToWorldEvent.class, this::onPlayerAddedToWorld);
         getEventRegistry().registerGlobal(RemovedPlayerFromWorldEvent.class, this::onPlayerRemovedFromWorld);
         getEventRegistry().registerGlobal(RemoveWorldEvent.class, event -> {
             if (waveGameManager != null) {
@@ -68,6 +69,19 @@ public class OffensivePlugin extends JavaPlugin {
         super.shutdown();
     }
 
+    private void onPlayerAddedToWorld(AddPlayerToWorldEvent event) {
+        if (waveGameManager == null) {
+            return;
+        }
+        var holder = event.getHolder();
+        PlayerRef playerRef = holder.getComponent(PlayerRef.getComponentType());
+        Player player = holder.getComponent(Player.getComponentType());
+        if (playerRef == null || player == null) {
+            return;
+        }
+        waveGameManager.onPlayerAddedToWorld(playerRef, event.getWorld());
+    }
+
     private void onPlayerRemovedFromWorld(RemovedPlayerFromWorldEvent event) {
         if (waveGameManager == null) {
             return;
@@ -78,6 +92,6 @@ public class OffensivePlugin extends JavaPlugin {
         if (playerRef == null || player == null) {
             return;
         }
-        waveGameManager.onPlayerRemovedFromWorld(playerRef, player, event.getWorld());
+        waveGameManager.onPlayerRemovedFromWorld(playerRef, event.getWorld());
     }
 }

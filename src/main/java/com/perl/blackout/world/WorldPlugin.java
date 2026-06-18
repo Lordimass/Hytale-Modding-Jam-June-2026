@@ -3,12 +3,13 @@ package com.perl.blackout.world;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
-import com.hypixel.hytale.server.core.universe.world.events.RemoveWorldEvent;
 import com.perl.blackout.world.craft.CraftAltarBreakHandler;
-import com.perl.blackout.world.craft.CraftAltarManager;
 import com.perl.blackout.world.craft.CraftAltarPlacementHandler;
-import com.perl.blackout.world.craft.CraftAltarSystem;
 
+/**
+ * World sub-plugin. Registers the crafting-machine place/break handlers, which forward to the
+ * Offensive wave game (the machine becomes the optional defended bench inside an instance).
+ */
 public class WorldPlugin extends JavaPlugin {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
 
@@ -19,21 +20,9 @@ public class WorldPlugin extends JavaPlugin {
 
     @Override
     protected void setup() {
-        CraftAltarManager.getInstance();
-
-        getEntityStoreRegistry().registerSystem(new CraftAltarSystem());
         getEntityStoreRegistry().registerSystem(new CraftAltarPlacementHandler());
         getEntityStoreRegistry().registerSystem(new CraftAltarBreakHandler());
 
-        getEventRegistry().registerGlobal(RemoveWorldEvent.class,
-                event -> CraftAltarManager.getInstance().onWorldRemoved(event.getWorld()));
-
-        LOGGER.atInfo().log("Craft altar system ready.");
-    }
-
-    @Override
-    protected void shutdown() {
-        CraftAltarManager.getInstance().shutdown();
-        super.shutdown();
+        LOGGER.atInfo().log("Blackout World crafting-machine handlers ready.");
     }
 }

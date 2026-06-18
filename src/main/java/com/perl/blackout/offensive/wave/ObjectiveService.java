@@ -1,6 +1,9 @@
 package com.perl.blackout.offensive.wave;
 
+import java.util.List;
+
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 import org.joml.Vector3d;
 
@@ -11,50 +14,51 @@ import com.hypixel.hytale.math.vector.Rotation3f;
 import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.modules.entitystats.EntityStatValue;
 import com.hypixel.hytale.server.core.modules.entitystats.asset.DefaultEntityStatTypes;
+import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.npc.NPCPlugin;
 import com.hypixel.hytale.server.npc.entities.NPCEntity;
 import com.hypixel.hytale.server.npc.role.Role;
 
 /**
- * Manages the defended objective NPC: spawning it, applying its configurable health, detecting its
- * destruction, and pointing enemies at it.
+ * Manages the optional defended bench NPC and points enemies at their target each tick:
+ * the bench NPC while it is alive, otherwise the nearest player.
  */
 final class ObjectiveService {
 
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
     /** Target slot consumed by NPC roles that pursue a marked entity. */
     private static final String TARGET_SLOT = "LockedTarget";
+    /** NPC role spawned on a placed crafting machine; enemies prefer to attack it. */
+    static final String BENCH_NPC_ROLE = "BO_Altar";
+    /** Health applied to the bench NPC on spawn. */
+    static final float BENCH_MAX_HEALTH = 200.0f;
 
-    /** Spawns the objective NPC and applies the configured health. Must run on the world thread. */
-    void spawnObjective(WaveGame game, Store<EntityStore> store, WaveConfig.Objective config) {
+    /** Spawns the bench NPC and applies its health. Must run on the world thread. */
+    @Nullable
+    Ref<EntityStore> spawnBench(Store<EntityStore> store, Vector3d position) {
         try {
-            Vector3d position = new Vector3d(config.position.x, config.position.y, config.position.z);
-            var result = NPCPlugin.get().spawnNPC(store, config.npcRole, null, position, new Rotation3f(0.0f, 0.0f, 0.0f));
+            var result = NPCPlugin.get().spawnNPC(store, BENCH_NPC_ROLE, null, position, new Rotation3f(0.0f, 0.0f, 0.0f));
             Ref<EntityStore> ref = result != null ? result.first() : null;
             if (ref == null) {
-                LOGGER.atWarning().log("Failed to spawn objective NPC '%s'", config.npcRole);
-                return;
+                LOGGER.atWarning().log("Failed to spawn bench NPC '%s'", BENCH_NPC_ROLE);
+                return null;
             }
-            game.setObjectiveRef(ref);
-
             EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
             if (stats != null) {
-                stats.setStatValue(DefaultEntityStatTypes.getHealth(), config.maxHealth);
+                stats.setStatValue(DefaultEntityStatTypes.getHealth(), BENCH_MAX_HEALTH);
             }
-            LOGGER.atInfo().log("Spawned objective '%s' with %s HP", config.npcRole, config.maxHealth);
+            LOGGER.atInfo().log("Spawned bench NPC '%s' with %s HP", BENCH_NPC_ROLE, BENCH_MAX_HEALTH);
+            return ref;
         } catch (Exception e) {
-            LOGGER.atWarning().withCause(e).log("Error spawning objective NPC");
+            LOGGER.atWarning().withCause(e).log("Error spawning bench NPC");
+            return null;
         }
     }
 
-    /** Reads the objective's health; safe to call on the tick thread (read-only). */
-    boolean isDestroyed(@Nonnull WaveGame game, @Nonnull Store<EntityStore> store) {
-        Ref<EntityStore> ref = game.getObjectiveRef();
-        if (ref == null) {
-            return false;
-        }
-        if (!ref.isValid()) {
+    /** True if the ref is gone or its health has hit zero. Read-only; safe on any thread. */
+    boolean isDead(@Nonnull Store<EntityStore> store, @Nullable Ref<EntityStore> ref) {
+        if (ref == null || !ref.isValid()) {
             return true;
         }
         EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
@@ -66,31 +70,64 @@ final class ObjectiveService {
     }
 
     /**
-     * Marks the objective as each enemy's target so roles that support a {@code LockedTarget} slot
-     * advance on the machine. No-op for roles (such as the default Seeker) that ignore the slot;
-     * those fall back to their normal aggro behaviour. Must run on the world thread.
+     * Re-points every live enemy at its target: the bench NPC while it lives, otherwise the nearest
+     * player. Roles that ignore the {@code LockedTarget} slot fall back to their own aggro. Must run
+     * on the world thread.
      */
-    void applyTargeting(WaveGame game, Store<EntityStore> store) {
-        Ref<EntityStore> objective = game.getObjectiveRef();
-        if (objective == null || !objective.isValid()) {
-            return;
-        }
-        for (Ref<EntityStore> enemy : game.getEnemies()) {
-            if (enemy == null || !enemy.isValid()) {
-                continue;
-            }
-            NPCEntity npc = store.getComponent(enemy, NPCEntity.getComponentType());
-            if (npc == null) {
-                continue;
-            }
-            Role role = npc.getRole();
-            if (role != null) {
+    void applyTargeting(WaveGame game, Store<EntityStore> store, World world) {
+        Ref<EntityStore> bench = game.getBenchNpcRef();
+        boolean benchAlive = bench != null && !isDead(store, bench);
+        List<Ref<EntityStore>> players = benchAlive ? List.of() : WavePlayers.refs(world);
+
+        synchronized (game.getEnemies()) {
+            for (Ref<EntityStore> enemy : game.getEnemies()) {
+                if (enemy == null || !enemy.isValid()) {
+                    continue;
+                }
+                NPCEntity npc = store.getComponent(enemy, NPCEntity.getComponentType());
+                if (npc == null) {
+                    continue;
+                }
+                Role role = npc.getRole();
+                if (role == null) {
+                    continue;
+                }
+                Ref<EntityStore> target = benchAlive ? bench : nearestPlayer(store, enemy, players);
+                if (target == null) {
+                    continue;
+                }
                 try {
-                    role.setMarkedTarget(TARGET_SLOT, objective);
+                    role.setMarkedTarget(TARGET_SLOT, target);
                 } catch (Exception ignored) {
                     // Role does not expose this target slot; ignore.
                 }
             }
         }
+    }
+
+    @Nullable
+    private Ref<EntityStore> nearestPlayer(Store<EntityStore> store, Ref<EntityStore> enemy,
+                                           List<Ref<EntityStore>> players) {
+        if (players.isEmpty()) {
+            return null;
+        }
+        Vector3d enemyPos = WavePlayers.positionOf(store, enemy);
+        if (enemyPos == null) {
+            return players.get(0);
+        }
+        Ref<EntityStore> best = null;
+        double bestDistSq = Double.MAX_VALUE;
+        for (Ref<EntityStore> player : players) {
+            Vector3d playerPos = WavePlayers.positionOf(store, player);
+            if (playerPos == null) {
+                continue;
+            }
+            double distSq = enemyPos.distanceSquared(playerPos);
+            if (distSq < bestDistSq) {
+                bestDistSq = distSq;
+                best = player;
+            }
+        }
+        return best;
     }
 }

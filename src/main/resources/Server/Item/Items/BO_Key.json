@@ -1,0 +1,27 @@
+{
+  "$Comment": "Placeholder Key crafted at the BO_CraftingMachine bench. No behaviour yet; reserved for unlocking deeper Backrooms levels. Placeholder icon reused from an existing asset.",
+  "TranslationProperties": {
+    "Name": "Key"
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Flashlight.png",
+  "MaxStack": 16,
+  "ItemLevel": 1,
+  "Recipe": {
+    "TimeSeconds": 60,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Linen",
+        "Quantity": 10
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "BO_CraftingMachine",
+        "Categories": [
+          "BO_Tools"
+        ]
+      }
+    ]
+  }
+}

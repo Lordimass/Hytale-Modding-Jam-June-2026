@@ -11,10 +11,15 @@ import com.hypixel.hytale.server.npc.NPCPlugin;
 import org.joml.Vector3d;
 
 import javax.annotation.Nullable;
+import java.util.List;
 import java.util.Random;
 
 /**
  * Spawns and despawns the wave enemies for a floor.
+ *
+ * <p>Enemies appear in a ring around the players (never on top of them) at the players' own Y, so
+ * they spawn on the same level as the people they hunt. With no players present they fall back to
+ * the configured anchor at the floor Y.
  *
  * <p>All mutating methods must be invoked on the world thread (i.e. inside {@code world.execute(...)}),
  * since entities cannot be added or removed during system tick processing.
@@ -22,28 +27,53 @@ import java.util.Random;
 final class EnemySpawnService {
 
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
+    /** Spawn attempts per enemy before giving up (each tries a fresh ring position). */
+    private static final int SPAWN_ATTEMPTS = 5;
 
     private final Random random = new Random();
 
-    /** Spawns every configured enemy for the given floor around the objective centre. */
+    /** Spawns every configured enemy for the given floor, ringed around the current players. */
     void spawnFloorEnemies(WaveGame game, Store<EntityStore> store, World world,
-                           @Nullable WaveConfig.Floor floor, WaveConfig.Position center) {
+                           WaveConfig config, @Nullable WaveConfig.Floor floor) {
         if (floor == null) {
             LOGGER.atWarning().log("No floor config for floor %s; no enemies spawned", game.getFloor());
             return;
         }
+        List<Vector3d> players = WavePlayers.positions(world, store);
+        double minRadius = Math.max(1.0, config.enemySpawnDistance - config.enemySpawnDistanceJitter);
+        double maxRadius = config.enemySpawnDistance + config.enemySpawnDistanceJitter;
+
         int spawned = 0;
         for (WaveConfig.EnemyGroup group : floor.enemies) {
             if (group.type == null || group.type.isBlank()) {
                 continue;
             }
             for (int i = 0; i < group.count; i++) {
-                Vector3d position = WavePositions.findOpen(
-                        world, center.x, center.z, floor.floorY, floor.enemySpawnRadius, random);
-                Ref<EntityStore> ref = spawnEnemy(store, group.type, position);
+                Ref<EntityStore> ref = null;
+                // Each enemy picks its own anchor + ring position, retrying so it reliably spawns.
+                for (int attempt = 0; attempt < SPAWN_ATTEMPTS && ref == null; attempt++) {
+                    double anchorX;
+                    double anchorZ;
+                    double y;
+                    if (players.isEmpty()) {
+                        anchorX = config.playerSpawn.x;
+                        anchorZ = config.playerSpawn.z;
+                        y = floor.floorY;
+                    } else {
+                        Vector3d anchor = players.get(random.nextInt(players.size()));
+                        anchorX = anchor.x;
+                        anchorZ = anchor.z;
+                        y = anchor.y;
+                    }
+                    Vector3d position = WavePositions.findOpenRing(
+                            world, anchorX, anchorZ, y, minRadius, maxRadius, random);
+                    ref = spawnEnemy(store, group.type, position);
+                }
                 if (ref != null) {
                     game.addEnemy(ref);
                     spawned++;
+                } else {
+                    LOGGER.atWarning().log("Gave up spawning a '%s' after %s attempts", group.type, SPAWN_ATTEMPTS);
                 }
             }
         }

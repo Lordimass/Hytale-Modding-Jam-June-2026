@@ -2,7 +2,6 @@ package com.perl.blackout.world.craft;
 
 import javax.annotation.Nonnull;
 
-import org.joml.Vector3d;
 import org.joml.Vector3i;
 
 import com.hypixel.hytale.component.ArchetypeChunk;
@@ -15,12 +14,15 @@ import com.hypixel.hytale.server.core.event.events.ecs.PlaceBlockEvent;
 import com.hypixel.hytale.server.core.inventory.ItemStack;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import com.perl.blackout.offensive.OffensivePlugin;
+import com.perl.blackout.offensive.wave.WaveGameManager;
 
 /**
- * Listens for the altar block being placed and hands off to {@link CraftAltarManager}.
+ * Listens for the crafting machine block being placed and registers it with the wave game as the
+ * optional bench the enemies prefer to attack. The block itself remains a normal (native) crafting
+ * bench; this only spawns the bench NPC target.
  *
- * <p>Fires on the tick thread; all entity mutations are deferred to the world thread
- * via {@code world.execute(...)}.
+ * <p>Fires on the tick thread; the wave manager defers entity mutations to the world thread.
  */
 public final class CraftAltarPlacementHandler extends EntityEventSystem<EntityStore, PlaceBlockEvent> {
 
@@ -35,7 +37,7 @@ public final class CraftAltarPlacementHandler extends EntityEventSystem<EntitySt
                        @Nonnull CommandBuffer<EntityStore> commandBuffer,
                        @Nonnull PlaceBlockEvent event) {
         ItemStack item = event.getItemInHand();
-        if (item == null || !CraftAltarManager.ALTAR_BLOCK_ID.equals(item.getItemId())) {
+        if (item == null || !WaveGameManager.BENCH_BLOCK_ID.equals(item.getItemId())) {
             return;
         }
 
@@ -49,20 +51,23 @@ public final class CraftAltarPlacementHandler extends EntityEventSystem<EntitySt
             return;
         }
 
-        // getTargetBlock() returns the position of the block being placed.
-        Vector3i blockPos = event.getTargetBlock();
-        // Centre the NPC on the block horizontally; keep floor Y.
-        Vector3d spawnPos = new Vector3d(blockPos.x + 0.5, blockPos.y, blockPos.z + 0.5);
+        WaveGameManager manager = waveManager();
+        if (manager == null) {
+            return;
+        }
 
-        world.execute(() -> {
-            Store<EntityStore> worldStore = world.getEntityStore().getStore();
-            CraftAltarManager.getInstance().onAltarPlaced(world, spawnPos, worldStore);
-        });
+        Vector3i blockPos = new Vector3i(event.getTargetBlock());
+        manager.onBenchPlaced(world, blockPos);
     }
 
     @Override
     @Nonnull
     public Query<EntityStore> getQuery() {
         return Query.and(Player.getComponentType());
+    }
+
+    private static WaveGameManager waveManager() {
+        OffensivePlugin plugin = OffensivePlugin.getInstance();
+        return plugin != null ? plugin.getWaveGameManager() : null;
     }
 }
