@@ -1,0 +1,41 @@
+{
+  "BlockType": {
+    "Textures": [
+      {
+        "All": "Items/Icons/ItemsGenerated/bo_grass_apt_texture.png"
+      }
+    ],
+    "Material": "Solid",
+    "IgnoreSupportWhenPlaced": true,
+    "Parent": "Rock_Stone",
+    "VariantRotation": "NESW",
+    "Opacity": "Solid",
+    "PlacementSettings": {
+      "RotationMode": "Default",
+      "AllowRotationKey": true,
+      "BlockPreviewVisibility": "AlwaysVisible"
+    },
+    "CustomModel": "Items/Icons/ItemsGenerated/bo_wallpaper_00.blockymodel",
+    "DrawType": "Cube"
+  },
+  "TranslationProperties": {
+    "Name": "BO_Grass"
+  },
+  "Texture": "BlockTextures/bo_grass_apt_texture.png",
+  "UsePlayerAnimations": true,
+  "Model": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
+  "Icon": "Icons/ItemsGenerated/BO_Grass_Apt.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Parent": "Rock_Bedrock"
+}

@@ -1,0 +1,74 @@
+{
+  "Type": "NoiseRange",
+  "DefaultTransitionDistance": 1024,
+  "MaxBiomeEdgeDistance": 32,
+  "Density": {
+    "Type": "Imported",
+    "Name": "Biome-Map"
+  },
+  "SpawnPositions": {
+    "Type": "Imported",
+    "Name": "Spawns"
+  },
+  "Framework": [
+    {
+      "Type": "Positions",
+      "Entries": [
+        {
+          "Name": "Spawns",
+          "Positions": {
+            "Type": "List",
+            "ExportAs": "Spawns",
+            "Positions": [
+              {
+                "X": 0,
+                "Y": 23,
+                "Z": 0
+              },
+              {
+                "X": 30,
+                "Y": 23,
+                "Z": 0
+              },
+              {
+                "X": 10,
+                "Y": 23,
+                "Z": 20
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Type": "DecimalConstants",
+      "Entries": [
+        {
+          "Name": "Base",
+          "Value": 100
+        },
+        {
+          "Name": "Water",
+          "Value": 100
+        },
+        {
+          "Name": "Bedrock",
+          "Value": 0
+        }
+      ]
+    }
+  ],
+  "Tags": {
+    "Blackout": [
+      "Blackout"
+    ]
+  },
+  "Biomes": [
+    {
+      "Biome": "Backrooms",
+      "Min": 1,
+      "Max": 1
+    }
+  ],
+  "DefaultBiome": "Backrooms"
+}

@@ -1,0 +1,15 @@
+{
+  "Groups": {
+    "Revered": [
+      "Player"
+    ],
+    "Friendly": [
+      "Passive",
+      "Turret"
+    ],
+    "Hostile": [
+      "Aggressive",
+      "Seeker"
+    ]
+  }
+}

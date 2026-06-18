@@ -1,0 +1,36 @@
+{
+  "Icon": "Icons/ItemsGenerated/BO_CraftingMachine.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      30,
+      45,
+      15
+    ],
+    "Translation": [
+      -4,
+      -4
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Crafting Machine"
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Rock_Stone"
+      }
+    ],
+    "Speed": 3,
+    "HitSoundLayer": "SFX_Stone_Break"
+  },
+  "Parent": "Rock_Stone",
+  "BlockType": {
+    "DrawType": "CubeWithModel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/bo_crafting_machine_texture.png"
+      }
+    ]
+  }
+}

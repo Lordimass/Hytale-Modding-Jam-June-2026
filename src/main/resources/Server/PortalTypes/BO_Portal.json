@@ -1,0 +1,13 @@
+{
+  "InstanceId": "Blackout/Backrooms",
+  "Description": {
+    "DisplayName": "Blackout",
+    "FlavorText": "my.portal.description.translationkey",
+    "ThemeColor": "#23970cec",
+    "SplashImage": "DefaultArtwork.png"
+  },
+  "Spawn": {
+    "SpawnReturnPortal": false,
+    "ReturnBlock": "BO_Wallpaper00_Portal"
+  }
+}

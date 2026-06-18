@@ -1,0 +1,101 @@
+{
+	"$NodeId":	"Group.TileSet.GridWave-00000000000000000000000000000006",
+	"Type":	"Group",
+	"TileSets":	[{
+			"$NodeId":	"Auto.TileSet.GridWave-00000000000000000000000000000007",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"Backroomsv1/1x1/1001",
+			"Weight":	0.5,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-00000000000000000000000000000008",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"Backroomsv1/1x1/1010",
+			"Weight":	2,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-00000000000000000000000000000009",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"Backroomsv1/1x1/1011",
+			"Weight":	1,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-00000000000000000000000000000010",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"Backroomsv1/1x1/1111",
+			"Weight":	1,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-00000000000000000000000000000011",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"Backroomsv1/1x1/0010",
+			"Weight":	0.15,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-00000000000000000000000000000012",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"Backroomsv1/1x1/0000",
+			"Weight":	0.5,
+			"MinimizeVariants":	false
+		}],
+	"ExportAs":	"BackroomsOfficeTiles",
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Group.TileSet.GridWave-00000000000000000000000000000006":	{
+				"$Position":	{
+					"$x":	3000,
+					"$y":	1000
+				},
+				"$Title":	"[ROOT] BackroomsOfficeTiles"
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000007":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	600
+				}
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000008":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	840
+				}
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000009":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	1080
+				}
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000010":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	1320
+				}
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000011":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	1560
+				}
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000012":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	1800
+				}
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{
+		},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"GridWave - TileSets"
+	}
+}

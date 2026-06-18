@@ -1,0 +1,145 @@
+{
+  "Model": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
+  "Texture": "Blocks/bo_wallpaper/bo_wallpaper_00_texture.png",
+  "Icon": "Icons/ItemsGenerated/BO_Wallpaper00.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      81,
+      52,
+      24
+    ],
+    "Translation": [
+      -6,
+      -4
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Wallpaper00"
+  },
+  "State": {
+    "Wallpaper_Scratched_01": {
+      "DrawType": "CubeWithModel",
+      "CustomModelTexture": [
+        {
+          "Texture": "Items/Icons/ItemsGenerated/bo_wallpaper_00_texture.png"
+        }
+      ],
+      "BlockType": "BO_Wallpaper00"
+    },
+    "Wallpaper_Scratched_02": {
+      "DrawType": "CubeWithModel",
+      "CustomModelTexture": [
+        {
+          "Texture": "Items/Icons/ItemsGenerated/bo_wallpaper_00_texture.png"
+        }
+      ],
+      "BlockType": "BO_Wallpaper00"
+    }
+  },
+  "BlockType": {
+    "DrawType": "Cube",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_wallpaper/bo_wallpaper_00_texture.png"
+      }
+    ],
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "BlockCondition",
+            "UseLatestTarget": true,
+            "Matchers": [
+              {
+                "Block": {
+                  "Id": "BO_Wallpaper00"
+                }
+              }
+            ],
+            "Next": {
+              "Type": "ChangeState",
+              "Changes": {
+                "default": "Wallpaper_Scratched_01",
+                "Wallpaper_Scratched_01": "Wallpaper_Scratched_02"
+              },
+              "UseLatestTarget": true,
+              "UpdateBlockState": true,
+              "Next": {
+                "Type": "AddItem",
+                "UseLatestTarget": true,
+                "ItemId": "Ingredient_Bolt_Linen",
+                "Quantity": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Wallpaper_Scratched_01": {
+          "DrawType": "Model",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/bo_wallpaper/bo_wallpaper_02_texture.png"
+            }
+          ],
+          "Tags": {
+            "Wallpaper": []
+          },
+          "CustomModel": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel"
+        },
+        "Wallpaper_Scratched_02": {
+          "DrawType": "Model",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/bo_wallpaper/bo_wallpaper_03_texture.png"
+            }
+          ],
+          "Tags": {
+            "Wallpaper": []
+          }
+        }
+      }
+    },
+    "Textures": [
+      {
+        "All": "Blocks/bo_wallpaper/bo_wallpaper_00_cube_texture.png"
+      }
+    ],
+    "Material": "Solid",
+    "Hardness": "5000",
+    "IgnoreSupportWhenPlaced": false,
+    "CustomModel": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
+    "Parent": "Rock_Bedrock",
+    "VariantRotation": "NESW",
+    "Group": "Stone",
+    "PlacementSettings": {
+      "RotationMode": "Default",
+      "AllowRotationKey": true
+    }
+  },
+  "Tags": {
+    "Wallpaper": []
+  },
+  "Parent": "Rock_Stone",
+  "ItemLevel": 500,
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Unbreak",
+        "IsIncorrect": true
+      },
+      {
+        "Parent": "VolcanicRocks",
+        "IsIncorrect": true
+      },
+      {
+        "Parent": "Rocks",
+        "IsIncorrect": true
+      }
+    ]
+  },
+  "UsePlayerAnimations": false
+}

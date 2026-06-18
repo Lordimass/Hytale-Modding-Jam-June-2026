@@ -1,0 +1,21 @@
+{
+  "Type": "Random",
+  "Mode": "Random",
+  "LoopCount": 0,
+  "AvoidRepeatCount": 4,
+  "Children": [
+    {
+      "Parent": "Track_BO_Theme",
+      "SilenceAfter": {
+        "Min": 10,
+        "Max": 20
+      }
+    },
+    {
+      "Parent": "Track_BO_Theme_Inactive"
+    }
+  ],
+  "Tempo": {
+    "Bpm": 120
+  }
+}

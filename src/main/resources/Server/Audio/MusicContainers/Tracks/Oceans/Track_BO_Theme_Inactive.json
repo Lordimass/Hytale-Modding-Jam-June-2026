@@ -1,0 +1,9 @@
+{
+  "Type": "SingleTrack",
+  "NameTranslationKey": "BO Theme Inactive",
+  "Track": "Music/Blackout/BO_Theme_InActive.ogg",
+  "LoopCount": 1,
+  "Tempo": {
+    "Bpm": 120
+  }
+}

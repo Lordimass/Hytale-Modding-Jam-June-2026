@@ -1,0 +1,80 @@
+{
+  "Model": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
+  "Texture": "Blocks/bo_wallpaper/bo_wallpaper_00_texture.png",
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Wallpaper00.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      81,
+      52,
+      24
+    ],
+    "Translation": [
+      -6,
+      -4
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Wallpaper00"
+  },
+  "BlockType": {
+    "DrawType": "Cube",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_wallpaper/bo_wallpaper_00_texture.png"
+      }
+    ],
+    "Textures": [
+      {
+        "All": "Blocks/bo_wallpaper/bo_wallpaper_00_cube_texture.png"
+      }
+    ],
+    "CustomModel": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
+    "Material": "Solid",
+    "IgnoreSupportWhenPlaced": false,
+    "Parent": "Rock_Stone",
+    "VariantRotation": "NESW",
+    "Group": "Stone",
+    "PlacementSettings": {
+      "RotationMode": "Default",
+      "AllowRotationKey": true
+    },
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "TeleportInstance",
+            "InstanceName": "Backrooms",
+            "PersonalReturnPoint": true,
+            "CloseOnBlockRemove": false,
+            "Next": {
+              "Type": "Simple",
+              "Effects": {
+                "LocalSoundEventId": "SFX_Portal_Neutral_Teleport_Local"
+              }
+            },
+            "OriginSource": "Block",
+            "Rules": {
+              "BlockedBy": [
+                "Dodge"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Tags": {
+    "Wallpaper": []
+  },
+  "Parent": "Rock_Bedrock"
+}

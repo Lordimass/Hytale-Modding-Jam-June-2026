@@ -1,0 +1,616 @@
+{
+	"$NodeId":	"Biome-d287580f-b11b-4189-b660-932132d6877d",
+	"Name":	"Backrooms",
+	"Props":	[{
+			"$NodeId":	"Runtime-00000000000000000000000000000125",
+			"Skip":	false,
+			"Runtime":	0,
+			"PropDistribution":	{
+				"$NodeId":	"Union.PropDistribution-00000000000000000000000000000126",
+				"Type":	"Union",
+				"Skip":	false,
+				"PropDistributions":	[{
+						"$NodeId":	"PropDistributionAlgo.GridWave-00000000000000000000000000000001",
+						"Type":	"PropDistributionAlgo",
+						"Skip":	false,
+						"GridPoints":	{
+							"$NodeId":	"GridGen2D.GridWave-00000000000000000000000000000024",
+							"Type":	"GridGen2D",
+							"ExportAs":	"",
+							"Position":	{
+								"$NodeId":	"Vector3i-00000000000000000000000000000025",
+								"X":	0,
+								"Y":	0,
+								"Z":	0
+							},
+							"OffsetX":	10,
+							"OffsetZ":	10,
+							"RepeatX":	75,
+							"RepeatZ":	75,
+							"Centered":	true
+						},
+						"POIs":	[],
+						"BaseTiles":	[{
+								"$NodeId":	"Imported.TileSet.GridWave-00000000000000000000000000000003",
+								"Type":	"Imported",
+								"Name":	"BackroomsGarageTiles",
+								"Features":	[{
+										"$NodeId":	"Border.Feature.GridWave-fd55d6cc-2544-474e-aab9-790080152f0c",
+										"Type":	"Border",
+										"Skip":	false,
+										"BorderType":	"OuterBorder",
+										"BorderRuleSets":	[{
+												"$NodeId":	"Simple.RuleSet.GridWave-4cf4f083-2d5f-4798-b4ac-8aaa47585d4a",
+												"Type":	"Simple",
+												"HorizontalRules":	{
+													"N":	"0",
+													"E":	"0",
+													"S":	"0",
+													"W":	"0"
+												}
+											}]
+									}]
+							}],
+						"FancyTiles":	[],
+						"Seed":	{
+							"$NodeId":	"Constant.Seed.GridWave-00000000000000000000000000000002",
+							"Type":	"Constant",
+							"Seed":	"BackroomsGarage"
+						},
+						"Features":	[{
+								"$NodeId":	"Border.Feature.GridWave-00000000000000000000000000000026",
+								"Type":	"Border",
+								"Skip":	false,
+								"BorderType":	"OuterBorder",
+								"BorderRuleSets":	[{
+										"$NodeId":	"Simple.RuleSet.GridWave-00000000000000000000000000000027",
+										"Type":	"Simple",
+										"HorizontalRules":	{
+											"N":	"0",
+											"E":	"0",
+											"S":	"0",
+											"W":	"0"
+										}
+									}]
+							}, {
+								"$NodeId":	"MultiAttempt.Feature.GridWave-00000000000000000000000000000028",
+								"Type":	"MultiAttempt",
+								"Skip":	false,
+								"MaxBacktracks":	1000,
+								"MaxAttempts":	200
+							}],
+						"MaxPositionsCount":	200000
+					}, {
+						"$NodeId":	"PropDistributionAlgo.GridWave-00000000000000000000000000000029",
+						"Type":	"PropDistributionAlgo",
+						"Skip":	false,
+						"GridPoints":	{
+							"$NodeId":	"GridGen2D.GridWave-00000000000000000000000000000072",
+							"Type":	"GridGen2D",
+							"ExportAs":	"",
+							"Position":	{
+								"$NodeId":	"Vector3i-00000000000000000000000000000073",
+								"X":	0,
+								"Y":	16,
+								"Z":	0
+							},
+							"OffsetX":	10,
+							"OffsetZ":	10,
+							"RepeatX":	75,
+							"RepeatZ":	75,
+							"Centered":	true
+						},
+						"POIs":	[],
+						"BaseTiles":	[{
+								"$NodeId":	"Imported.TileSet.GridWave-00000000000000000000000000000031",
+								"Type":	"Imported",
+								"Name":	"BackroomsOfficeTiles",
+								"Features":	[{
+										"$NodeId":	"Border.Feature.GridWave-854585d0-b1c5-43ee-b4b9-20bc13ef5af1",
+										"Type":	"Border",
+										"Skip":	false,
+										"BorderType":	"OuterBorder",
+										"BorderRuleSets":	[{
+												"$NodeId":	"Simple.RuleSet.GridWave-b2e46bf7-1d9b-4940-9ee0-9f0e41101596",
+												"Type":	"Simple",
+												"HorizontalRules":	{
+													"N":	"0",
+													"E":	"0",
+													"S":	"0",
+													"W":	"0"
+												}
+											}]
+									}]
+							}],
+						"FancyTiles":	[{
+								"$NodeId":	"Imported.TileSet.GridWave-bsi0000000000000000000000000000111",
+								"Type":	"Imported",
+								"Name":	"BackroomsSpecialTiles",
+								"Features":	[{
+										"$NodeId":	"Border.Feature.GridWave-01fb8099-5f91-48db-8cdb-84db7ebe769f",
+										"Type":	"Border",
+										"Skip":	false,
+										"BorderType":	"OuterBorder",
+										"BorderRuleSets":	[{
+												"$NodeId":	"Simple.RuleSet.GridWave-968f2d31-b0df-4e6e-95db-36f83c5b9206",
+												"Type":	"Simple",
+												"HorizontalRules":	{
+													"N":	"0",
+													"E":	"0",
+													"S":	"0",
+													"W":	"0"
+												}
+											}]
+									}]
+							}],
+						"Seed":	{
+							"$NodeId":	"Constant.Seed.GridWave-00000000000000000000000000000030",
+							"Type":	"Constant",
+							"Seed":	"BackroomsOffice"
+						},
+						"Features":	[{
+								"$NodeId":	"Border.Feature.GridWave-00000000000000000000000000000074",
+								"Type":	"Border",
+								"Skip":	false,
+								"BorderType":	"OuterBorder",
+								"BorderRuleSets":	[{
+										"$NodeId":	"Simple.RuleSet.GridWave-00000000000000000000000000000075",
+										"Type":	"Simple",
+										"HorizontalRules":	{
+											"N":	"0",
+											"E":	"0",
+											"S":	"0",
+											"W":	"0"
+										}
+									}]
+							}, {
+								"$NodeId":	"MultiAttempt.Feature.GridWave-00000000000000000000000000000076",
+								"Type":	"MultiAttempt",
+								"Skip":	false,
+								"MaxBacktracks":	1000,
+								"MaxAttempts":	200
+							}],
+						"MaxPositionsCount":	200000
+					}, {
+						"$NodeId":	"PropDistributionAlgo.GridWave-00000000000000000000000000000077",
+						"Type":	"PropDistributionAlgo",
+						"Skip":	false,
+						"GridPoints":	{
+							"$NodeId":	"GridGen2D.GridWave-00000000000000000000000000000120",
+							"Type":	"GridGen2D",
+							"ExportAs":	"",
+							"Position":	{
+								"$NodeId":	"Vector3i-00000000000000000000000000000121",
+								"X":	0,
+								"Y":	32,
+								"Z":	0
+							},
+							"OffsetX":	10,
+							"OffsetZ":	10,
+							"RepeatX":	75,
+							"RepeatZ":	75,
+							"Centered":	true
+						},
+						"POIs":	[],
+						"BaseTiles":	[{
+								"$NodeId":	"Imported.TileSet.GridWave-00000000000000000000000000000079",
+								"Type":	"Imported",
+								"Name":	"BackroomsWaterTiles",
+								"Features":	[{
+										"$NodeId":	"Border.Feature.GridWave-c50c2cf4-cb62-4b56-aa65-0194d50ca4ca",
+										"Type":	"Border",
+										"Skip":	false,
+										"BorderType":	"OuterBorder",
+										"BorderRuleSets":	[{
+												"$NodeId":	"Simple.RuleSet.GridWave-d023967f-cef5-4673-a88d-495977e0375f",
+												"Type":	"Simple",
+												"HorizontalRules":	{
+													"N":	"0",
+													"E":	"0",
+													"S":	"0",
+													"W":	"0"
+												}
+											}]
+									}]
+							}],
+						"FancyTiles":	[{
+								"$NodeId":	"Imported.TileSet.GridWave-bsi0000000000000000000000000000112",
+								"Type":	"Imported",
+								"Name":	"BackroomsSpecialTiles",
+								"Features":	[{
+										"$NodeId":	"Border.Feature.GridWave-4b036656-c3b6-4522-a8a2-8f23ef399bec",
+										"Type":	"Border",
+										"Skip":	false,
+										"BorderType":	"OuterBorder",
+										"BorderRuleSets":	[{
+												"$NodeId":	"Simple.RuleSet.GridWave-887faf1c-8815-44a2-9c4d-4d589d2c363b",
+												"Type":	"Simple",
+												"HorizontalRules":	{
+													"N":	"0",
+													"E":	"0",
+													"S":	"0",
+													"W":	"0"
+												}
+											}]
+									}]
+							}],
+						"Seed":	{
+							"$NodeId":	"Constant.Seed.GridWave-00000000000000000000000000000078",
+							"Type":	"Constant",
+							"Seed":	"BackroomsWater"
+						},
+						"Features":	[{
+								"$NodeId":	"Border.Feature.GridWave-00000000000000000000000000000122",
+								"Type":	"Border",
+								"Skip":	false,
+								"BorderType":	"OuterBorder",
+								"BorderRuleSets":	[{
+										"$NodeId":	"Simple.RuleSet.GridWave-00000000000000000000000000000123",
+										"Type":	"Simple",
+										"HorizontalRules":	{
+											"N":	"0",
+											"E":	"0",
+											"S":	"0",
+											"W":	"0"
+										}
+									}]
+							}, {
+								"$NodeId":	"MultiAttempt.Feature.GridWave-00000000000000000000000000000124",
+								"Type":	"MultiAttempt",
+								"Skip":	false,
+								"MaxBacktracks":	1000,
+								"MaxAttempts":	200
+							}],
+						"MaxPositionsCount":	200000
+					}, {
+						"$NodeId":	"PropDistributionAlgo.GridWave-00000000000000000000000000000300",
+						"Type":	"PropDistributionAlgo",
+						"Skip":	false,
+						"GridPoints":	{
+							"$NodeId":	"GridGen2D.GridWave-00000000000000000000000000000301",
+							"Type":	"GridGen2D",
+							"ExportAs":	"",
+							"Position":	{
+								"$NodeId":	"Vector3i-00000000000000000000000000000302",
+								"X":	0,
+								"Y":	0,
+								"Z":	0
+							},
+							"OffsetX":	10,
+							"OffsetZ":	10,
+							"RepeatX":	73,
+							"RepeatZ":	73,
+							"Centered":	true
+						},
+						"POIs":	[],
+						"BaseTiles":	[{
+								"$NodeId":	"Imported.TileSet.GridWave-00000000000000000000000000000303",
+								"Type":	"Imported",
+								"Name":	"BackroomsPillarTiles"
+							}],
+						"FancyTiles":	[],
+						"Seed":	{
+							"$NodeId":	"Constant.Seed.GridWave-00000000000000000000000000000304",
+							"Type":	"Constant",
+							"Seed":	"BackroomsPillars"
+						},
+						"Features":	[{
+								"$NodeId":	"Border.Feature.GridWave-00000000000000000000000000000305",
+								"Type":	"Border",
+								"Skip":	false,
+								"BorderType":	"OuterBorder",
+								"BorderRuleSets":	[{
+										"$NodeId":	"Simple.RuleSet.GridWave-00000000000000000000000000000306",
+										"Type":	"Simple",
+										"HorizontalRules":	{
+											"N":	"0",
+											"E":	"0",
+											"S":	"0",
+											"W":	"0"
+										}
+									}]
+							}, {
+								"$NodeId":	"MultiAttempt.Feature.GridWave-00000000000000000000000000000307",
+								"Type":	"MultiAttempt",
+								"Skip":	false,
+								"MaxBacktracks":	1000,
+								"MaxAttempts":	200
+							}],
+						"MaxPositionsCount":	200000
+					}]
+			}
+		}],
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Biome-d287580f-b11b-4189-b660-932132d6877d":	{
+				"$Position":	{
+					"$x":	-4180,
+					"$y":	-237
+				},
+				"$Title":	"[ROOT] Biome"
+			},
+			"Runtime-00000000000000000000000000000125":	{
+				"$Position":	{
+					"$x":	-3400,
+					"$y":	-100
+				}
+			},
+			"Union.PropDistribution-00000000000000000000000000000126":	{
+				"$Position":	{
+					"$x":	-2600,
+					"$y":	-100
+				}
+			},
+			"PropDistributionAlgo.GridWave-00000000000000000000000000000077":	{
+				"$Position":	{
+					"$x":	-1500,
+					"$y":	2900
+				}
+			},
+			"GridGen2D.GridWave-00000000000000000000000000000120":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	2750
+				}
+			},
+			"Vector3i-00000000000000000000000000000121":	{
+				"$Position":	{
+					"$x":	-15,
+					"$y":	2740
+				}
+			},
+			"Imported.TileSet.GridWave-00000000000000000000000000000079":	{
+				"$Position":	{
+					"$x":	-811,
+					"$y":	3394
+				}
+			},
+			"Imported.TileSet.GridWave-bsi0000000000000000000000000000112":	{
+				"$Position":	{
+					"$x":	-76,
+					"$y":	3109
+				}
+			},
+			"Constant.Seed.GridWave-00000000000000000000000000000078":	{
+				"$Position":	{
+					"$x":	-810,
+					"$y":	3203
+				}
+			},
+			"Border.Feature.GridWave-00000000000000000000000000000122":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	3550
+				}
+			},
+			"Simple.RuleSet.GridWave-00000000000000000000000000000123":	{
+				"$Position":	{
+					"$x":	0,
+					"$y":	3550
+				}
+			},
+			"MultiAttempt.Feature.GridWave-00000000000000000000000000000124":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	3750
+				}
+			},
+			"PropDistributionAlgo.GridWave-00000000000000000000000000000029":	{
+				"$Position":	{
+					"$x":	-1500,
+					"$y":	700
+				}
+			},
+			"GridGen2D.GridWave-00000000000000000000000000000072":	{
+				"$Position":	{
+					"$x":	-743,
+					"$y":	344
+				}
+			},
+			"Vector3i-00000000000000000000000000000073":	{
+				"$Position":	{
+					"$x":	-48,
+					"$y":	368
+				}
+			},
+			"Imported.TileSet.GridWave-00000000000000000000000000000031":	{
+				"$Position":	{
+					"$x":	-830,
+					"$y":	688
+				}
+			},
+			"Imported.TileSet.GridWave-bsi0000000000000000000000000000111":	{
+				"$Position":	{
+					"$x":	-278,
+					"$y":	862
+				}
+			},
+			"Constant.Seed.GridWave-00000000000000000000000000000030":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	950
+				}
+			},
+			"Border.Feature.GridWave-00000000000000000000000000000074":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	1350
+				}
+			},
+			"Simple.RuleSet.GridWave-00000000000000000000000000000075":	{
+				"$Position":	{
+					"$x":	0,
+					"$y":	1350
+				}
+			},
+			"MultiAttempt.Feature.GridWave-00000000000000000000000000000076":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	1550
+				}
+			},
+			"PropDistributionAlgo.GridWave-00000000000000000000000000000001":	{
+				"$Position":	{
+					"$x":	-1488,
+					"$y":	-1496
+				}
+			},
+			"GridGen2D.GridWave-00000000000000000000000000000024":	{
+				"$Position":	{
+					"$x":	-780,
+					"$y":	-1822
+				}
+			},
+			"Vector3i-00000000000000000000000000000025":	{
+				"$Position":	{
+					"$x":	-17,
+					"$y":	-1823
+				}
+			},
+			"Imported.TileSet.GridWave-00000000000000000000000000000003":	{
+				"$Position":	{
+					"$x":	-786,
+					"$y":	-1343
+				}
+			},
+			"Constant.Seed.GridWave-00000000000000000000000000000002":	{
+				"$Position":	{
+					"$x":	-801,
+					"$y":	-1182
+				}
+			},
+			"Border.Feature.GridWave-00000000000000000000000000000026":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	-850
+				}
+			},
+			"Simple.RuleSet.GridWave-00000000000000000000000000000027":	{
+				"$Position":	{
+					"$x":	0,
+					"$y":	-850
+				}
+			},
+			"MultiAttempt.Feature.GridWave-00000000000000000000000000000028":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	-650
+				}
+			},
+			"PropDistributionAlgo.GridWave-00000000000000000000000000000300":	{
+				"$Position":	{
+					"$x":	-1500,
+					"$y":	5200
+				}
+			},
+			"GridGen2D.GridWave-00000000000000000000000000000301":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	5050
+				}
+			},
+			"Vector3i-00000000000000000000000000000302":	{
+				"$Position":	{
+					"$x":	-124,
+					"$y":	5037
+				}
+			},
+			"Imported.TileSet.GridWave-00000000000000000000000000000303":	{
+				"$Position":	{
+					"$x":	-795,
+					"$y":	5340
+				}
+			},
+			"Constant.Seed.GridWave-00000000000000000000000000000304":	{
+				"$Position":	{
+					"$x":	-798,
+					"$y":	5445
+				}
+			},
+			"Border.Feature.GridWave-00000000000000000000000000000305":	{
+				"$Position":	{
+					"$x":	-794,
+					"$y":	5589
+				}
+			},
+			"Simple.RuleSet.GridWave-00000000000000000000000000000306":	{
+				"$Position":	{
+					"$x":	-126,
+					"$y":	5613
+				}
+			},
+			"MultiAttempt.Feature.GridWave-00000000000000000000000000000307":	{
+				"$Position":	{
+					"$x":	-800,
+					"$y":	5750
+				}
+			},
+			"Border.Feature.GridWave-c50c2cf4-cb62-4b56-aa65-0194d50ca4ca":	{
+				"$Position":	{
+					"$x":	-59,
+					"$y":	3371
+				}
+			},
+			"Simple.RuleSet.GridWave-d023967f-cef5-4673-a88d-495977e0375f":	{
+				"$Position":	{
+					"$x":	742,
+					"$y":	3376
+				}
+			},
+			"Border.Feature.GridWave-854585d0-b1c5-43ee-b4b9-20bc13ef5af1":	{
+				"$Position":	{
+					"$x":	-61,
+					"$y":	623
+				}
+			},
+			"Simple.RuleSet.GridWave-b2e46bf7-1d9b-4940-9ee0-9f0e41101596":	{
+				"$Position":	{
+					"$x":	615,
+					"$y":	576
+				}
+			},
+			"Border.Feature.GridWave-fd55d6cc-2544-474e-aab9-790080152f0c":	{
+				"$Position":	{
+					"$x":	-36,
+					"$y":	-1356
+				}
+			},
+			"Simple.RuleSet.GridWave-4cf4f083-2d5f-4798-b4ac-8aaa47585d4a":	{
+				"$Position":	{
+					"$x":	666,
+					"$y":	-1349
+				}
+			},
+			"Border.Feature.GridWave-01fb8099-5f91-48db-8cdb-84db7ebe769f":	{
+				"$Position":	{
+					"$x":	430,
+					"$y":	924
+				}
+			},
+			"Simple.RuleSet.GridWave-968f2d31-b0df-4e6e-95db-36f83c5b9206":	{
+				"$Position":	{
+					"$x":	1147,
+					"$y":	1034
+				}
+			},
+			"Border.Feature.GridWave-4b036656-c3b6-4522-a8a2-8f23ef399bec":	{
+				"$Position":	{
+					"$x":	633,
+					"$y":	3112
+				}
+			},
+			"Simple.RuleSet.GridWave-887faf1c-8815-44a2-9c4d-4d589d2c363b":	{
+				"$Position":	{
+					"$x":	1298,
+					"$y":	3099
+				}
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{
+		},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"HytaleGenerator - Biome"
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "BlockType": {
+    "Material": "Solid",
+    "IgnoreSupportWhenPlaced": true,
+    "Parent": "Rock_Stone",
+    "VariantRotation": "NESW",
+    "Opacity": "Solid",
+    "PlacementSettings": {
+      "RotationMode": "Default",
+      "AllowRotationKey": true,
+      "BlockPreviewVisibility": "AlwaysVisible"
+    },
+    "CustomModel": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
+    "DrawType": "Model",
+    "CubeShadingMode": "Reflective",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/bo_window_texture.png"
+      }
+    ],
+    "SoundOcclusionOpacity": 0.5
+  },
+  "TranslationProperties": {
+    "Name": "BO_Apt_Window"
+  },
+  "UsePlayerAnimations": true,
+  "Icon": "Icons/ItemsGenerated/BO_Apt_Window.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Parent": "Rock_Bedrock"
+}

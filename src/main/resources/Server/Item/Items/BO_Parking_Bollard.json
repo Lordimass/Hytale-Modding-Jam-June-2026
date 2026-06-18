@@ -1,0 +1,48 @@
+{
+  "Model": "Blocks/bo_parking_bollard/bo_parking_bollard.blockymodel",
+  "Texture": "Blocks/bo_parking_bumper/bo_parking_bumper_texture.png",
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "BlockType": {
+    "CustomModel": "Items/Icons/ItemsGenerated/bo_parking_bollard.blockymodel",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Icons/ItemsGenerated/bo_parking_bumper_texture.png"
+      }
+    ],
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer",
+      "BlockPreviewVisibility": "AlwaysVisible"
+    },
+    "BlockListAssetId": "BO_WallpaperType",
+    "IgnoreSupportWhenPlaced": true,
+    "VariantRotation": "NESW",
+    "HitboxType": "BO_Parking_Bollard_BB",
+    "Material": "Solid"
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Parking_Bollard.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      52,
+      24
+    ],
+    "Translation": [
+      4,
+      -22
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Parking_Bollard"
+  },
+  "Parent": "Rock_Bedrock"
+}

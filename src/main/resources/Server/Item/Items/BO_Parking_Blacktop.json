@@ -1,0 +1,39 @@
+{
+  "BlockType": {
+    "Material": "Solid",
+    "IgnoreSupportWhenPlaced": true,
+    "Parent": "Rock_Stone",
+    "VariantRotation": "NESW",
+    "Opacity": "Solid",
+    "PlacementSettings": {
+      "RotationMode": "Default",
+      "AllowRotationKey": true,
+      "BlockPreviewVisibility": "AlwaysVisible"
+    },
+    "CustomModel": "Blocks/bo_parking_blacktop/bo_parking_blacktop.blockymodel",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_parking_blacktop/bo_parking_blacktop.png"
+      }
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "BO_Parking_Blacktop"
+  },
+  "UsePlayerAnimations": true,
+  "Icon": "Icons/ItemsGenerated/BO_Parking_Blacktop.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Parent": "Rock_Bedrock"
+}

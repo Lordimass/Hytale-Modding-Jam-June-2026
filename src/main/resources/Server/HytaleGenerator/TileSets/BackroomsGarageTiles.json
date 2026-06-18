@@ -1,0 +1,79 @@
+{
+	"$NodeId": "Group.TileSet.GridWave-00000000000000000000000000000001",
+	"Type": "Group",
+	"TileSets": [
+		{
+			"$NodeId": "Auto.TileSet.GridWave-00000000000000000000000000000002",
+			"Type": "Auto",
+			"Features": [],
+			"FolderPath": "Backroomsv1/1x1/4004",
+			"Weight": 0.5,
+			"MinimizeVariants": true
+		},
+		{
+			"$NodeId": "Auto.TileSet.GridWave-00000000000000000000000000000003",
+			"Type": "Auto",
+			"Features": [],
+			"FolderPath": "Backroomsv1/1x1/4044",
+			"Weight": 3,
+			"MinimizeVariants": true
+		},
+		{
+			"$NodeId": "Auto.TileSet.GridWave-00000000000000000000000000000004",
+			"Type": "Auto",
+			"Features": [],
+			"FolderPath": "Backroomsv1/1x1/4444",
+			"Weight": 3,
+			"MinimizeVariants": true
+		},
+		{
+			"$NodeId": "Auto.TileSet.GridWave-00000000000000000000000000000005",
+			"Type": "Auto",
+			"Features": [],
+			"FolderPath": "Backroomsv1/1x1/0000",
+			"Weight": 0.1,
+			"MinimizeVariants": true
+		}
+	],
+	"ExportAs": "BackroomsGarageTiles",
+	"$NodeEditorMetadata": {
+		"$Nodes": {
+			"Group.TileSet.GridWave-00000000000000000000000000000001": {
+				"$Position": {
+					"$x": 3000,
+					"$y": 1000
+				},
+				"$Title": "[ROOT] BackroomsGarageTiles"
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000002": {
+				"$Position": {
+					"$x": 4000,
+					"$y": 600
+				}
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000003": {
+				"$Position": {
+					"$x": 4000,
+					"$y": 840
+				}
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000004": {
+				"$Position": {
+					"$x": 4000,
+					"$y": 1080
+				}
+			},
+			"Auto.TileSet.GridWave-00000000000000000000000000000005": {
+				"$Position": {
+					"$x": 4000,
+					"$y": 1320
+				}
+			}
+		},
+		"$FloatingNodes": [],
+		"$Links": {},
+		"$Groups": [],
+		"$Comments": [],
+		"$WorkspaceID": "GridWave - TileSets"
+	}
+}

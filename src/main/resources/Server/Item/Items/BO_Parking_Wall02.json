@@ -1,0 +1,46 @@
+{
+  "Model": "Blocks/bo_parking_blacktop/bo_parking_blacktop.blockymodel",
+  "Texture": "Blocks/bo_parking_wall/bo_parking_wall_02.png",
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "BlockType": {
+    "CustomModel": "Blocks/bo_parking_blacktop/bo_parking_blacktop.blockymodel",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_parking_wall/bo_parking_wall_02.png"
+      }
+    ],
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer",
+      "BlockPreviewVisibility": "AlwaysVisible"
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "Material": "Solid",
+    "Parent": "Rock_Bedrock"
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Parking_Wall02.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      52,
+      24
+    ],
+    "Translation": [
+      4,
+      -12
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Parking_Wall_02"
+  },
+  "Parent": "Rock_Bedrock"
+}

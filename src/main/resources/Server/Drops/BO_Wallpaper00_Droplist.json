@@ -1,0 +1,24 @@
+{
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "BO_Wallpaper00",
+          "QuantityMin": 0
+        },
+        "Weight": 25
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Ingredient_Stick",
+          "QuantityMin": 0,
+          "QuantityMax": 3
+        },
+        "Weight": 75
+      }
+    ]
+  }
+}

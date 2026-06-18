@@ -1,0 +1,13 @@
+{
+  "Conditions": {
+    "EnvironmentTagPattern": {
+      "Op": "Equals",
+      "Tag": "Blackout"
+    }
+  },
+  "MusicContainer": "MC_BO_Lv0",
+  "Priority": 40,
+  "AmbientBed": {
+    "Track": "Sounds/BO_Theme_InActive.ogg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "TexturePath": "Trails/Void.png",
+  "LifeSpan": 20,
+  "Roll": 0,
+  "Start": {
+    "Color": "rgba(#ffffff, 0.9)",
+    "Width": 1
+  },
+  "End": {
+    "Color": "rgba(#2f0f53, 0.733)",
+    "Width": 1
+  },
+  "LightInfluence": 0.656,
+  "Smooth": true,
+  "RenderMode": "Distortion",
+  "IntersectionHighlight": {
+    "HighlightThreshold": 0.164
+  }
+}

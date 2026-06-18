@@ -1,0 +1,82 @@
+{
+  "Animations": {
+    "Shoot": {
+      "ThirdPerson": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "ThirdPersonMoving": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "FirstPerson": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "Speed": 1,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
+    },
+    "ShootCharging": {
+      "ThirdPerson": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "Speed": 0.667,
+      "FirstPerson": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "Looping": false,
+      "ThirdPersonMoving": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
+    },
+    "ShootCharged": {
+      "ThirdPerson": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "ThirdPersonMoving": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "FirstPerson": "NPC/Turrets/Gun_Turret/Animations/Shoot.blockyanim",
+      "Speed": 1,
+      "BlendingDuration": 0,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim"
+    }
+  },
+  "Camera": {
+    "Pitch": {
+      "AngleRange": {
+        "Max": 60,
+        "Min": -45
+      },
+      "TargetNodes": [
+        "Head",
+        "LShoulder"
+      ]
+    },
+    "Yaw": {
+      "AngleRange": {
+        "Max": 45,
+        "Min": -45
+      },
+      "TargetNodes": [
+        "Belly"
+      ]
+    }
+  },
+  "WiggleWeights": {
+    "Pitch": 1,
+    "PitchDeceleration": 0.2,
+    "Roll": 0.1,
+    "RollDeceleration": 0.2,
+    "X": 1,
+    "XDeceleration": 0.2,
+    "Y": 0.1,
+    "YDeceleration": 0.2,
+    "Z": 0.1,
+    "ZDeceleration": 0.2
+  },
+  "PullbackConfig": {
+    "LeftOffsetOverride": [
+      0,
+      0,
+      -1.6
+    ],
+    "LeftRotationOverride": [
+      0,
+      0,
+      0
+    ],
+    "RightOffsetOverride": [
+      0,
+      0,
+      -1.6
+    ],
+    "RightRotationOverride": [
+      0,
+      0,
+      0
+    ]
+  }
+}

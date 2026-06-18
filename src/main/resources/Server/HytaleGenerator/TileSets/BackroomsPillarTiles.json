@@ -1,0 +1,109 @@
+{
+	"$NodeId":	"Group.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000000",
+	"Type":	"Group",
+	"TileSets":	[{
+			"$NodeId":	"Single.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000001",
+			"Type":	"Single",
+			"RuleSet":	{
+				"$NodeId":	"Simple.RuleSet.GridWave-pi00aaaa-0000-4000-8000-000000000002",
+				"Type":	"Simple",
+				"HorizontalRules":	{
+					"N":	"0",
+					"E":	"0",
+					"S":	"0",
+					"W":	"0"
+				}
+			},
+			"Features":	[],
+			"PrefabPath":	"",
+			"Weight":	1,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Single.TileSet.GridWave-6a3c123a-286a-4384-be7b-096fccf15fb2",
+			"Type":	"Single",
+			"RuleSet":	{
+				"$NodeId":	"Simple.RuleSet.GridWave-5840cb39-a9a3-49c7-b926-bdeb8f9f6dd7",
+				"Type":	"Simple",
+				"HorizontalRules":	{
+					"N":	"0",
+					"E":	"0",
+					"S":	"0",
+					"W":	"0"
+				}
+			},
+			"PrefabPath":	"BackroomsPillar/TopBottom/",
+			"Weight":	0.05,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Single.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000003",
+			"Type":	"Single",
+			"RuleSet":	{
+				"$NodeId":	"Simple.RuleSet.GridWave-pi00aaaa-0000-4000-8000-000000000004",
+				"Type":	"Simple",
+				"HorizontalRules":	{
+					"N":	"0",
+					"E":	"0",
+					"S":	"0",
+					"W":	"0"
+				}
+			},
+			"Features":	[],
+			"PrefabPath":	"BackroomsPillar/MidTop/",
+			"Weight":	0.05,
+			"MinimizeVariants":	false
+		}],
+	"ExportAs":	"BackroomsPillarTiles",
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Group.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000000":	{
+				"$Position":	{
+					"$x":	3000,
+					"$y":	700
+				},
+				"$Title":	"[ROOT] Backrooms Pillar Tiles"
+			},
+			"Single.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000001":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	500
+				}
+			},
+			"Simple.RuleSet.GridWave-pi00aaaa-0000-4000-8000-000000000002":	{
+				"$Position":	{
+					"$x":	4800,
+					"$y":	500
+				}
+			},
+			"Single.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000003":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	950
+				}
+			},
+			"Simple.RuleSet.GridWave-pi00aaaa-0000-4000-8000-000000000004":	{
+				"$Position":	{
+					"$x":	4976,
+					"$y":	1172
+				}
+			},
+			"Single.TileSet.GridWave-6a3c123a-286a-4384-be7b-096fccf15fb2":	{
+				"$Position":	{
+					"$x":	3994,
+					"$y":	726
+				}
+			},
+			"Simple.RuleSet.GridWave-5840cb39-a9a3-49c7-b926-bdeb8f9f6dd7":	{
+				"$Position":	{
+					"$x":	4950,
+					"$y":	816
+				}
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{
+		},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"GridWave - TileSets"
+	}
+}

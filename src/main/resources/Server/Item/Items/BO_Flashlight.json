@@ -1,0 +1,41 @@
+{
+  "Utility": {
+    "Usable": true,
+    "Compatible": true
+  },
+  "Model": "Items/flashlight/flashlight.blockymodel",
+  "Texture": "Items/flashlight/texture.png",
+  "Icon": "Icons/ItemsGenerated/BO_Flashlight.png",
+  "IconProperties": {
+    "Scale": 5,
+    "Rotation": [
+      0,
+      104,
+      47
+    ],
+    "Translation": [
+      -2,
+      -2
+    ]
+  },
+  "MaxStack": 1,
+  "Light": {
+    "Radius": 1,
+    "Color": "#eee"
+  },
+  "Interactions": {
+    "Primary": "Root_Unarmed_Swing_Left",
+    "Secondary": "Block_Secondary"
+  },
+  "InteractionConfig": {
+    "Priorities": {
+      "Secondary": {
+        "MainHand": 1,
+        "OffHand": -1
+      }
+    }
+  },
+  "UsePlayerAnimations": true,
+  "Scale": 5,
+  "PlayerAnimationsId": "Daggers_Push"
+}

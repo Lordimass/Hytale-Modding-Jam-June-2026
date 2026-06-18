@@ -1,0 +1,32 @@
+{
+  "Conditions": {
+    "EnvironmentTagPattern": {
+      "Op": "Equals",
+      "Tag": "Blackout",
+      "Tags": {
+        "Blackout": [
+          "Blackout"
+        ]
+      }
+    },
+    "EnvironmentIds": [
+      "Blackout"
+    ]
+  },
+  "AmbientBed": {
+    "Volume": -12.44,
+    "Track": "Sounds/BO_Theme_InActive.ogg",
+    "TransitionSpeed": "Default"
+  },
+  "Tags": {
+    "Blackout": []
+  },
+  "Music": {
+    "Tracks": [
+      "Music/Blackout/BO_Theme_InActive.ogg",
+      "Music/Blackout/BO_Theme.ogg"
+    ],
+    "Volume": -12.44
+  },
+  "MusicContainer": "Track_BO_Theme"
+}

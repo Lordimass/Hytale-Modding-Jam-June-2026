@@ -1,0 +1,101 @@
+{
+  "Texture": "Items/Icons/ItemsGenerated/the_seeker_texture.png",
+  "Model": "Items/Icons/ItemsGenerated/the_seeker.blockymodel",
+  "HitBox": {
+    "Max": {
+      "Y": 2,
+      "X": 1,
+      "Z": 1
+    }
+  },
+  "Icon": "Icons/ModelsGenerated/BO_The_Seeker.png",
+  "IconProperties": {
+    "Scale": 0.25,
+    "Rotation": [
+      0,
+      -45,
+      0
+    ],
+    "Translation": [
+      0,
+      -75
+    ]
+  },
+  "PhysicsValues": {
+    "Mass": 3
+  },
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Idle.blockyanim",
+          "Speed": 1,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Chase.blockyanim",
+          "Speed": 1,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    },
+    "WalkBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Chase.blockyanim",
+          "Speed": 1,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Chase.blockyanim",
+          "Speed": 1.25,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    },
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Alerted.blockyanim",
+          "Speed": 1,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    }
+  },
+  "Trails": [
+    {
+      "TrailId": "Void_Seeker",
+      "TargetEntityPart": "Entity",
+      "PositionOffset": {
+        "Y": 1,
+        "X": 0,
+        "Z": 0.5
+      }
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Spectre_Void_Body",
+      "TargetEntityPart": "Entity",
+      "Scale": 5,
+      "PositionOffset": {
+        "X": 0.5
+      },
+      "Color": "#2a044f"
+    }
+  ]
+}

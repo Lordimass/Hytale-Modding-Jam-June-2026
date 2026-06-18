@@ -1,0 +1,19 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_The_Seeker",
+  "Modify": {
+    "DropList": "Empty",
+    "Appearance": "Seeker",
+    "MaxHealth": 180,
+    "ViewRange": 8,
+    "ViewSector": 360,
+    "HearingRange": 32,
+    "AlertedRange": 30,
+    "AttackDistance": 2.5,
+    "FleeRange": 12,
+    "FlashlightItems": [
+      "BO_Flashlight"
+    ],
+    "NameTranslationKey": "Seeker"
+  }
+}

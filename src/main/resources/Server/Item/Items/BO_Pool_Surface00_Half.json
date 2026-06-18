@@ -1,0 +1,52 @@
+{
+  "Texture": "Blocks/bo_pool_surface/bo_pool_surface_texture.png",
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "BlockType": {
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_pool_surface/bo_pool_surface_texture.png"
+      }
+    ],
+    "Gathering": {
+      "Breaking": {
+        "Quality": 1,
+        "ItemId": "BO_Wallpaper00",
+        "DropList": "BO_Wallpaper00_Droplist"
+      }
+    },
+    "PlacementSettings": {
+      "RotationMode": "Default",
+      "BlockPreviewVisibility": "AlwaysVisible",
+      "PlaceInEmptyBlocks": false
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "Material": "Solid",
+    "CubeShadingMode": "Reflective",
+    "FlipType": "Symmetric"
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Pool_Surface00.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      52,
+      24
+    ],
+    "Translation": [
+      4,
+      -12
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Pool Tiles"
+  },
+  "Parent": "Rock_Bedrock"
+}

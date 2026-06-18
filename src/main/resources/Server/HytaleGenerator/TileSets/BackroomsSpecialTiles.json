@@ -1,0 +1,139 @@
+{
+	"$NodeId":	"Group.TileSet.GridWave-bspec000-0000-4000-8000-000000000000",
+	"Type":	"Group",
+	"TileSets":	[{
+			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000001",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"BackroomsSpecial/1x1/2022",
+			"Weight":	0.15,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000002",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"BackroomsSpecial/1x2/10X0-X111",
+			"Weight":	0.25,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000003",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"BackroomsSpecial/1x2/11X1-X111",
+			"Weight":	0.25,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000004",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"BackroomsSpecial/1x2/20X2-X022",
+			"Weight":	0.15,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000005",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"BackroomsSpecial/1x2/22X2-X222",
+			"Weight":	0.25,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000006",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"BackroomsSpecial/2x2/00XX-X01X-1XX0-XX00",
+			"Weight":	0.75,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000007",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"BackroomsSpecial/2x2/11XX-X11X-1XX1-XX11",
+			"Weight":	0.25,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000008",
+			"Type":	"Auto",
+			"Features":	[],
+			"FolderPath":	"BackroomsSpecial/2x2/22XX-X22X-2XX2-XX22",
+			"Weight":	0.25,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-dbb2a6cf-5fee-40fa-85dc-37915e94ab55",
+			"Type":	"Auto",
+			"FolderPath":	"BackroomsSpecial/2x2/44XX-X44X-4XX4-XX44",
+			"Weight":	0.25,
+			"MinimizeVariants":	false
+		}],
+	"ExportAs":	"BackroomsSpecialTiles",
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Group.TileSet.GridWave-bspec000-0000-4000-8000-000000000000":	{
+				"$Position":	{
+					"$x":	3000,
+					"$y":	700
+				},
+				"$Title":	"[ROOT] Backrooms Special Tiles"
+			},
+			"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000001":	{
+				"$Position":	{
+					"$x":	4100,
+					"$y":	540
+				}
+			},
+			"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000002":	{
+				"$Position":	{
+					"$x":	4100,
+					"$y":	780
+				}
+			},
+			"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000003":	{
+				"$Position":	{
+					"$x":	4100,
+					"$y":	1020
+				}
+			},
+			"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000004":	{
+				"$Position":	{
+					"$x":	4100,
+					"$y":	1260
+				}
+			},
+			"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000005":	{
+				"$Position":	{
+					"$x":	4100,
+					"$y":	1500
+				}
+			},
+			"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000006":	{
+				"$Position":	{
+					"$x":	4100,
+					"$y":	1740
+				}
+			},
+			"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000007":	{
+				"$Position":	{
+					"$x":	4100,
+					"$y":	1980
+				}
+			},
+			"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000008":	{
+				"$Position":	{
+					"$x":	4100,
+					"$y":	2220
+				}
+			},
+			"Auto.TileSet.GridWave-dbb2a6cf-5fee-40fa-85dc-37915e94ab55":	{
+				"$Position":	{
+					"$x":	4101,
+					"$y":	2444
+				}
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{
+		},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"GridWave - TileSets"
+	}
+}

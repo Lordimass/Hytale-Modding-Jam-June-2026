@@ -1,0 +1,28 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Turret",
+  "Parameters": {
+    "FlockArray": {
+      "Value": [ "Gun_Turret" ],
+      "TypeHint": "String",
+      "Description": "Array containing NPCs for this flock type."
+    },
+    "NameTranslationKey": {
+      "Value": "blackout.npcRoles.Gun_Turret.name",
+      "Description": "Translation key for NPC name display"
+    }
+  },
+  "Modify": {
+    "MaxHealth": 36,
+    "HearingRange": 8,
+    "ViewSector": 270,
+    "Appearance": "Gun_Turret",
+    "FlockArray": { "Compute": "FlockArray" },
+    "Attack": "Gun_Turret_Shoot",
+    "AttackDistance": 15,
+    "CombatBehaviorDistance": 15,
+    "TargetRange": 15,
+    "NameTranslationKey": { "Compute": "NameTranslationKey" },
+    "CombatRelativeTurnSpeed": 0.5
+  }
+}

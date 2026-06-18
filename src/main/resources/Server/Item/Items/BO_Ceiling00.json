@@ -1,0 +1,46 @@
+{
+  "Model": "Blocks/bo_ceiling/bo_ceiling_00.blockymodel",
+  "Texture": "Blocks/bo_ceiling/bo_ceiling_00.png",
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "BlockType": {
+    "CustomModel": "Blocks/bo_ceiling/bo_ceiling_00.blockymodel",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_ceiling/bo_ceiling_00.png"
+      }
+    ],
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer",
+      "BlockPreviewVisibility": "AlwaysVisible"
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "Material": "Solid",
+    "Opacity": "Solid"
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Ceiling00.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      52,
+      24
+    ],
+    "Translation": [
+      4,
+      -12
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Ceiling"
+  },
+  "Parent": "Rock_Bedrock"
+}

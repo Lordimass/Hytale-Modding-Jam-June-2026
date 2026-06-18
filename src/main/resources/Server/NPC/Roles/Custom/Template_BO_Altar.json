@@ -1,0 +1,53 @@
+{
+  "Type": "Abstract",
+  "Parameters": {
+    "MaxHealth": {
+      "Value": 200,
+      "Description": "Altar health pool"
+    },
+    "Appearance": {
+      "Value": "BO_The_Seeker",
+      "Description": "Model used for the altar NPC"
+    },
+    "NameTranslationKey": {
+      "Value": "BO_Altar",
+      "Description": "Translation key for NPC name display"
+    }
+  },
+  "MaxHealth": { "Compute": "MaxHealth" },
+  "Appearance": { "Compute": "Appearance" },
+  "NameTranslationKey": { "Compute": "NameTranslationKey" },
+  "DropList": "Empty",
+  "DefaultPlayerAttitude": "Ignore",
+  "DefaultNPCAttitude": "Ignore",
+  "KnockbackScale": 0,
+  "StartState": "Peaceful",
+  "MotionControllerList": [
+    {
+      "Type": "Walk",
+      "MaxWalkSpeed": 0.5,
+      "Gravity": 10,
+      "MaxFallSpeed": 8,
+      "Acceleration": 0.5
+    }
+  ],
+  "Instructions": [
+    {
+      "Instructions": [
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Peaceful"
+          },
+          "Instructions": [
+            {
+              "Sensor": {
+                "Type": "Any"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "Model": "Blocks/bo_ceiling_light/bo_ceiling_light_00.blockymodel",
+  "Texture": "Blocks/bo_ceiling_light/bo_ceiling_light_00.png",
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "BlockType": {
+    "CustomModel": "Blocks/bo_ceiling_light/bo_ceiling_light_00.blockymodel",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_ceiling_light/bo_ceiling_light_00.png"
+      }
+    ],
+    "Gathering": {
+      "Breaking": {
+        "Quality": 1,
+        "ItemId": "BO_Wallpaper00",
+        "DropList": "BO_Wallpaper00_Droplist"
+      }
+    },
+    "PlacementSettings": {
+      "RotationMode": "Default",
+      "BlockPreviewVisibility": "Default",
+      "AllowRotationKey": true
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "Light": {
+      "Color": "#aa8"
+    },
+    "CubeShadingMode": "Fullbright",
+    "Opacity": "Transparent",
+    "VariantRotation": "UpDown",
+    "FlipType": "Symmetric",
+    "RotationYawPlacementOffset": "Ninety",
+    "RandomRotation": "None"
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Ceiling_Light00.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      13,
+      119,
+      336
+    ],
+    "Translation": [
+      4,
+      -12
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Floor00"
+  },
+  "Parent": "Rock_Bedrock"
+}
