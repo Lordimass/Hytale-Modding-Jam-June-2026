@@ -1,0 +1,8 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Example_Hit_Sparks",
+      "MaxConcurrent": 1
+    }
+  ]
+}

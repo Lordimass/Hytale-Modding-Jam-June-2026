@@ -1,0 +1,16 @@
+{
+  "Parent": "SFX_Torch_On_Loop",
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/FlorescentLightOn.ogg"
+      ],
+      "RandomSettings": {
+        "MaxPitch": 0.96,
+        "MinPitch": -0.816,
+        "MaxStartOffset": 0.5
+      }
+    }
+  ],
+  "MaxDistance": 20
+}

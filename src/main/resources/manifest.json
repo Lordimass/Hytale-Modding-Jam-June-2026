@@ -20,7 +20,7 @@
     "Website": "https://modtale.net/mod/Blackout",
     "ServerVersion": ">=0.5.0 <0.6.0",
     "Dependencies": {
-        "Hytale:NPC": "*"
+        "ch.voronoi:GridWaveCore": "^0.9.1900"
     },
     "OptionalDependencies": {
         "Riprod:Patchly": "*"

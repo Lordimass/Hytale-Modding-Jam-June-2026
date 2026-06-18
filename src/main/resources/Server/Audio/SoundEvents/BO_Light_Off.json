@@ -1,0 +1,28 @@
+{
+  "Parent": "SFX_Torch_On_Loop",
+  "Layers": [
+    {
+      "StartDelay": 1,
+      "RandomSettings": {
+        "MinPitch": -0.384,
+        "MaxVolume": 0.36
+      },
+      "Files": [
+        "Sounds/LightSparkOff1.ogg",
+        "Sounds/LightSparkOff2.ogg"
+      ],
+      "Probability": 25
+    },
+    {
+      "RandomSettings": {
+        "MaxPitch": 0,
+        "MinPitch": -1.248,
+        "MaxStartOffset": 0.2
+      },
+      "Files": [
+        "Sounds/DramaticLightOff.ogg"
+      ]
+    }
+  ],
+  "MaxDistance": 28
+}

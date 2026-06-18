@@ -62,7 +62,7 @@ public final class WaveGameManager {
         var playerEntityRef = playerRef.getReference();
         world.execute(() -> {
             Store<EntityStore> store = world.getEntityStore().getStore();
-            playerSpawnService.teleport(playerEntityRef, store, world, spawn);
+            // playerSpawnService.teleport(playerEntityRef, store, world, spawn);
         });
     }
 
@@ -131,7 +131,7 @@ public final class WaveGameManager {
 
         for (PlayerRef playerRef : world.getPlayerRefs()) {
             if (playerRef != null && playerRef.isValid()) {
-                playerSpawnService.teleport(playerRef.getReference(), store, world, spawn);
+                // playerSpawnService.teleport(playerRef.getReference(), store, world, spawn);
             }
         }
 

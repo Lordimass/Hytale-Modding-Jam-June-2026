@@ -2388,14 +2388,18 @@
       "x": 0,
       "y": 13,
       "z": 0,
-      "name": "BO_Ceiling_Light00",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      },
       "rotation": 2
-    },
-    {
-      "x": 0,
-      "y": 14,
-      "z": 0,
-      "name": "Build_Lightsource_White"
     },
     {
       "x": 0,
@@ -2443,14 +2447,18 @@
       "x": 0,
       "y": 13,
       "z": 1,
-      "name": "BO_Ceiling_Light00",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      },
       "rotation": 2
-    },
-    {
-      "x": 0,
-      "y": 14,
-      "z": 1,
-      "name": "Build_Lightsource_White"
     },
     {
       "x": 0,
@@ -2900,14 +2908,18 @@
       "x": 1,
       "y": 13,
       "z": 0,
-      "name": "BO_Ceiling_Light00",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      },
       "rotation": 2
-    },
-    {
-      "x": 1,
-      "y": 14,
-      "z": 0,
-      "name": "Build_Lightsource_White"
     },
     {
       "x": 1,
@@ -2955,14 +2967,18 @@
       "x": 1,
       "y": 13,
       "z": 1,
-      "name": "BO_Ceiling_Light00",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      },
       "rotation": 2
-    },
-    {
-      "x": 1,
-      "y": 14,
-      "z": 1,
-      "name": "Build_Lightsource_White"
     },
     {
       "x": 1,

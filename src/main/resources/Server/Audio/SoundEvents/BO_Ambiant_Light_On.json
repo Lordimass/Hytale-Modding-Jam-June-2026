@@ -1,0 +1,17 @@
+{
+  "Parent": "SFX_Torch_On_Loop",
+  "Layers": [
+    {
+      "Looping": true,
+      "Files": [
+        "Sounds/FlourescentLightBuzz.ogg"
+      ],
+      "StartDelay": 1,
+      "RandomSettings": {
+        "MinPitch": -0.384,
+        "MaxVolume": 0.36
+      }
+    }
+  ],
+  "MaxDistance": 14
+}

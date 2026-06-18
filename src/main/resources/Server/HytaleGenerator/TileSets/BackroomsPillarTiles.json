@@ -32,7 +32,7 @@
 				}
 			},
 			"PrefabPath":	"BackroomsPillar/TopBottom/",
-			"Weight":	0.05,
+			"Weight":	0.03,
 			"MinimizeVariants":	false
 		}, {
 			"$NodeId":	"Single.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000003",
@@ -49,7 +49,7 @@
 			},
 			"Features":	[],
 			"PrefabPath":	"BackroomsPillar/MidTop/",
-			"Weight":	0.05,
+			"Weight":	0.03,
 			"MinimizeVariants":	false
 		}],
 	"ExportAs":	"BackroomsPillarTiles",
@@ -74,18 +74,6 @@
 					"$y":	500
 				}
 			},
-			"Single.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000003":	{
-				"$Position":	{
-					"$x":	4000,
-					"$y":	950
-				}
-			},
-			"Simple.RuleSet.GridWave-pi00aaaa-0000-4000-8000-000000000004":	{
-				"$Position":	{
-					"$x":	4976,
-					"$y":	1172
-				}
-			},
 			"Single.TileSet.GridWave-6a3c123a-286a-4384-be7b-096fccf15fb2":	{
 				"$Position":	{
 					"$x":	3994,
@@ -96,6 +84,18 @@
 				"$Position":	{
 					"$x":	4950,
 					"$y":	816
+				}
+			},
+			"Single.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000003":	{
+				"$Position":	{
+					"$x":	4000,
+					"$y":	950
+				}
+			},
+			"Simple.RuleSet.GridWave-pi00aaaa-0000-4000-8000-000000000004":	{
+				"$Position":	{
+					"$x":	4976,
+					"$y":	1172
 				}
 			}
 		},
