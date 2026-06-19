@@ -14,13 +14,7 @@
     "HitSoundLayer": "SFX_Wood_Break"
   },
   "BlockType": {
-    "CustomModel": "Blocks/bo_floor/bo_floor_00.blockymodel",
-    "DrawType": "Model",
-    "CustomModelTexture": [
-      {
-        "Texture": "Blocks/bo_floor/bo_floor_00_texture.png"
-      }
-    ],
+    "DrawType": "Cube",
     "Gathering": {
       "Breaking": {
         "Quality": 1,
@@ -32,8 +26,13 @@
       "RotationMode": "FacingPlayer",
       "BlockPreviewVisibility": "AlwaysVisible"
     },
-    "HitboxType": "Block_Seven_Eighth",
-    "IgnoreSupportWhenPlaced": true
+    "IgnoreSupportWhenPlaced": true,
+    "Textures": [
+      {
+        "All": "Blocks/bo_floor/bo_floor_00_cube_texture.png"
+      }
+    ],
+    "Material": "Solid"
   },
   "Icon": "Icons/ItemsGenerated/BO_Floor00.png",
   "IconProperties": {

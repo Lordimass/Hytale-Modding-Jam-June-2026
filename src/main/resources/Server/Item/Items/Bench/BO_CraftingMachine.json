@@ -27,15 +27,6 @@
       "Input": [
         {
           "FilterValidIngredients": true
-        },
-        {
-          "FilterValidIngredients": true
-        },
-        {
-          "FilterValidIngredients": true
-        },
-        {
-          "FilterValidIngredients": true
         }
       ],
       "AllowNoInputProcessing": false,

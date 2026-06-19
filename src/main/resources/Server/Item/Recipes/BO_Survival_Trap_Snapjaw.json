@@ -1,0 +1,25 @@
+{
+  "Input": [
+    {
+      "ItemId": "Ingredient_Stud_Iron",
+      "Quantity": 5
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Wood_Softwood_Fence",
+    "Quantity": 2
+  },
+  "Output": [
+    {
+      "ItemId": "Survival_Trap_Snapjaw",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "BlackoutSalvagebench"
+    }
+  ],
+  "TimeSeconds": 30
+}
