@@ -1,0 +1,17 @@
+{
+  "BlockType": {
+    "Gathering": {
+      "Breaking": null,
+      "Soft": {
+        "DropList": {
+          "Container": {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Stick"
+            }
+          }
+        }
+      }
+    }
+  }
+}

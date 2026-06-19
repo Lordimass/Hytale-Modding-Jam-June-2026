@@ -55,45 +55,16 @@
       ],
       "Description": "How long the Seeker remains scared after it loses sight of the light source"
     },
-    "VeryDarkLightRange": {
-      "Value": [
-        0,
-        2
-      ],
-      "Description": "Peaceful->Angry when light is in this range (very dark). MUST NOT overlap EnterPeacefulLightRange, or the state ping-pongs forever."
-    },
-    "NormalLightRange": {
-      "Value": [
-        60,
-        100
-      ],
-      "Description": "Light range that makes the Seeker peaceful"
-    },
-    "EnterAngryLightRange": {
-      "Value": [
-        0,
-        3
-      ],
-      "Description": "Light range that changes the Seeker from scared into angry"
-    },
-    "EnterPeacefulLightRange": {
-      "Value": [
-        8,
-        100
-      ],
-      "Description": "Angry/Scared->Peaceful when light is in this range. Floor is 8 (not 3) to leave a wide gap above VeryDarkLightRange's 2 (light 3-7 holds the current state), so moving across a light gradient can't ping-pong the state."
-    },
     "AttackSequence": {
       "Value": "Component_Instruction_Attack_Sequence_Seeker",
       "Description": "Attack sequence used while the Seeker is angry"
     },
     "FlashlightItems": {
       "Value": [
-        "Flashlight",
         "BO_Flashlight"
       ],
       "TypeHint": "String",
-      "Description": "Items that count as medium light sources for Seeker behavior"
+      "Description": "Legacy item-list parameter for role-side ItemInHand filters. The active flashlight scare logic is handled by FlashlightScareService, because SetState swaps the held stack to generated item ids such as '*BO_Flashlight_State_On' and only the On state carries Light."
     },
     "NameTranslationKey": {
       "Value": "Template_The_Seeker",
@@ -149,22 +120,21 @@
           },
           "Instructions": [
             {
+              "$Comment": "A lit flashlight nearby scares the NPC only during wave night mode. FlashlightNear and NightMode are set each tick by the plugin's FlashlightScareService.",
               "Sensor": {
-                "Reference": "Component_Sensor_Sight_With_Light_By_Attitude",
-                "Modify": {
-                  "ViewRange": {
-                    "Compute": "ViewRange"
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Flag",
+                    "Name": "FlashlightNear",
+                    "Set": true
                   },
-                  "Attitudes": [
-                    "Hostile",
-                    "Neutral"
-                  ],
-                  "Items": {
-                    "Compute": "FlashlightItems"
-                  },
-                  "Moving": false,
-                  "GetNPCs": false
-                }
+                  {
+                    "Type": "Flag",
+                    "Name": "NightMode",
+                    "Set": true
+                  }
+                ]
               },
               "Actions": [
                 {
@@ -174,11 +144,11 @@
               ]
             },
             {
+              "$Comment": "Wave night mode makes the NPC angry regardless of local block light. The wave code sets NightMode from the world blackout state instead of relying on JSON Light sensors.",
               "Sensor": {
-                "Type": "Light",
-                "LightRange": {
-                  "Compute": "VeryDarkLightRange"
-                }
+                "Type": "Flag",
+                "Name": "NightMode",
+                "Set": true
               },
               "Actions": [
                 {
@@ -239,6 +209,23 @@
           },
           "Instructions": [
             {
+              "$Comment": "Lights-on/rest mode immediately makes persistent SCP-3008 style variants passive again.",
+              "Sensor": {
+                "Type": "Flag",
+                "Name": "NightMode",
+                "Set": false
+              },
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Peaceful"
+                }
+              ]
+            },
+            {
               "Continue": true,
               "Sensor": {
                 "Type": "Any",
@@ -262,57 +249,11 @@
               ]
             },
             {
+              "$Comment": "Stop being scared once no lit flashlight is near (FlashlightNear cleared). Wait out ScaredDuration first so it doesn't flip back the instant the light leaves range. The player-in-range Flee below drives the actual retreat while scared.",
               "Sensor": {
-                "Reference": "Component_Sensor_Sight_With_Light_By_Attitude",
-                "Modify": {
-                  "ViewRange": {
-                    "Compute": "ViewRange"
-                  },
-                  "Attitudes": [
-                    "Hostile",
-                    "Neutral"
-                  ],
-                  "Items": {
-                    "Compute": "FlashlightItems"
-                  },
-                  "Moving": false,
-                  "GetNPCs": false
-                }
-              },
-              "BodyMotion": {
-                "Type": "Flee",
-                "SlowDownDistance": {
-                  "Compute": "FleeRange"
-                },
-                "StopDistance": {
-                  "Compute": "FleeRange + 2"
-                },
-                "RelativeSpeed": 1
-              },
-              "HeadMotion": {
-                "Type": "Watch"
-              }
-            },
-            {
-              "Sensor": {
-                "Type": "Not",
-                "Sensor": {
-                  "Reference": "Component_Sensor_Sight_With_Light_By_Attitude",
-                  "Modify": {
-                    "ViewRange": {
-                      "Compute": "ViewRange"
-                    },
-                    "Attitudes": [
-                      "Hostile",
-                      "Neutral"
-                    ],
-                    "Items": {
-                      "Compute": "FlashlightItems"
-                    },
-                    "Moving": false,
-                    "GetNPCs": false
-                  }
-                }
+                "Type": "Flag",
+                "Name": "FlashlightNear",
+                "Set": false
               },
               "ActionsAtomic": true,
               "Actions": [
@@ -371,42 +312,11 @@
           },
           "Instructions": [
             {
+              "$Comment": "Lights-on/rest mode calms persistent SCP-3008 style variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
               "Sensor": {
-                "Reference": "Component_Sensor_Sight_With_Light_By_Attitude",
-                "Modify": {
-                  "ViewRange": {
-                    "Compute": "ViewRange"
-                  },
-                  "Attitudes": [
-                    "Hostile",
-                    "Neutral"
-                  ],
-                  "Items": {
-                    "Compute": "FlashlightItems"
-                  },
-                  "Moving": false,
-                  "GetNPCs": false
-                }
-              },
-              "Actions": [
-                {
-                  "Type": "ReleaseTarget"
-                },
-                {
-                  "Type": "State",
-                  "State": "Scared"
-                }
-              ],
-              "HeadMotion": {
-                "Type": "Watch"
-              }
-            },
-            {
-              "Sensor": {
-                "Type": "Light",
-                "LightRange": {
-                  "Compute": "EnterPeacefulLightRange"
-                }
+                "Type": "Flag",
+                "Name": "NightMode",
+                "Set": false
               },
               "Actions": [
                 {
@@ -415,6 +325,33 @@
                 {
                   "Type": "State",
                   "State": "Peaceful"
+                }
+              ]
+            },
+            {
+              "$Comment": "A lit flashlight nearby (FlashlightNear flag) scares the NPC while night mode is active: drop the target and flee.",
+              "Sensor": {
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Flag",
+                    "Name": "FlashlightNear",
+                    "Set": true
+                  },
+                  {
+                    "Type": "Flag",
+                    "Name": "NightMode",
+                    "Set": true
+                  }
+                ]
+              },
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Scared"
                 }
               ]
             },
@@ -521,43 +458,11 @@
           },
           "Instructions": [
             {
+              "$Comment": "Lights-on/rest mode calms persistent SCP-3008 style variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
               "Sensor": {
-                "Reference": "Component_Sensor_Sight_With_Light_By_Attitude",
-                "Modify": {
-                  "ViewRange": {
-                    "Compute": "ViewRange"
-                  },
-                  "Attitudes": [
-                    "Hostile",
-                    "Neutral"
-                  ],
-                  "Items": {
-                    "Compute": "FlashlightItems"
-                  },
-                  "Moving": false,
-                  "GetNPCs": false
-                }
-              },
-              "Actions": [
-                {
-                  "Type": "ReleaseTarget"
-                },
-                {
-                  "Type": "State",
-                  "State": "Scared"
-                }
-              ],
-              "HeadMotion": {
-                "Type": "Watch"
-              }
-            },
-            {
-              "$Comment": "Bright enough to calm down even mid-fight: drop the target and return to peaceful.",
-              "Sensor": {
-                "Type": "Light",
-                "LightRange": {
-                  "Compute": "EnterPeacefulLightRange"
-                }
+                "Type": "Flag",
+                "Name": "NightMode",
+                "Set": false
               },
               "Actions": [
                 {
@@ -566,6 +471,33 @@
                 {
                   "Type": "State",
                   "State": "Peaceful"
+                }
+              ]
+            },
+            {
+              "$Comment": "A lit flashlight nearby (FlashlightNear flag) scares the NPC while night mode is active: drop the target and flee.",
+              "Sensor": {
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Flag",
+                    "Name": "FlashlightNear",
+                    "Set": true
+                  },
+                  {
+                    "Type": "Flag",
+                    "Name": "NightMode",
+                    "Set": true
+                  }
+                ]
+              },
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Scared"
                 }
               ]
             },

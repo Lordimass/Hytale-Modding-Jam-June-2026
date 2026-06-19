@@ -1,3 +1,9 @@
 {
-  "Recipe": null
+  "Recipe": {
+    "BenchRequirement~": [
+      {
+        "Id": "Arcanebench"
+      }
+    ]
+  }
 }

@@ -80,28 +80,26 @@ final class ObjectiveService {
         boolean benchAlive = bench != null && !isDead(store, bench);
         List<Ref<EntityStore>> players = benchAlive ? List.of() : WavePlayers.refs(world);
 
-        synchronized (game.getEnemies()) {
-            for (Ref<EntityStore> enemy : game.getEnemies()) {
-                if (enemy == null || !enemy.isValid()) {
-                    continue;
-                }
-                NPCEntity npc = store.getComponent(enemy, NPCEntity.getComponentType());
-                if (npc == null) {
-                    continue;
-                }
-                Role role = npc.getRole();
-                if (role == null) {
-                    continue;
-                }
-                Ref<EntityStore> target = benchAlive ? bench : nearestPlayer(store, enemy, players);
-                if (target == null) {
-                    continue;
-                }
-                try {
-                    role.setMarkedTarget(TARGET_SLOT, target);
-                } catch (Exception ignored) {
-                    // Role does not expose this target slot; ignore.
-                }
+        for (Ref<EntityStore> enemy : game.getAllEnemiesSnapshot()) {
+            if (enemy == null || !enemy.isValid()) {
+                continue;
+            }
+            NPCEntity npc = store.getComponent(enemy, NPCEntity.getComponentType());
+            if (npc == null) {
+                continue;
+            }
+            Role role = npc.getRole();
+            if (role == null) {
+                continue;
+            }
+            Ref<EntityStore> target = benchAlive ? bench : nearestPlayer(store, enemy, players);
+            if (target == null) {
+                continue;
+            }
+            try {
+                role.setMarkedTarget(TARGET_SLOT, target);
+            } catch (Exception ignored) {
+                // Role does not expose this target slot; ignore.
             }
         }
     }

@@ -19,7 +19,7 @@ import java.util.List;
 public final class WaveGame {
 
     private final World world;
-    private final int floor;
+    private volatile int floor;
 
     private volatile WavePhase phase = WavePhase.REST;
     private volatile long phaseStartMs;
@@ -36,6 +36,7 @@ public final class WaveGame {
     private volatile Vector3i benchBlockPos;
 
     private final List<Ref<EntityStore>> enemies = Collections.synchronizedList(new ArrayList<>());
+    private final List<Ref<EntityStore>> persistentEnemies = Collections.synchronizedList(new ArrayList<>());
 
     public WaveGame(World world, int floor) {
         this.world = world;
@@ -49,6 +50,10 @@ public final class WaveGame {
 
     public int getFloor() {
         return floor;
+    }
+
+    public void setFloor(int floor) {
+        this.floor = floor;
     }
 
     public WavePhase getPhase() {
@@ -112,11 +117,34 @@ public final class WaveGame {
         enemies.add(enemy);
     }
 
+    public void addPersistentEnemy(Ref<EntityStore> enemy) {
+        persistentEnemies.add(enemy);
+    }
+
     public List<Ref<EntityStore>> getEnemies() {
         return enemies;
     }
 
+    public List<Ref<EntityStore>> getPersistentEnemies() {
+        return persistentEnemies;
+    }
+
+    public List<Ref<EntityStore>> getAllEnemiesSnapshot() {
+        List<Ref<EntityStore>> all = new ArrayList<>();
+        synchronized (enemies) {
+            all.addAll(enemies);
+        }
+        synchronized (persistentEnemies) {
+            all.addAll(persistentEnemies);
+        }
+        return all;
+    }
+
     public void clearEnemies() {
         enemies.clear();
+    }
+
+    public void clearPersistentEnemies() {
+        persistentEnemies.clear();
     }
 }
