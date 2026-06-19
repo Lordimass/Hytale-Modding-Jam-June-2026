@@ -29,7 +29,7 @@ public final class WaveConfig {
     /** Substring matched case-insensitively against a world's name to detect a Backrooms instance. */
     public String instanceWorldMatch = "Backrooms";
     /** Daytime rest period (seconds): the grace on entry and the lull between attack waves. */
-    public int restDurationSeconds = 30;
+    public int restDurationSeconds = 60;
     /** Night-time attack period (seconds): how long each wave of enemies hunts before daybreak. */
     public int attackDurationSeconds = 60;
     /** Horizontal distance (blocks) from a player that enemies spawn at the start of an attack. */
