@@ -12,11 +12,17 @@
     "NameTranslationKey": {
       "Value": "BO_Altar",
       "Description": "Translation key for NPC name display"
+    },
+    "DisableDamageGroups": {
+      "Value": [],
+      "TypeHint": "String",
+      "Description": "Groups not to take damage from."
     }
   },
   "MaxHealth": { "Compute": "MaxHealth" },
   "Appearance": { "Compute": "Appearance" },
   "NameTranslationKey": { "Compute": "NameTranslationKey" },
+  "DisableDamageGroups": { "Compute": "DisableDamageGroups" },
   "DropList": "Empty",
   "DefaultPlayerAttitude": "Ignore",
   "DefaultNPCAttitude": "Ignore",

@@ -8,7 +8,9 @@ import org.joml.Vector3i;
 import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Runtime state for one wave game, tied to a single Backrooms instance world.
@@ -37,6 +39,7 @@ public final class WaveGame {
 
     private final List<Ref<EntityStore>> enemies = Collections.synchronizedList(new ArrayList<>());
     private final List<Ref<EntityStore>> persistentEnemies = Collections.synchronizedList(new ArrayList<>());
+    private final Map<Vector3i, Ref<EntityStore>> fenceTargets = Collections.synchronizedMap(new LinkedHashMap<>());
 
     public WaveGame(World world, int floor) {
         this.world = world;
@@ -146,5 +149,26 @@ public final class WaveGame {
 
     public void clearPersistentEnemies() {
         persistentEnemies.clear();
+    }
+
+    // ── Player fence targets ──
+
+    public void setFenceTarget(Vector3i blockPos, Ref<EntityStore> npcRef) {
+        fenceTargets.put(new Vector3i(blockPos), npcRef);
+    }
+
+    @Nullable
+    public Ref<EntityStore> removeFenceTarget(Vector3i blockPos) {
+        return fenceTargets.remove(blockPos);
+    }
+
+    public Map<Vector3i, Ref<EntityStore>> getFenceTargetsSnapshot() {
+        synchronized (fenceTargets) {
+            return new LinkedHashMap<>(fenceTargets);
+        }
+    }
+
+    public void clearFenceTargets() {
+        fenceTargets.clear();
     }
 }

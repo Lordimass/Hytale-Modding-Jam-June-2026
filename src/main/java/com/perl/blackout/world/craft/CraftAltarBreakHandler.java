@@ -18,8 +18,8 @@ import com.perl.blackout.offensive.OffensivePlugin;
 import com.perl.blackout.offensive.wave.WaveGameManager;
 
 /**
- * Listens for a player breaking the crafting machine block and tells the wave game to despawn its
- * bench NPC (the block break itself returns the item). Enemies then fall back to hunting players.
+ * Listens for a player breaking wave-relevant blocks and removes their hidden NPC targets. The
+ * block break itself handles normal item returns.
  */
 public final class CraftAltarBreakHandler extends EntityEventSystem<EntityStore, BreakBlockEvent> {
 
@@ -34,7 +34,7 @@ public final class CraftAltarBreakHandler extends EntityEventSystem<EntityStore,
                        @Nonnull CommandBuffer<EntityStore> commandBuffer,
                        @Nonnull BreakBlockEvent event) {
         BlockType blockType = event.getBlockType();
-        if (blockType == null || !WaveGameManager.BENCH_BLOCK_ID.equals(blockType.getId())) {
+        if (blockType == null || !isWaveBlock(blockType.getId())) {
             return;
         }
 
@@ -54,7 +54,11 @@ public final class CraftAltarBreakHandler extends EntityEventSystem<EntityStore,
         }
 
         Vector3i blockPos = new Vector3i(event.getTargetBlock());
-        manager.onBenchBroken(world, blockPos);
+        if (WaveGameManager.BENCH_BLOCK_ID.equals(blockType.getId())) {
+            manager.onBenchBroken(world, blockPos);
+        } else if (isFenceBlock(blockType.getId())) {
+            manager.onFenceBroken(world, blockPos);
+        }
     }
 
     @Override
@@ -66,5 +70,14 @@ public final class CraftAltarBreakHandler extends EntityEventSystem<EntityStore,
     private static WaveGameManager waveManager() {
         OffensivePlugin plugin = OffensivePlugin.getInstance();
         return plugin != null ? plugin.getWaveGameManager() : null;
+    }
+
+    private boolean isWaveBlock(String blockId) {
+        return WaveGameManager.BENCH_BLOCK_ID.equals(blockId) || isFenceBlock(blockId);
+    }
+
+    private boolean isFenceBlock(String blockId) {
+        return WaveGameManager.FENCE_BLOCK_ID.equals(blockId)
+                || blockId.startsWith(WaveGameManager.FENCE_BLOCK_ID + "_");
     }
 }

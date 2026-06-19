@@ -50,14 +50,19 @@ public final class WaveGameManager {
     public static final String BENCH_BLOCK_ID = "BO_CraftingMachine";
     /** NPC role spawned inside the crafting machine so enemies can target the bench. */
     public static final String BENCH_NPC_ROLE = "BO_CraftingMachineTarget";
+    /** Native fence item/block id that becomes a damageable wave target inside instances. */
+    public static final String FENCE_BLOCK_ID = "Wood_Softwood_Fence";
+    /** NPC role spawned inside a fence so enemies can destroy it when it blocks the bench route. */
+    public static final String FENCE_NPC_ROLE = "BO_FenceTarget";
     /** Block id used to clear (break) a block in the world. */
-    private static final String EMPTY_BLOCK = "Empty";
+    public static final String EMPTY_BLOCK_ID = "Empty";
     /** Blocks within which a player's lit flashlight scares a Seeker (~the Seeker's view range). */
     private static final double FLASHLIGHT_SCARE_RANGE = 16.0;
 
     private final WaveConfig config;
     private final EnemySpawnService enemySpawnService = new EnemySpawnService();
-    private final ObjectiveService objectiveService = new ObjectiveService();
+    private final FenceTargetService fenceTargetService = new FenceTargetService();
+    private final ObjectiveService objectiveService = new ObjectiveService(fenceTargetService);
     private final FlashlightScareService flashlightScareService = new FlashlightScareService(FLASHLIGHT_SCARE_RANGE);
     private final Map<World, WaveGame> games = new ConcurrentHashMap<>();
 
@@ -174,6 +179,7 @@ public final class WaveGameManager {
                 world.execute(() -> breakAndDropBench(world, blockPos));
             }
         }
+        world.execute(() -> fenceTargetService.clearDestroyedFences(game, world.getEntityStore().getStore(), world));
 
         long elapsed = game.getPhaseElapsedMs(now);
         switch (game.getPhase()) {
@@ -242,6 +248,7 @@ public final class WaveGameManager {
         game.startPhase(WavePhase.ENDED, System.currentTimeMillis());
         games.remove(world);
         world.execute(() -> enemySpawnService.despawnAllIncludingPersistent(game, world.getEntityStore().getStore()));
+        world.execute(() -> fenceTargetService.removeAllFenceTargets(game, world.getEntityStore().getStore()));
         LOGGER.atInfo().log("Ended wave game in world %s (no players left)", world.getName());
     }
 
@@ -290,9 +297,37 @@ public final class WaveGameManager {
         });
     }
 
+    /** Spawns the damageable target inside a player-placed fence in an instance. */
+    public void onFencePlaced(World world, Vector3i blockPos) {
+        WaveGame game = ensureGame(world);
+        if (game == null) {
+            return;
+        }
+        world.execute(() -> {
+            Store<EntityStore> store = world.getEntityStore().getStore();
+            Ref<EntityStore> existing = game.removeFenceTarget(blockPos);
+            fenceTargetService.removeFenceTarget(store, existing);
+            Ref<EntityStore> ref = fenceTargetService.spawnFenceTarget(store, blockPos);
+            if (ref != null) {
+                game.setFenceTarget(blockPos, ref);
+                objectiveService.applyTargeting(game, store, world);
+            }
+        });
+    }
+
+    /** Removes the hidden fence target when a player breaks the visible fence block. */
+    public void onFenceBroken(World world, Vector3i blockPos) {
+        WaveGame game = games.get(world);
+        if (game == null) {
+            return;
+        }
+        Ref<EntityStore> ref = game.removeFenceTarget(blockPos);
+        world.execute(() -> fenceTargetService.removeFenceTarget(world.getEntityStore().getStore(), ref));
+    }
+
     /** Clears the bench block and drops the crafting machine item (used when the bench NPC dies). */
     private void breakAndDropBench(World world, Vector3i blockPos) {
-        world.setBlock(blockPos.x, blockPos.y, blockPos.z, EMPTY_BLOCK, 0);
+        world.setBlock(blockPos.x, blockPos.y, blockPos.z, EMPTY_BLOCK_ID, 0);
         Store<EntityStore> store = world.getEntityStore().getStore();
         dropBenchItem(store, blockPos);
         WaveMessages.broadcast(world, "Workbench Destroyed", "Pick it back up and re-place it!", false);

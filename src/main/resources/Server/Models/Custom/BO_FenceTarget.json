@@ -1,0 +1,19 @@
+{
+  "Model": "NPC/Turrets/Gun_Turret/Gun_Turret.blockymodel",
+  "Texture": "NPC/Turrets/Gun_Turret/Gun_Turret_Texture.png",
+  "HitBox": {
+    "Min": {
+      "X": -0.5,
+      "Y": 0,
+      "Z": -0.5
+    },
+    "Max": {
+      "X": 0.5,
+      "Y": 1,
+      "Z": 0.5
+    }
+  },
+  "EyeHeight": 0.5,
+  "MinScale": 0.01,
+  "MaxScale": 0.01
+}

@@ -18,9 +18,8 @@ import com.perl.blackout.offensive.OffensivePlugin;
 import com.perl.blackout.offensive.wave.WaveGameManager;
 
 /**
- * Listens for the crafting machine block being placed and registers it with the wave game as the
- * optional bench the enemies prefer to attack. The block itself remains a normal (native) crafting
- * bench; this only spawns the bench NPC target.
+ * Listens for wave-relevant blocks being placed and registers their hidden NPC targets. The visible
+ * blocks stay native blocks; this only spawns the attackable wave targets inside them.
  *
  * <p>Fires on the tick thread; the wave manager defers entity mutations to the world thread.
  */
@@ -37,7 +36,7 @@ public final class CraftAltarPlacementHandler extends EntityEventSystem<EntitySt
                        @Nonnull CommandBuffer<EntityStore> commandBuffer,
                        @Nonnull PlaceBlockEvent event) {
         ItemStack item = event.getItemInHand();
-        if (item == null || !WaveGameManager.BENCH_BLOCK_ID.equals(item.getItemId())) {
+        if (item == null || !isWaveBlock(item.getItemId())) {
             return;
         }
 
@@ -57,7 +56,11 @@ public final class CraftAltarPlacementHandler extends EntityEventSystem<EntitySt
         }
 
         Vector3i blockPos = new Vector3i(event.getTargetBlock());
-        manager.onBenchPlaced(world, blockPos);
+        if (WaveGameManager.BENCH_BLOCK_ID.equals(item.getItemId())) {
+            manager.onBenchPlaced(world, blockPos);
+        } else if (WaveGameManager.FENCE_BLOCK_ID.equals(item.getItemId())) {
+            manager.onFencePlaced(world, blockPos);
+        }
     }
 
     @Override
@@ -69,5 +72,9 @@ public final class CraftAltarPlacementHandler extends EntityEventSystem<EntitySt
     private static WaveGameManager waveManager() {
         OffensivePlugin plugin = OffensivePlugin.getInstance();
         return plugin != null ? plugin.getWaveGameManager() : null;
+    }
+
+    private boolean isWaveBlock(String itemId) {
+        return WaveGameManager.BENCH_BLOCK_ID.equals(itemId) || WaveGameManager.FENCE_BLOCK_ID.equals(itemId);
     }
 }

@@ -6,6 +6,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import org.joml.Vector3d;
+import org.joml.Vector3i;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
@@ -32,6 +33,12 @@ final class ObjectiveService {
     private static final String TARGET_SLOT = MarkedEntitySupport.DEFAULT_TARGET_SLOT;
     /** Health applied to the bench NPC on spawn. */
     static final float BENCH_MAX_HEALTH = 200.0f;
+
+    private final FenceTargetService fenceTargetService;
+
+    ObjectiveService(FenceTargetService fenceTargetService) {
+        this.fenceTargetService = fenceTargetService;
+    }
 
     /** Spawns the bench NPC and applies its health. Must run on the world thread. */
     @Nullable
@@ -78,7 +85,7 @@ final class ObjectiveService {
     void applyTargeting(WaveGame game, Store<EntityStore> store, World world) {
         Ref<EntityStore> bench = game.getBenchNpcRef();
         boolean benchAlive = bench != null && !isDead(store, bench);
-        List<Ref<EntityStore>> players = benchAlive ? List.of() : WavePlayers.refs(world);
+        List<Ref<EntityStore>> players = WavePlayers.refs(world);
 
         for (Ref<EntityStore> enemy : game.getAllEnemiesSnapshot()) {
             if (enemy == null || !enemy.isValid()) {
@@ -92,7 +99,8 @@ final class ObjectiveService {
             if (role == null) {
                 continue;
             }
-            Ref<EntityStore> target = benchAlive ? bench : nearestPlayer(store, enemy, players);
+            Ref<EntityStore> target = benchAlive ? targetForBenchRoute(game, store, world, enemy, bench, players) :
+                    targetForNearestPlayerRoute(game, store, world, enemy, players);
             if (target == null) {
                 continue;
             }
@@ -102,6 +110,43 @@ final class ObjectiveService {
                 // Role does not expose this target slot; ignore.
             }
         }
+    }
+
+    @Nullable
+    private Ref<EntityStore> targetForBenchRoute(WaveGame game, Store<EntityStore> store, World world,
+                                                 Ref<EntityStore> enemy, Ref<EntityStore> bench,
+                                                 List<Ref<EntityStore>> players) {
+        Vector3d enemyPos = WavePlayers.positionOf(store, enemy);
+        Vector3i benchPos = game.getBenchBlockPos();
+        if (enemyPos == null || benchPos == null) {
+            return bench;
+        }
+        FenceTargetService.RouteTarget route = fenceTargetService.resolveBenchRoute(game, store, world, enemyPos,
+                benchPos);
+        if (route.fenceTarget() != null) {
+            return route.fenceTarget();
+        }
+        return bench;
+    }
+
+    @Nullable
+    private Ref<EntityStore> targetForNearestPlayerRoute(WaveGame game, Store<EntityStore> store, World world,
+                                                         Ref<EntityStore> enemy,
+                                                         List<Ref<EntityStore>> players) {
+        Ref<EntityStore> player = nearestPlayer(store, enemy, players);
+        if (player == null) {
+            return null;
+        }
+        Vector3d enemyPos = WavePlayers.positionOf(store, enemy);
+        Vector3d playerPos = WavePlayers.positionOf(store, player);
+        if (enemyPos == null || playerPos == null) {
+            return player;
+        }
+        Vector3i playerBlock = new Vector3i((int) Math.floor(playerPos.x), (int) Math.floor(playerPos.y),
+                (int) Math.floor(playerPos.z));
+        FenceTargetService.RouteTarget route = fenceTargetService.resolvePlayerRoute(game, store, world, enemyPos,
+                playerBlock);
+        return route.fenceTarget() != null ? route.fenceTarget() : player;
     }
 
     @Nullable

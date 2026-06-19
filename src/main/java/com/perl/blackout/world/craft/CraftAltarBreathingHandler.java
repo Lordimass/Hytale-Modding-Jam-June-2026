@@ -14,8 +14,8 @@ import com.hypixel.hytale.server.npc.entities.NPCEntity;
 import com.perl.blackout.offensive.wave.WaveGameManager;
 
 /**
- * The crafting machine target NPC intentionally lives inside a solid bench block. Keep the normal
- * bench health/damage behavior, but never let the breathing system treat that overlap as suffocation.
+ * Wave target NPCs intentionally live inside solid blocks. Keep normal health/damage behavior, but
+ * never let the breathing system treat that overlap as suffocation.
  */
 public final class CraftAltarBreathingHandler extends EntityEventSystem<EntityStore, BreathingCheckEvent> {
 
@@ -30,7 +30,7 @@ public final class CraftAltarBreathingHandler extends EntityEventSystem<EntitySt
                        @Nonnull CommandBuffer<EntityStore> commandBuffer,
                        @Nonnull BreathingCheckEvent event) {
         NPCEntity npc = archetypeChunk.getComponent(index, NPCEntity.getComponentType());
-        if (npc == null || !WaveGameManager.BENCH_NPC_ROLE.equals(npc.getRoleName())) {
+        if (npc == null || !isBlockTarget(npc.getRoleName())) {
             return;
         }
 
@@ -45,5 +45,9 @@ public final class CraftAltarBreathingHandler extends EntityEventSystem<EntitySt
     @Nonnull
     public Query<EntityStore> getQuery() {
         return Query.and(NPCEntity.getComponentType(), BreathingComponent.getComponentType());
+    }
+
+    private boolean isBlockTarget(String roleName) {
+        return WaveGameManager.BENCH_NPC_ROLE.equals(roleName) || WaveGameManager.FENCE_NPC_ROLE.equals(roleName);
     }
 }
