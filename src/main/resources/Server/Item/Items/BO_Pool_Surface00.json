@@ -1,6 +1,4 @@
 {
-  "Model": "Blocks/bo_pool_surface/BO_Pool_Surface.blockymodel",
-  "Texture": "Blocks/bo_pool_surface/bo_pool_surface_texture.png",
   "Tool": {
     "Specs": [
       {

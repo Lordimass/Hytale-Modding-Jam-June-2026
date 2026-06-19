@@ -1,6 +1,4 @@
 {
-  "Model": "Blocks/bo_ceiling_light/bo_ceiling_light_00.blockymodel",
-  "Texture": "Blocks/bo_ceiling_light/bo_ceiling_light_00.png",
   "BlockType": {
     "CustomModel": "Blocks/bo_ceiling_light/bo_ceiling_light_00.blockymodel",
     "DrawType": "Model",

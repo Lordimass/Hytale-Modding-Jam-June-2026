@@ -1,6 +1,4 @@
 {
-  "Model": "Blocks/bo_parking_bumper/bo_parking_bumper.blockymodel",
-  "Texture": "Blocks/bo_parking_bumper/bo_parking_bumper_texture.png",
   "Tool": {
     "Specs": [
       {

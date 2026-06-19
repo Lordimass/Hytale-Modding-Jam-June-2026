@@ -1,5 +1,4 @@
 {
-  "Texture": "Blocks/bo_parking_wall/bo_parking_wall_00.png",
   "Tool": {
     "Specs": [
       {
@@ -40,6 +39,5 @@
   "TranslationProperties": {
     "Name": "Parking_Wall_00"
   },
-  "Parent": "Rock_Bedrock",
-  "Model": "Blocks/bo_parking_blacktop/bo_parking_blacktop.blockymodel"
+  "Parent": "Rock_Bedrock"
 }

@@ -21,9 +21,6 @@
   "TranslationProperties": {
     "Name": "BO_Grass"
   },
-  "Texture": "BlockTextures/bo_grass_apt_texture.png",
-  "UsePlayerAnimations": true,
-  "Model": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
   "Icon": "Icons/ItemsGenerated/BO_Grass_Apt.png",
   "IconProperties": {
     "Scale": 0.58823,

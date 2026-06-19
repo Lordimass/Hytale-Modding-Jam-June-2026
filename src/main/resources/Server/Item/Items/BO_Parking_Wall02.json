@@ -1,6 +1,4 @@
 {
-  "Model": "Blocks/bo_parking_blacktop/bo_parking_blacktop.blockymodel",
-  "Texture": "Blocks/bo_parking_wall/bo_parking_wall_02.png",
   "Tool": {
     "Specs": [
       {

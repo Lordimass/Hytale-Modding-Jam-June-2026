@@ -1,21 +1,18 @@
 {
-  "Model": "Blocks/bo_wallpaper/bo_wallpaper_01.blockymodel",
-  "Texture": "Blocks/bo_wallpaper/bo_wallpaper_01_texture.png",
   "BlockType": {
-    "CustomModel": "Blocks/bo_wallpaper/bo_wallpaper_01.blockymodel",
-    "DrawType": "Model",
-    "CustomModelTexture": [
-      {
-        "Texture": "Blocks/bo_wallpaper/bo_wallpaper_01_texture.png"
-      }
-    ],
+    "DrawType": "Cube",
     "PlacementSettings": {
       "RotationMode": "FacingPlayer",
       "BlockPreviewVisibility": "AlwaysVisible"
     },
     "BlockListAssetId": "BO_WallpaperType",
     "IgnoreSupportWhenPlaced": true,
-    "Material": "Solid"
+    "Material": "Solid",
+    "Textures": [
+      {
+        "All": "Blocks/bo_wallpaper/bo_wallpaper_00_cube_texture.png"
+      }
+    ]
   },
   "Icon": "Icons/ItemsGenerated/BO_Wallpaper01.png",
   "IconProperties": {
@@ -31,7 +28,7 @@
     ]
   },
   "TranslationProperties": {
-    "Name": "Wallpaper00"
+    "Name": "Wallpaper01"
   },
   "Parent": "Rock_Bedrock"
 }

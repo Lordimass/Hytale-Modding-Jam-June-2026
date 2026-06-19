@@ -1,6 +1,9 @@
 {
-  "Model": "Blocks/bo_floor/bo_floor_00.blockymodel",
-  "Texture": "Blocks/bo_floor/bo_floor_00_texture.png",
+  "Parent": "Rock_Bedrock",
+  "TranslationProperties": {
+    "Name": "Floor00"
+  },
+  "PlayerAnimationsId": "Block",
   "Tool": {
     "Specs": [
       {
@@ -45,8 +48,6 @@
       -12
     ]
   },
-  "TranslationProperties": {
-    "Name": "Floor00"
-  },
-  "Parent": "Rock_Bedrock"
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "MaxStack": 1
 }

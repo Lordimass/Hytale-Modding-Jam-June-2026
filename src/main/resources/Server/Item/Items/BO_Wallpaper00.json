@@ -1,6 +1,4 @@
 {
-  "Model": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
-  "Texture": "Blocks/bo_wallpaper/bo_wallpaper_00_texture.png",
   "Icon": "Icons/ItemsGenerated/BO_Wallpaper00.png",
   "IconProperties": {
     "Scale": 0.5,
@@ -39,11 +37,6 @@
   },
   "BlockType": {
     "DrawType": "Cube",
-    "CustomModelTexture": [
-      {
-        "Texture": "Blocks/bo_wallpaper/bo_wallpaper_00_texture.png"
-      }
-    ],
     "Interactions": {
       "Use": {
         "Interactions": [
@@ -111,7 +104,6 @@
     "Material": "Solid",
     "Hardness": "5000",
     "IgnoreSupportWhenPlaced": false,
-    "CustomModel": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
     "Parent": "Rock_Bedrock",
     "VariantRotation": "NESW",
     "Group": "Stone",
@@ -140,6 +132,5 @@
         "IsIncorrect": true
       }
     ]
-  },
-  "UsePlayerAnimations": false
+  }
 }

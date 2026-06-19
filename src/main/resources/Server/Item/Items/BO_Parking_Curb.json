@@ -22,7 +22,6 @@
   "TranslationProperties": {
     "Name": "BO_Parking_Blacktop_01"
   },
-  "UsePlayerAnimations": true,
   "Icon": "Icons/ItemsGenerated/BO_Parking_Curb.png",
   "IconProperties": {
     "Scale": 0.58823,
