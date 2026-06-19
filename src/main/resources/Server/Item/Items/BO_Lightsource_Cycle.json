@@ -1,0 +1,69 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Build_Lightsource_White.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Build_Lightsource_White.png",
+  "SubCategory": "LightSources",
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "Group": "Dev",
+    "HitboxType": "Full",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "BlockTextures/Build_Lightsource_White.png"
+      }
+    ],
+    "BlockSoundSetId": "Crystal",
+    "PhysicalMaterialId": "Stone",
+    "CubeShadingMode": "Fullbright",
+    "VariantRotation": "Pipe",
+    "BlockEntity": {
+      "Components": {
+        "BlackoutCycleState": {
+          "OnState": "Day",
+          "OffState": "Night"
+        }
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Day": {
+          "Light": {
+            "Color": "#eee"
+          },
+          "Textures": [
+            {
+              "Weight": 1,
+              "All": "BlockTextures/Build_Lightsource_White.png"
+            }
+          ]
+        },
+        "Night": {
+          "Light": {
+            "Color": "#05d"
+          },
+          "Textures": [
+            {
+              "Weight": 1,
+              "All": "BlockTextures/Dev_Lightsource_Blue_Side.png"
+            }
+          ]
+        }
+      }
+    },
+    "DrawType": "Cube"
+  },
+  "Categories": [
+    "Tool.TechnicalBlocks"
+  ],
+  "MaxStack": 100
+}

@@ -13,5 +13,8 @@
       }
     }
   ],
-  "MaxDistance": 14
+  "MaxDistance": 9,
+  "SpatialBlend": 0.124,
+  "MaxInstance": 8,
+  "StartAttenuationDistance": 2
 }

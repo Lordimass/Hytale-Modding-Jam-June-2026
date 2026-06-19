@@ -6449,21 +6449,21 @@
       "x": 0,
       "y": 0,
       "z": -1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 5
     },
     {
       "x": 0,
       "y": 1,
       "z": -1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 5
     },
     {
       "x": 0,
       "y": 2,
       "z": -1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 5
     },
     {
@@ -6594,21 +6594,21 @@
       "x": 0,
       "y": 0,
       "z": 0,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
       "x": 0,
       "y": 1,
       "z": 0,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
       "x": 0,
       "y": 2,
       "z": 0,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
@@ -6659,21 +6659,21 @@
       "x": 0,
       "y": 0,
       "z": 1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
       "x": 0,
       "y": 1,
       "z": 1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
       "x": 0,
       "y": 2,
       "z": 1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
@@ -7757,21 +7757,21 @@
       "x": 1,
       "y": 0,
       "z": -1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
       "x": 1,
       "y": 1,
       "z": -1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
       "x": 1,
       "y": 2,
       "z": -1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
@@ -7967,21 +7967,21 @@
       "x": 1,
       "y": 0,
       "z": 1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
       "x": 1,
       "y": 1,
       "z": 1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
       "x": 1,
       "y": 2,
       "z": 1,
-      "name": "Rock_Stone_Brick",
+      "name": "Build_Lightsource_White",
       "rotation": 4
     },
     {
@@ -9066,19 +9066,19 @@
       "x": 2,
       "y": 0,
       "z": -1,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,
       "y": 1,
       "z": -1,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,
       "y": 2,
       "z": -1,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,
@@ -9209,19 +9209,19 @@
       "x": 2,
       "y": 0,
       "z": 0,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,
       "y": 1,
       "z": 0,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,
       "y": 2,
       "z": 0,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,
@@ -9351,19 +9351,19 @@
       "x": 2,
       "y": 0,
       "z": 1,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,
       "y": 1,
       "z": 1,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,
       "y": 2,
       "z": 1,
-      "name": "Rock_Stone_Brick"
+      "name": "Build_Lightsource_White"
     },
     {
       "x": 2,

@@ -297,28 +297,15 @@
       "x": -4,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -610,28 +597,15 @@
       "x": -4,
       "y": 42,
       "z": -3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": -3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": -3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -920,28 +894,15 @@
       "x": -4,
       "y": 42,
       "z": -2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": -2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": -2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -1233,28 +1194,15 @@
       "x": -4,
       "y": 42,
       "z": -1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": -1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": -1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -1545,28 +1493,15 @@
       "x": -4,
       "y": 42,
       "z": 0,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": 0,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": 0,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -1858,28 +1793,15 @@
       "x": -4,
       "y": 42,
       "z": 1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": 1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": 1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -2172,28 +2094,15 @@
       "x": -4,
       "y": 42,
       "z": 2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": 2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": 2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -2483,28 +2392,15 @@
       "x": -4,
       "y": 42,
       "z": 3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": 3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": 3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -2796,28 +2692,15 @@
       "x": -4,
       "y": 42,
       "z": 4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": 4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": 4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -3130,28 +3013,15 @@
       "x": -4,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": -4,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -3465,25 +3335,15 @@
       "x": -3,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -3795,25 +3655,15 @@
       "x": -3,
       "y": 42,
       "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -4124,25 +3974,15 @@
       "x": -3,
       "y": 42,
       "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -4455,25 +4295,15 @@
       "x": -3,
       "y": 42,
       "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -4786,25 +4616,15 @@
       "x": -3,
       "y": 42,
       "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -5118,25 +4938,15 @@
       "x": -3,
       "y": 42,
       "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -5450,25 +5260,15 @@
       "x": -3,
       "y": 42,
       "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -5780,25 +5580,15 @@
       "x": -3,
       "y": 42,
       "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -6112,25 +5902,15 @@
       "x": -3,
       "y": 42,
       "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -6445,25 +6225,15 @@
       "x": -3,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -3,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -3,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -3,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -6775,25 +6545,15 @@
       "x": -2,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -7103,25 +6863,15 @@
       "x": -2,
       "y": 42,
       "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -7431,25 +7181,15 @@
       "x": -2,
       "y": 42,
       "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -7752,25 +7492,15 @@
       "x": -2,
       "y": 42,
       "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -8073,25 +7803,15 @@
       "x": -2,
       "y": 42,
       "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -8395,25 +8115,15 @@
       "x": -2,
       "y": 42,
       "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -8719,25 +8429,15 @@
       "x": -2,
       "y": 42,
       "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -9041,25 +8741,15 @@
       "x": -2,
       "y": 42,
       "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -9365,25 +9055,15 @@
       "x": -2,
       "y": 42,
       "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -9690,25 +9370,15 @@
       "x": -2,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -2,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -2,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -2,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -10022,25 +9692,15 @@
       "x": -1,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -10352,25 +10012,15 @@
       "x": -1,
       "y": 42,
       "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -10682,25 +10332,15 @@
       "x": -1,
       "y": 42,
       "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -11005,25 +10645,15 @@
       "x": -1,
       "y": 42,
       "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -11318,25 +10948,15 @@
       "x": -1,
       "y": 42,
       "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -11633,25 +11253,15 @@
       "x": -1,
       "y": 42,
       "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -11948,25 +11558,15 @@
       "x": -1,
       "y": 42,
       "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -12263,25 +11863,15 @@
       "x": -1,
       "y": 42,
       "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -12579,25 +12169,15 @@
       "x": -1,
       "y": 42,
       "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -12897,25 +12477,15 @@
       "x": -1,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -1,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -1,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": -1,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -13227,25 +12797,15 @@
       "x": 0,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -13558,25 +13118,15 @@
       "x": 0,
       "y": 42,
       "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -13889,25 +13439,15 @@
       "x": 0,
       "y": 42,
       "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -14212,25 +13752,15 @@
       "x": 0,
       "y": 42,
       "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -14524,25 +14054,15 @@
       "x": 0,
       "y": 42,
       "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -14812,25 +14332,15 @@
       "x": 0,
       "y": 42,
       "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -15099,25 +14609,15 @@
       "x": 0,
       "y": 42,
       "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -15413,25 +14913,15 @@
       "x": 0,
       "y": 42,
       "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -15729,25 +15219,15 @@
       "x": 0,
       "y": 42,
       "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -16047,25 +15527,15 @@
       "x": 0,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 0,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 0,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 0,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -16377,25 +15847,15 @@
       "x": 1,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -16707,25 +16167,15 @@
       "x": 1,
       "y": 42,
       "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -17037,25 +16487,15 @@
       "x": 1,
       "y": 42,
       "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -17358,25 +16798,15 @@
       "x": 1,
       "y": 42,
       "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -17670,25 +17100,15 @@
       "x": 1,
       "y": 42,
       "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -17958,25 +17378,15 @@
       "x": 1,
       "y": 42,
       "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -18246,25 +17656,15 @@
       "x": 1,
       "y": 42,
       "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -18561,25 +17961,15 @@
       "x": 1,
       "y": 42,
       "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -18877,25 +18267,15 @@
       "x": 1,
       "y": 42,
       "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -19195,25 +18575,15 @@
       "x": 1,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 1,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 1,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 1,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -19527,25 +18897,15 @@
       "x": 2,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -19855,25 +19215,15 @@
       "x": 2,
       "y": 42,
       "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -20183,25 +19533,15 @@
       "x": 2,
       "y": 42,
       "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -20504,25 +19844,15 @@
       "x": 2,
       "y": 42,
       "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -20817,25 +20147,15 @@
       "x": 2,
       "y": 42,
       "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -21132,25 +20452,15 @@
       "x": 2,
       "y": 42,
       "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -21447,25 +20757,15 @@
       "x": 2,
       "y": 42,
       "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -21762,25 +21062,15 @@
       "x": 2,
       "y": 42,
       "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -22078,25 +21368,15 @@
       "x": 2,
       "y": 42,
       "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -22396,25 +21676,15 @@
       "x": 2,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 2,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 2,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 2,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -22725,25 +21995,15 @@
       "x": 3,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -23053,25 +22313,15 @@
       "x": 3,
       "y": 42,
       "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -23381,25 +22631,15 @@
       "x": 3,
       "y": 42,
       "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -23702,25 +22942,15 @@
       "x": 3,
       "y": 42,
       "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -24023,25 +23253,15 @@
       "x": 3,
       "y": 42,
       "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -24345,25 +23565,15 @@
       "x": 3,
       "y": 42,
       "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -24669,25 +23879,15 @@
       "x": 3,
       "y": 42,
       "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -24991,25 +24191,15 @@
       "x": 3,
       "y": 42,
       "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -25315,25 +24505,15 @@
       "x": 3,
       "y": 42,
       "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -25640,25 +24820,15 @@
       "x": 3,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 3,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 3,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 3,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -25972,25 +25142,15 @@
       "x": 4,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -26302,25 +25462,15 @@
       "x": 4,
       "y": 42,
       "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": -3,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -26631,25 +25781,15 @@
       "x": 4,
       "y": 42,
       "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": -2,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -26962,25 +26102,15 @@
       "x": 4,
       "y": 42,
       "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": -1,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -27293,25 +26423,15 @@
       "x": 4,
       "y": 42,
       "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": 0,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -27625,25 +26745,15 @@
       "x": 4,
       "y": 42,
       "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": 1,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -27957,25 +27067,15 @@
       "x": 4,
       "y": 42,
       "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": 2,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -28287,25 +27387,15 @@
       "x": 4,
       "y": 42,
       "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": 3,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -28619,25 +27709,15 @@
       "x": 4,
       "y": 42,
       "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": 4,
-      "name": "Empty"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -28952,25 +28032,15 @@
       "x": 4,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 4,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 4,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White"
-    },
-    {
-      "x": 4,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -29278,28 +28348,15 @@
       "x": 5,
       "y": 42,
       "z": -4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": -4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": -4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": -4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -29591,28 +28648,15 @@
       "x": 5,
       "y": 42,
       "z": -3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": -3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": -3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": -3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -29901,28 +28945,15 @@
       "x": 5,
       "y": 42,
       "z": -2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": -2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": -2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": -2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -30214,28 +29245,15 @@
       "x": 5,
       "y": 42,
       "z": -1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": -1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": -1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": -1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -30525,28 +29543,15 @@
       "x": 5,
       "y": 42,
       "z": 0,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": 0,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": 0,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": 0,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -30837,28 +29842,15 @@
       "x": 5,
       "y": 42,
       "z": 1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": 1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": 1,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": 1,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -31151,28 +30143,15 @@
       "x": 5,
       "y": 42,
       "z": 2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": 2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": 2,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": 2,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -31462,28 +30441,15 @@
       "x": 5,
       "y": 42,
       "z": 3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": 3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": 3,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": 3,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -31776,28 +30742,15 @@
       "x": 5,
       "y": 42,
       "z": 4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": 4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": 4,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -32111,28 +31064,15 @@
       "x": 5,
       "y": 42,
       "z": 5,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 43,
-      "z": 5,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 44,
-      "z": 5,
-      "name": "Build_Lightsource_White",
-      "rotation": 1
-    },
-    {
-      "x": 5,
-      "y": 45,
-      "z": 5,
-      "name": "Build_Lightsource_White",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
