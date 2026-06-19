@@ -18,16 +18,21 @@ import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.npc.entities.NPCEntity;
 import com.hypixel.hytale.server.npc.role.Role;
+import com.hypixel.hytale.server.npc.role.support.MarkedEntitySupport;
 
 /**
- * Scares Seekers that are near a player holding a lit flashlight.
+ * Pushes wave-controlled behavior flags onto Seeker-family NPCs.
  *
  * <p>The Seeker role cannot detect a held item's on/off state by itself: the flashlight's On/Off is
  * an item-state swap (see the mod's {@code SetStateInteraction}, which calls {@code withState}), and
  * NPC sight filters only match by item id — and the on-state id isn't resolvable when the role is
- * built. So the detection happens here in Java and is pushed onto each Seeker as a single boolean
+ * built. So the detection happens here in Java and is pushed onto each NPC as a single boolean
  * role flag (slot {@link #FLASHLIGHT_FLAG_SLOT}) that the role's FSM reads through {@code Flag}
  * sensors to enter and leave its Scared state.
+ *
+ * <p>The role also reads {@link #NIGHT_MODE_FLAG_SLOT}. Persistent SCP-3008 enemies follow the
+ * wave phase, while normal spawned Seekers force this flag on so they attack their marked target
+ * regardless of local light level until they are despawned.
  *
  * <p>"Lit flashlight" = the held item id belongs to the flashlight family and its resolved item emits
  * light. Only the On state variant carries a {@code Light}, so {@code getItem().getLight() != null}
@@ -38,14 +43,21 @@ import com.hypixel.hytale.server.npc.role.Role;
 final class FlashlightScareService {
 
     /**
-     * Flag slot the Seeker role uses for "a lit flashlight is near me". The Seeker role declares
-     * exactly one flag (referenced by name in its FSM {@code Flag} sensors), so it is allocated slot
-     * 0. Keep this in sync with the {@code "Name": "FlashlightNear"} flag in Template_The_Seeker.json.
+     * Flag slot the Seeker role uses for "a lit flashlight is near me". Keep this in sync with the
+     * first {@code "Name": "FlashlightNear"} flag reference in Template_The_Seeker.json.
      */
     static final int FLASHLIGHT_FLAG_SLOT = 0;
+    /** Flag slot the role uses for wave night/rest state. */
+    static final int NIGHT_MODE_FLAG_SLOT = 1;
 
     /** Base flashlight item id. State variants are generated as contained ids under this id. */
     private static final String FLASHLIGHT_ITEM_ID = "BO_Flashlight";
+    private static final String SEEKER_ROLE = "Seeker";
+    private static final String STATE_ANGRY = "Angry";
+    private static final String STATE_ATTACK = "Attack";
+    private static final String STATE_PEACEFUL = "Peaceful";
+    private static final String STATE_SCARED = "Scared";
+    private static final String TARGET_SLOT = MarkedEntitySupport.DEFAULT_TARGET_SLOT;
 
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
     private static final long DIAG_INTERVAL_MS = 2000L;
@@ -69,40 +81,46 @@ final class FlashlightScareService {
         }
 
         List<Vector3d> litPlayers = litFlashlightPlayerPositions(store, world, diag);
+        boolean waveAttack = game.getPhase() == WavePhase.ATTACK;
 
         int total = 0;
         int flagged = 0;
-        synchronized (game.getEnemies()) {
-            for (Ref<EntityStore> enemy : game.getEnemies()) {
-                if (enemy == null || !enemy.isValid()) {
-                    continue;
-                }
-                NPCEntity npc = store.getComponent(enemy, NPCEntity.getComponentType());
-                if (npc == null) {
-                    continue;
-                }
-                Role role = npc.getRole();
-                if (role == null) {
-                    continue;
-                }
-                total++;
-                boolean scared = isNearAny(WavePlayers.positionOf(store, enemy), litPlayers);
-                if (scared) {
-                    flagged++;
-                }
-                try {
-                    role.setFlag(FLASHLIGHT_FLAG_SLOT, scared);
-                } catch (RuntimeException ex) {
-                    if (diag) {
-                        LOGGER.atWarning().withCause(ex).log("setFlag(%s) failed on a Seeker", FLASHLIGHT_FLAG_SLOT);
-                    }
+        int aggressive = 0;
+        for (Ref<EntityStore> enemy : game.getAllEnemiesSnapshot()) {
+            if (enemy == null || !enemy.isValid()) {
+                continue;
+            }
+            NPCEntity npc = store.getComponent(enemy, NPCEntity.getComponentType());
+            if (npc == null) {
+                continue;
+            }
+            Role role = npc.getRole();
+            if (role == null) {
+                continue;
+            }
+            total++;
+            boolean forceAggressive = SEEKER_ROLE.equals(npc.getRoleName()) || waveAttack;
+            boolean scared = forceAggressive && isNearAny(WavePlayers.positionOf(store, enemy), litPlayers);
+            if (scared) {
+                flagged++;
+            }
+            if (forceAggressive) {
+                aggressive++;
+            }
+            try {
+                role.setFlag(FLASHLIGHT_FLAG_SLOT, scared);
+                role.setFlag(NIGHT_MODE_FLAG_SLOT, forceAggressive);
+                syncWaveState(enemy, role, store, forceAggressive);
+            } catch (RuntimeException ex) {
+                if (diag) {
+                    LOGGER.atWarning().withCause(ex).log("setFlag failed on a Seeker-family NPC");
                 }
             }
         }
 
         if (diag) {
-            LOGGER.atInfo().log("[FlashlightScare] litPlayers=%s seekers=%s flagged=%s",
-                    litPlayers.size(), total, flagged);
+            LOGGER.atInfo().log("[FlashlightScare] litPlayers=%s enemies=%s flashlightFlagged=%s nightFlagged=%s",
+                    litPlayers.size(), total, flagged, aggressive);
         }
     }
 
@@ -161,5 +179,23 @@ final class FlashlightScareService {
             }
         }
         return false;
+    }
+
+    private void syncWaveState(Ref<EntityStore> enemy, Role role, Store<EntityStore> store, boolean forceAggressive) {
+        if (!forceAggressive) {
+            role.getMarkedEntitySupport().setMarkedEntity(TARGET_SLOT, null);
+            if (!isInState(role, STATE_PEACEFUL)) {
+                role.getStateSupport().setState(enemy, STATE_PEACEFUL, null, store);
+            }
+            return;
+        }
+        if (!isInState(role, STATE_ANGRY) && !isInState(role, STATE_ATTACK) && !isInState(role, STATE_SCARED)) {
+            role.getStateSupport().setState(enemy, STATE_ANGRY, null, store);
+        }
+    }
+
+    private boolean isInState(Role role, String state) {
+        int stateIndex = role.getStateSupport().getStateHelper().getStateIndex(state);
+        return stateIndex >= 0 && role.getStateSupport().inState(stateIndex);
     }
 }

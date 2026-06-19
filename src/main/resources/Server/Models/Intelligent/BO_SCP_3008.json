@@ -1,0 +1,109 @@
+{
+  "Texture": "NPC/Intelligent/Seeker/the_seeker_texture.png",
+  "Model": "NPC/Intelligent/Seeker/the_seeker.blockymodel",
+  "EyeHeight": 2.7,
+  "MinScale": 1.55,
+  "MaxScale": 1.55,
+  "HitBox": {
+    "Min": {
+      "Y": 0,
+      "X": -1.2,
+      "Z": -1.2
+    },
+    "Max": {
+      "Y": 3.1,
+      "X": 1.2,
+      "Z": 1.2
+    }
+  },
+  "Icon": "Icons/ModelsGenerated/BO_The_Seeker.png",
+  "IconProperties": {
+    "Scale": 0.2,
+    "Rotation": [
+      0,
+      -45,
+      0
+    ],
+    "Translation": [
+      0,
+      -95
+    ]
+  },
+  "PhysicsValues": {
+    "Mass": 4
+  },
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Idle.blockyanim",
+          "Speed": 0.85,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Chase.blockyanim",
+          "Speed": 0.9,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    },
+    "WalkBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Chase.blockyanim",
+          "Speed": 0.9,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Chase.blockyanim",
+          "Speed": 1.1,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    },
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Seeker/Animations/Default/Alerted.blockyanim",
+          "Speed": 0.9,
+          "BlendingDuration": 0.2,
+          "Looping": true
+        }
+      ]
+    }
+  },
+  "Trails": [
+    {
+      "TrailId": "Void_Seeker",
+      "TargetEntityPart": "Entity",
+      "PositionOffset": {
+        "Y": 1.5,
+        "X": 0,
+        "Z": 0.5
+      }
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Spectre_Void_Body",
+      "TargetEntityPart": "Entity",
+      "Scale": 7,
+      "PositionOffset": {
+        "X": 0.5
+      },
+      "Color": "#2a044f"
+    }
+  ]
+}

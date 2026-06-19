@@ -5,6 +5,8 @@ import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 
+import javax.annotation.Nullable;
+
 import org.joml.Vector3d;
 import org.joml.Vector3i;
 
@@ -71,7 +73,18 @@ public final class WaveGameManager {
 
     /** Starts a wave game when a player first enters a matching Backrooms instance world. */
     public void onPlayerAddedToWorld(PlayerRef playerRef, World world) {
-        ensureGame(world);
+        WaveGame game = ensureGame(world);
+        if (game != null && game.isInitialized()) {
+            world.execute(() -> {
+                Store<EntityStore> store = world.getEntityStore().getStore();
+                WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
+                if (floor != null && floor.spawnEnemiesOnInitialize) {
+                    enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+                    objectiveService.applyTargeting(game, store, world);
+                    flashlightScareService.apply(game, store, world);
+                }
+            });
+        }
     }
 
     public void onPlayerRemovedFromWorld(PlayerRef playerRef, World world) {
@@ -131,6 +144,12 @@ public final class WaveGameManager {
         Store<EntityStore> store = world.getEntityStore().getStore();
 
         setLightPhase(world, store, PHASE_LIT);
+        WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
+        if (floor != null && floor.spawnEnemiesOnInitialize) {
+            enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+            objectiveService.applyTargeting(game, store, world);
+            flashlightScareService.apply(game, store, world);
+        }
 
         game.startPhase(WavePhase.REST, System.currentTimeMillis());
         game.setInitialized(true);
@@ -161,6 +180,13 @@ public final class WaveGameManager {
             case REST -> {
                 if (elapsed >= config.restDurationSeconds * 1000L) {
                     beginAttack(world, game, now);
+                } else {
+                    world.execute(() -> {
+                        Store<EntityStore> restStore = world.getEntityStore().getStore();
+                        enemySpawnService.pruneDeadPersistentEnemies(game, restStore);
+                        objectiveService.applyTargeting(game, restStore, world);
+                        flashlightScareService.apply(game, restStore, world);
+                    });
                 }
             }
             case ATTACK -> {
@@ -169,6 +195,7 @@ public final class WaveGameManager {
                 } else {
                     world.execute(() -> {
                         Store<EntityStore> attackStore = world.getEntityStore().getStore();
+                        enemySpawnService.pruneDeadPersistentEnemies(game, attackStore);
                         objectiveService.applyTargeting(game, attackStore, world);
                         flashlightScareService.apply(game, attackStore, world);
                     });
@@ -182,14 +209,15 @@ public final class WaveGameManager {
     private void beginAttack(World world, WaveGame game, long now) {
         game.startPhase(WavePhase.ATTACK, now);
         int round = game.incrementRound();
-        WaveMessages.broadcast(world, "Night " + round, "The Seekers are coming!", true);
+        WaveMessages.broadcast(world, "Night " + round, "The lights are going out!", true);
 
-        WaveConfig.Floor floor = config.findFloor(game.getFloor());
         world.execute(() -> {
             Store<EntityStore> store = world.getEntityStore().getStore();
+            WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
             setLightPhase(world, store, PHASE_DARK);
             enemySpawnService.spawnFloorEnemies(game, store, world, config, floor);
             objectiveService.applyTargeting(game, store, world);
+            flashlightScareService.apply(game, store, world);
         });
     }
 
@@ -199,15 +227,21 @@ public final class WaveGameManager {
                 "Rest " + config.restDurationSeconds + "s until the next night.", true);
         world.execute(() -> {
             Store<EntityStore> store = world.getEntityStore().getStore();
+            WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
             setLightPhase(world, store, PHASE_LIT);
             enemySpawnService.despawnAll(game, store);
+            if (floor != null && floor.persistentEnemies) {
+                enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+            }
+            objectiveService.applyTargeting(game, store, world);
+            flashlightScareService.apply(game, store, world);
         });
     }
 
     private void endGame(World world, WaveGame game) {
         game.startPhase(WavePhase.ENDED, System.currentTimeMillis());
         games.remove(world);
-        world.execute(() -> enemySpawnService.despawnAll(game, world.getEntityStore().getStore()));
+        world.execute(() -> enemySpawnService.despawnAllIncludingPersistent(game, world.getEntityStore().getStore()));
         LOGGER.atInfo().log("Ended wave game in world %s (no players left)", world.getName());
     }
 
@@ -286,6 +320,41 @@ public final class WaveGameManager {
             state.setOn(lit);
         }
         CyclePhase.applyPhaseToWorld(world, lit);
+    }
+
+    @Nullable
+    private WaveConfig.Floor resolveCurrentFloor(World world, Store<EntityStore> store, WaveGame game) {
+        WaveConfig.Floor floor = nearestFloorForPlayers(world, store);
+        if (floor == null) {
+            floor = config.findFloor(game.getFloor());
+        }
+        if (floor == null && !config.floors.isEmpty()) {
+            floor = config.floors.get(0);
+        }
+        if (floor != null) {
+            game.setFloor(floor.floor);
+        }
+        return floor;
+    }
+
+    @Nullable
+    private WaveConfig.Floor nearestFloorForPlayers(World world, Store<EntityStore> store) {
+        List<Vector3d> players = WavePlayers.positions(world, store);
+        if (players.isEmpty() || config.floors.isEmpty()) {
+            return null;
+        }
+        WaveConfig.Floor best = null;
+        double bestDistance = Double.MAX_VALUE;
+        for (Vector3d player : players) {
+            for (WaveConfig.Floor floor : config.floors) {
+                double distance = Math.abs(player.y - floor.floorY);
+                if (distance < bestDistance) {
+                    bestDistance = distance;
+                    best = floor;
+                }
+            }
+        }
+        return best;
     }
 
     private boolean matchesInstance(World world) {

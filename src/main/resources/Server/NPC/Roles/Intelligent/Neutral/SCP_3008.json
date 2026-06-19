@@ -1,0 +1,19 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_The_Seeker",
+  "Modify": {
+    "DropList": "Empty",
+    "Appearance": "BO_SCP_3008",
+    "MaxHealth": 240,
+    "ViewRange": 16,
+    "ViewSector": 360,
+    "HearingRange": 32,
+    "AlertedRange": 30,
+    "AttackDistance": 2.8,
+    "FleeRange": 12,
+    "FlashlightItems": [
+      "BO_Flashlight"
+    ],
+    "NameTranslationKey": "npcRoles.SCP_3008.name"
+  }
+}

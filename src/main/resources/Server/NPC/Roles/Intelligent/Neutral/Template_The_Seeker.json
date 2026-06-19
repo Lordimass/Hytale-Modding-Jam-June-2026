@@ -55,13 +55,6 @@
       ],
       "Description": "How long the Seeker remains scared after it loses sight of the light source"
     },
-    "DarkRGBLightRange": {
-      "Value": [
-        0,
-        0
-      ],
-      "Description": "Per-channel block-light range (Red, Green AND Blue) that counts as darkness. The Seeker turns Angry only when ALL three block-light channels fall in this range; it returns to Peaceful as soon as any channel leaves it. [0,0] = no block light at all. Block-light channels only, so sky/daylight is ignored and this works indoors at any time of day. NOTE: the engine reads these as 0-100 percentages of the internal 0-15 light scale (abs = round(pct * 0.15)), which is why the old combined-Light range of [0,2] silently collapsed to 'absolute 0 only'."
-    },
     "AttackSequence": {
       "Value": "Component_Instruction_Attack_Sequence_Seeker",
       "Description": "Attack sequence used while the Seeker is angry"
@@ -127,11 +120,21 @@
           },
           "Instructions": [
             {
-              "$Comment": "A lit flashlight nearby scares the Seeker. The 'FlashlightNear' flag is set each tick by the plugin's FlashlightScareService when a player holding an ON flashlight is within range; the role can't read a held item's on/off state itself (on/off is an item-state swap, and sight filters only match item ids).",
+              "$Comment": "A lit flashlight nearby scares the NPC only during wave night mode. FlashlightNear and NightMode are set each tick by the plugin's FlashlightScareService.",
               "Sensor": {
-                "Type": "Flag",
-                "Name": "FlashlightNear",
-                "Set": true
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Flag",
+                    "Name": "FlashlightNear",
+                    "Set": true
+                  },
+                  {
+                    "Type": "Flag",
+                    "Name": "NightMode",
+                    "Set": true
+                  }
+                ]
               },
               "Actions": [
                 {
@@ -141,18 +144,11 @@
               ]
             },
             {
-              "$Comment": "Total darkness (no block light of any colour) makes the Seeker angry. Block-light channels only, so daylight/sky exposure never keeps it calm indoors.",
+              "$Comment": "Wave night mode makes the NPC angry regardless of local block light. The wave code sets NightMode from the world blackout state instead of relying on JSON Light sensors.",
               "Sensor": {
-                "Type": "Light",
-                "RedLightRange": {
-                  "Compute": "DarkRGBLightRange"
-                },
-                "GreenLightRange": {
-                  "Compute": "DarkRGBLightRange"
-                },
-                "BlueLightRange": {
-                  "Compute": "DarkRGBLightRange"
-                }
+                "Type": "Flag",
+                "Name": "NightMode",
+                "Set": true
               },
               "Actions": [
                 {
@@ -212,6 +208,23 @@
             "State": "Scared"
           },
           "Instructions": [
+            {
+              "$Comment": "Lights-on/rest mode immediately makes persistent SCP-3008 style variants passive again.",
+              "Sensor": {
+                "Type": "Flag",
+                "Name": "NightMode",
+                "Set": false
+              },
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Peaceful"
+                }
+              ]
+            },
             {
               "Continue": true,
               "Sensor": {
@@ -299,38 +312,11 @@
           },
           "Instructions": [
             {
-              "$Comment": "A lit flashlight nearby (FlashlightNear flag) scares the Seeker even while angry/attacking: drop the target and flee.",
+              "$Comment": "Lights-on/rest mode calms persistent SCP-3008 style variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
               "Sensor": {
                 "Type": "Flag",
-                "Name": "FlashlightNear",
-                "Set": true
-              },
-              "Actions": [
-                {
-                  "Type": "ReleaseTarget"
-                },
-                {
-                  "Type": "State",
-                  "State": "Scared"
-                }
-              ]
-            },
-            {
-              "$Comment": "Any block light at all (a placed torch/lamp lights the tile) calms the Seeker back to Peaceful. Exact inverse of the darkness trigger, so there is no overlap and no state ping-pong.",
-              "Sensor": {
-                "Type": "Not",
-                "Sensor": {
-                  "Type": "Light",
-                  "RedLightRange": {
-                    "Compute": "DarkRGBLightRange"
-                  },
-                  "GreenLightRange": {
-                    "Compute": "DarkRGBLightRange"
-                  },
-                  "BlueLightRange": {
-                    "Compute": "DarkRGBLightRange"
-                  }
-                }
+                "Name": "NightMode",
+                "Set": false
               },
               "Actions": [
                 {
@@ -339,6 +325,33 @@
                 {
                   "Type": "State",
                   "State": "Peaceful"
+                }
+              ]
+            },
+            {
+              "$Comment": "A lit flashlight nearby (FlashlightNear flag) scares the NPC while night mode is active: drop the target and flee.",
+              "Sensor": {
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Flag",
+                    "Name": "FlashlightNear",
+                    "Set": true
+                  },
+                  {
+                    "Type": "Flag",
+                    "Name": "NightMode",
+                    "Set": true
+                  }
+                ]
+              },
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Scared"
                 }
               ]
             },
@@ -445,38 +458,11 @@
           },
           "Instructions": [
             {
-              "$Comment": "A lit flashlight nearby (FlashlightNear flag) scares the Seeker even while angry/attacking: drop the target and flee.",
+              "$Comment": "Lights-on/rest mode calms persistent SCP-3008 style variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
               "Sensor": {
                 "Type": "Flag",
-                "Name": "FlashlightNear",
-                "Set": true
-              },
-              "Actions": [
-                {
-                  "Type": "ReleaseTarget"
-                },
-                {
-                  "Type": "State",
-                  "State": "Scared"
-                }
-              ]
-            },
-            {
-              "$Comment": "Any block light calms it down even mid-fight: drop the target and return to peaceful. Block-light channels only (inverse of the darkness trigger).",
-              "Sensor": {
-                "Type": "Not",
-                "Sensor": {
-                  "Type": "Light",
-                  "RedLightRange": {
-                    "Compute": "DarkRGBLightRange"
-                  },
-                  "GreenLightRange": {
-                    "Compute": "DarkRGBLightRange"
-                  },
-                  "BlueLightRange": {
-                    "Compute": "DarkRGBLightRange"
-                  }
-                }
+                "Name": "NightMode",
+                "Set": false
               },
               "Actions": [
                 {
@@ -485,6 +471,33 @@
                 {
                   "Type": "State",
                   "State": "Peaceful"
+                }
+              ]
+            },
+            {
+              "$Comment": "A lit flashlight nearby (FlashlightNear flag) scares the NPC while night mode is active: drop the target and flee.",
+              "Sensor": {
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Flag",
+                    "Name": "FlashlightNear",
+                    "Set": true
+                  },
+                  {
+                    "Type": "Flag",
+                    "Name": "NightMode",
+                    "Set": true
+                  }
+                ]
+              },
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Scared"
                 }
               ]
             },

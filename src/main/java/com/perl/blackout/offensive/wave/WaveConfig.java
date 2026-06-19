@@ -63,6 +63,10 @@ public final class WaveConfig {
         public int floor = 0;
         /** Y level used for enemy spawns only as a fallback when no player position is available. */
         public double floorY = 10.0;
+        /** True for enemies that should survive daybreak and only be replaced after death. */
+        public boolean persistentEnemies = false;
+        /** True when this floor should seed its persistent enemies as soon as the instance starts. */
+        public boolean spawnEnemiesOnInitialize = false;
         public List<EnemyGroup> enemies = new ArrayList<>();
     }
 
@@ -81,9 +85,25 @@ public final class WaveConfig {
 
     private static List<Floor> defaultFloors() {
         Floor floor0 = new Floor();
-        floor0.enemies.add(new EnemyGroup("Seeker", 6));
+        floor0.floor = 0;
+        floor0.floorY = 22.0;
+        floor0.persistentEnemies = true;
+        floor0.spawnEnemiesOnInitialize = true;
+        floor0.enemies.add(new EnemyGroup("SCP_3008", 6));
+
+        Floor floor1 = new Floor();
+        floor1.floor = 1;
+        floor1.floorY = 33.5;
+
+        Floor floor2 = new Floor();
+        floor2.floor = 2;
+        floor2.floorY = 4.0;
+        floor2.enemies.add(new EnemyGroup("Seeker", 6));
+
         List<Floor> list = new ArrayList<>();
         list.add(floor0);
+        list.add(floor1);
+        list.add(floor2);
         return list;
     }
 
@@ -116,10 +136,39 @@ public final class WaveConfig {
     public static WaveConfig load(Path path) {
         try (InputStreamReader reader = new InputStreamReader(Files.newInputStream(path), StandardCharsets.UTF_8)) {
             WaveConfig config = GSON.fromJson(reader, WaveConfig.class);
-            return config != null ? config : new WaveConfig();
+            if (config == null) {
+                return new WaveConfig();
+            }
+            config.normalize();
+            return config;
         } catch (Exception e) {
             LOGGER.atWarning().withCause(e).log("Failed to load wave config; using defaults");
             return new WaveConfig();
         }
+    }
+
+    private void normalize() {
+        if (floors == null || floors.isEmpty() || isLegacyDefaultFloorList(floors)) {
+            floors = defaultFloors();
+            return;
+        }
+        for (Floor floor : floors) {
+            if (floor.enemies == null) {
+                floor.enemies = new ArrayList<>();
+            }
+        }
+    }
+
+    private static boolean isLegacyDefaultFloorList(List<Floor> floors) {
+        if (floors.size() != 1) {
+            return false;
+        }
+        Floor floor = floors.get(0);
+        if (floor == null || floor.floor != 0 || floor.persistentEnemies || floor.spawnEnemiesOnInitialize
+                || Math.abs(floor.floorY - 10.0) > 0.0001 || floor.enemies == null || floor.enemies.size() != 1) {
+            return false;
+        }
+        EnemyGroup enemy = floor.enemies.get(0);
+        return enemy != null && "Seeker".equals(enemy.type) && enemy.count == 6;
     }
 }

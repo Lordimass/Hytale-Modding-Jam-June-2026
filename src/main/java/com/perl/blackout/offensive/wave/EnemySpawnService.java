@@ -5,6 +5,9 @@ import com.hypixel.hytale.component.RemoveReason;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.math.vector.Rotation3f;
+import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
+import com.hypixel.hytale.server.core.modules.entitystats.EntityStatValue;
+import com.hypixel.hytale.server.core.modules.entitystats.asset.DefaultEntityStatTypes;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.npc.NPCPlugin;
@@ -32,13 +35,43 @@ final class EnemySpawnService {
 
     private final Random random = new Random();
 
-    /** Spawns every configured enemy for the given floor, ringed around the current players. */
+    /** Spawns every configured wave enemy for the given floor, ringed around the current players. */
     void spawnFloorEnemies(WaveGame game, Store<EntityStore> store, World world,
                            WaveConfig config, @Nullable WaveConfig.Floor floor) {
         if (floor == null) {
             LOGGER.atWarning().log("No floor config for floor %s; no enemies spawned", game.getFloor());
             return;
         }
+        if (floor.persistentEnemies) {
+            ensurePersistentFloorEnemies(game, store, world, config, floor);
+            return;
+        }
+        spawnConfiguredEnemies(game, store, world, config, floor, false);
+    }
+
+    /** Spawns persistent enemies for a floor only when none of its tracked persistent enemies are alive. */
+    void ensurePersistentFloorEnemies(WaveGame game, Store<EntityStore> store, World world,
+                                      WaveConfig config, @Nullable WaveConfig.Floor floor) {
+        if (floor == null || !floor.persistentEnemies) {
+            return;
+        }
+        pruneDeadPersistentEnemies(game, store);
+        synchronized (game.getPersistentEnemies()) {
+            if (!game.getPersistentEnemies().isEmpty()) {
+                return;
+            }
+        }
+        spawnConfiguredEnemies(game, store, world, config, floor, true);
+    }
+
+    void pruneDeadPersistentEnemies(WaveGame game, Store<EntityStore> store) {
+        synchronized (game.getPersistentEnemies()) {
+            game.getPersistentEnemies().removeIf(ref -> !isAlive(store, ref));
+        }
+    }
+
+    private void spawnConfiguredEnemies(WaveGame game, Store<EntityStore> store, World world,
+                                        WaveConfig config, WaveConfig.Floor floor, boolean persistent) {
         List<Vector3d> players = WavePlayers.positions(world, store);
         double minRadius = Math.max(1.0, config.enemySpawnDistance - config.enemySpawnDistanceJitter);
         double maxRadius = config.enemySpawnDistance + config.enemySpawnDistanceJitter;
@@ -70,14 +103,19 @@ final class EnemySpawnService {
                     ref = spawnEnemy(store, group.type, position);
                 }
                 if (ref != null) {
-                    game.addEnemy(ref);
+                    if (persistent) {
+                        game.addPersistentEnemy(ref);
+                    } else {
+                        game.addEnemy(ref);
+                    }
                     spawned++;
                 } else {
                     LOGGER.atWarning().log("Gave up spawning a '%s' after %s attempts", group.type, SPAWN_ATTEMPTS);
                 }
             }
         }
-        LOGGER.atInfo().log("Spawned %s enemies for floor %s", spawned, game.getFloor());
+        LOGGER.atInfo().log("Spawned %s %s enemies for floor %s",
+                spawned, persistent ? "persistent" : "wave", game.getFloor());
     }
 
     @Nullable
@@ -92,7 +130,7 @@ final class EnemySpawnService {
         }
     }
 
-    /** Removes all tracked enemies and clears the game's enemy list. */
+    /** Removes all tracked wave enemies and clears the game's wave enemy list. */
     void despawnAll(WaveGame game, Store<EntityStore> store) {
         synchronized (game.getEnemies()) {
             for (Ref<EntityStore> ref : game.getEnemies()) {
@@ -102,5 +140,30 @@ final class EnemySpawnService {
             }
         }
         game.clearEnemies();
+    }
+
+    /** Removes every tracked enemy, including persistent enemies. Used only when the instance game ends. */
+    void despawnAllIncludingPersistent(WaveGame game, Store<EntityStore> store) {
+        despawnAll(game, store);
+        synchronized (game.getPersistentEnemies()) {
+            for (Ref<EntityStore> ref : game.getPersistentEnemies()) {
+                if (ref != null && ref.isValid()) {
+                    store.removeEntity(ref, RemoveReason.REMOVE);
+                }
+            }
+        }
+        game.clearPersistentEnemies();
+    }
+
+    private boolean isAlive(Store<EntityStore> store, @Nullable Ref<EntityStore> ref) {
+        if (ref == null || !ref.isValid()) {
+            return false;
+        }
+        EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
+        if (stats == null) {
+            return true;
+        }
+        EntityStatValue health = stats.get(DefaultEntityStatTypes.getHealth());
+        return health != null && health.get() > 0.0f;
     }
 }

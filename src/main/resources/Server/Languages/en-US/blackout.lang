@@ -4,3 +4,4 @@ items.flashlight.name=Old Flashlight
 items.flashlight.description=<i>if only we could find some batteries</i>
 items.BO_Fluid_Flood.name=Flood Water
 npcRoles.BO_CraftingMachineTarget.name=Crafting Machine
+npcRoles.SCP_3008.name=The SCP-3008
