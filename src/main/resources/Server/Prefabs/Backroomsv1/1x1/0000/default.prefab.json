@@ -4211,18 +4211,21 @@
       "x": 0,
       "y": 13,
       "z": 0,
-      "name": "BO_Ceiling_Light00",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      },
       "rotation": 2
     },
     {
       "x": 0,
-      "y": 14,
-      "z": 0,
-      "name": "Build_Lightsource_White",
-      "rotation": 5
-    },
-    {
-      "x": 0,
       "y": 0,
       "z": 1,
       "name": "BO_Floor00"
@@ -4309,18 +4312,21 @@
       "x": 0,
       "y": 13,
       "z": 1,
-      "name": "BO_Ceiling_Light00",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      },
       "rotation": 2
     },
     {
       "x": 0,
-      "y": 14,
-      "z": 1,
-      "name": "Build_Lightsource_White",
-      "rotation": 5
-    },
-    {
-      "x": 0,
       "y": 0,
       "z": 2,
       "name": "BO_Floor00"
@@ -5171,18 +5177,21 @@
       "x": 1,
       "y": 13,
       "z": 0,
-      "name": "BO_Ceiling_Light00",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      },
       "rotation": 2
     },
     {
       "x": 1,
-      "y": 14,
-      "z": 0,
-      "name": "Build_Lightsource_White",
-      "rotation": 4
-    },
-    {
-      "x": 1,
       "y": 0,
       "z": 1,
       "name": "BO_Floor00"
@@ -5269,15 +5278,18 @@
       "x": 1,
       "y": 13,
       "z": 1,
-      "name": "BO_Ceiling_Light00",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      },
       "rotation": 2
-    },
-    {
-      "x": 1,
-      "y": 14,
-      "z": 1,
-      "name": "Build_Lightsource_White",
-      "rotation": 4
     },
     {
       "x": 1,

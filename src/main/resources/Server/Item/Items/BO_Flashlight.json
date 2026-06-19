@@ -1,7 +1,7 @@
 {
   "Utility": {
-    "Usable": true,
-    "Compatible": true
+    "Usable": false,
+    "Compatible": false
   },
   "Model": "Items/flashlight/flashlight.blockymodel",
   "Texture": "Items/flashlight/texture.png",
@@ -19,13 +19,54 @@
     ]
   },
   "MaxStack": 1,
-  "Light": {
-    "Radius": 1,
-    "Color": "#eee"
-  },
   "Interactions": {
     "Primary": "Root_Unarmed_Swing_Left",
-    "Secondary": "Block_Secondary"
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "DurabilityCondition",
+          "Threshold": 10,
+          "Operator": "GreaterOrEqual",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemDurability": -10,
+            "NotifyOnBreak": true,
+            "NotifyOnBreakMessage": "Out of Battery!",
+            "Effects": {
+              "LocalSoundEventId": "BO_Flashlight_Click",
+              "WorldSoundEventId": "BO_Flashlight_Click"
+            },
+            "Next": {
+              "Type": "SetState",
+              "State": "On",
+              "Next": {
+                "Type": "Charging",
+                "Next": {
+                  "0.0": {
+                    "Type": "SetState",
+                    "State": "Off",
+                    "Effects": {
+                      "LocalSoundEventId": "BO_Flashlight_Click"
+                    }
+                  },
+                  "10.0": {
+                    "Type": "SetState",
+                    "State": "Off",
+                    "Effects": {
+                      "LocalSoundEventId": "BO_Flashlight_Click"
+                    }
+                  }
+                },
+                "HorizontalSpeedMultiplier": 0.3,
+                "Effects": {},
+                "RunTime": 5,
+                "DisplayProgress": true
+              }
+            }
+          }
+        }
+      ]
+    }
   },
   "InteractionConfig": {
     "Priorities": {
@@ -35,7 +76,21 @@
       }
     }
   },
-  "UsePlayerAnimations": true,
   "Scale": 5,
-  "PlayerAnimationsId": "Daggers_Push"
+  "MaxDurability": 100,
+  "State": {
+    "Off": {},
+    "On": {
+      "Light": {
+        "Color": "#fff",
+        "Radius": 10
+      }
+    }
+  },
+  "TranslationProperties": {
+    "Name": "blackout.items.flashlight.name",
+    "Description": "blackout.items.flashlight.description"
+  },
+  "UsePlayerAnimations": true,
+  "PlayerAnimationsId": "Axe"
 }

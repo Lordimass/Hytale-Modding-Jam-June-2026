@@ -4654,35 +4654,35 @@
       "x": -5,
       "y": 1,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": -5,
       "y": 2,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": -5,
       "y": 3,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": -5,
       "y": 4,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": -5,
       "y": 5,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
@@ -4744,13 +4744,17 @@
       "x": -5,
       "y": 13,
       "z": -5,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": -5,
-      "y": 14,
-      "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": -5,
@@ -4799,13 +4803,17 @@
       "x": -5,
       "y": 13,
       "z": -4,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": -5,
-      "y": 14,
-      "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": -5,
@@ -5192,35 +5200,35 @@
       "x": -5,
       "y": 1,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": -5,
       "y": 2,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": -5,
       "y": 3,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": -5,
       "y": 4,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": -5,
       "y": 5,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
@@ -5282,13 +5290,17 @@
       "x": -5,
       "y": 13,
       "z": 5,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": -5,
-      "y": 14,
-      "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": -5,
@@ -5337,13 +5349,17 @@
       "x": -5,
       "y": 13,
       "z": 6,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": -5,
-      "y": 14,
-      "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": -5,
@@ -5730,35 +5746,35 @@
       "x": -4,
       "y": 1,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": -4,
       "y": 2,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": -4,
       "y": 3,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": -4,
       "y": 4,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": -4,
       "y": 5,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
@@ -5820,13 +5836,17 @@
       "x": -4,
       "y": 13,
       "z": -5,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": -4,
-      "y": 14,
-      "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": -4,
@@ -5875,13 +5895,17 @@
       "x": -4,
       "y": 13,
       "z": -4,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": -4,
-      "y": 14,
-      "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": -4,
@@ -6268,35 +6292,35 @@
       "x": -4,
       "y": 1,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": -4,
       "y": 2,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": -4,
       "y": 3,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": -4,
       "y": 4,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": -4,
       "y": 5,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
@@ -6358,13 +6382,17 @@
       "x": -4,
       "y": 13,
       "z": 5,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": -4,
-      "y": 14,
-      "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": -4,
@@ -6413,13 +6441,17 @@
       "x": -4,
       "y": 13,
       "z": 6,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": -4,
-      "y": 14,
-      "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": -4,
@@ -6806,31 +6838,31 @@
       "x": -3,
       "y": 1,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 2,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 3,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 4,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 5,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
@@ -6854,31 +6886,31 @@
       "x": -3,
       "y": 1,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 2,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 3,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 4,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 5,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
@@ -6902,31 +6934,31 @@
       "x": -3,
       "y": 1,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 2,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 3,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 4,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 5,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
@@ -7325,31 +7357,31 @@
       "x": -3,
       "y": 1,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 2,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 3,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 4,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 5,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
@@ -7373,31 +7405,31 @@
       "x": -3,
       "y": 1,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 2,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 3,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 4,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 5,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
@@ -7421,31 +7453,31 @@
       "x": -3,
       "y": 1,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 2,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 3,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 4,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
       "y": 5,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": -3,
@@ -15611,35 +15643,35 @@
       "x": 5,
       "y": 1,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": 5,
       "y": 2,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": 5,
       "y": 3,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": 5,
       "y": 4,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": 5,
       "y": 5,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
@@ -15701,13 +15733,17 @@
       "x": 5,
       "y": 13,
       "z": -5,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": 5,
-      "y": 14,
-      "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": 5,
@@ -15756,13 +15792,17 @@
       "x": 5,
       "y": 13,
       "z": -4,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": 5,
-      "y": 14,
-      "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": 5,
@@ -16149,35 +16189,35 @@
       "x": 5,
       "y": 1,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": 5,
       "y": 2,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": 5,
       "y": 3,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": 5,
       "y": 4,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
       "x": 5,
       "y": 5,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 5
     },
     {
@@ -16239,13 +16279,17 @@
       "x": 5,
       "y": 13,
       "z": 5,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": 5,
-      "y": 14,
-      "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": 5,
@@ -16294,13 +16338,17 @@
       "x": 5,
       "y": 13,
       "z": 6,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": 5,
-      "y": 14,
-      "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": 5,
@@ -16687,35 +16735,35 @@
       "x": 6,
       "y": 1,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": 6,
       "y": 2,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": 6,
       "y": 3,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": 6,
       "y": 4,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": 6,
       "y": 5,
       "z": -6,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
@@ -16777,13 +16825,17 @@
       "x": 6,
       "y": 13,
       "z": -5,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": 6,
-      "y": 14,
-      "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": 6,
@@ -16832,13 +16884,17 @@
       "x": 6,
       "y": 13,
       "z": -4,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": 6,
-      "y": 14,
-      "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": 6,
@@ -17225,35 +17281,35 @@
       "x": 6,
       "y": 1,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": 6,
       "y": 2,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": 6,
       "y": 3,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": 6,
       "y": 4,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
       "x": 6,
       "y": 5,
       "z": 4,
-      "name": "Build_Lightsource_White",
+      "name": "Rock_Stone_Brick",
       "rotation": 4
     },
     {
@@ -17315,13 +17371,17 @@
       "x": 6,
       "y": 13,
       "z": 5,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": 6,
-      "y": 14,
-      "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": 6,
@@ -17370,13 +17430,17 @@
       "x": 6,
       "y": 13,
       "z": 6,
-      "name": "BO_Ceiling_Light00"
-    },
-    {
-      "x": 6,
-      "y": 14,
-      "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "On",
+            "OffState": "Off",
+            "OnSound": "BO_Light_On",
+            "OffSound": "BO_Light_Off"
+          }
+        }
+      }
     },
     {
       "x": 6,
@@ -17763,31 +17827,31 @@
       "x": 7,
       "y": 1,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 2,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 3,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 4,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 5,
       "z": -6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
@@ -17811,31 +17875,31 @@
       "x": 7,
       "y": 1,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 2,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 3,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 4,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 5,
       "z": -5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
@@ -17859,31 +17923,31 @@
       "x": 7,
       "y": 1,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 2,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 3,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 4,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 5,
       "z": -4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
@@ -18282,31 +18346,31 @@
       "x": 7,
       "y": 1,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 2,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 3,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 4,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 5,
       "z": 4,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
@@ -18330,31 +18394,31 @@
       "x": 7,
       "y": 1,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 2,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 3,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 4,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 5,
       "z": 5,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
@@ -18378,31 +18442,31 @@
       "x": 7,
       "y": 1,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 2,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 3,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 4,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,
       "y": 5,
       "z": 6,
-      "name": "Build_Lightsource_White"
+      "name": "Rock_Stone_Brick"
     },
     {
       "x": 7,

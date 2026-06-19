@@ -1,2 +1,5 @@
 items.Egg_Spawner_Gun_Turret.name = Gun Turret
 items.Egg_Spawner_Gun_Turret.description = Shoots your enemies!
+items.flashlight.name=Old Flashlight
+items.flashlight.description=<i>if only we could find some batteries</i>
+items.BO_Fluid_Flood.name=Flood Water

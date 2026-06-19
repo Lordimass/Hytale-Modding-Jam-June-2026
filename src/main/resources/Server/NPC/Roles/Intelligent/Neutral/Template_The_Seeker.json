@@ -103,12 +103,11 @@
     "Compute": "MaxHealth"
   },
   "DisableDamageGroups": [
-    "Self",
-    "Seeker"
+    "Self"
   ],
   "StartState": "Peaceful",
   "DefaultPlayerAttitude": "Neutral",
-  "DefaultNPCAttitude": "Hostile",
+  "DefaultNPCAttitude": "Ignore",
   "KnockbackScale": 0.5,
   "MotionControllerList": [
     {

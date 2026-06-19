@@ -1,0 +1,15 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/FlashlightToggle.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -2.928,
+        "MaxPitch": 0.816,
+        "MaxVolume": 0.16,
+        "MinVolume": -2
+      }
+    }
+  ]
+}

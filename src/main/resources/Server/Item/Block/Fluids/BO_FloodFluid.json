@@ -1,0 +1,9 @@
+{
+  "Parent": "BO_FloodFluid_Source",
+  "MaxFluidLevel": 8,
+  "Ticker": {
+    "CanDemote": true,
+    "SpreadFluid": "BO_FloodFluid",
+    "SupportedBy": "BO_FloodFluid_Source"
+  }
+}

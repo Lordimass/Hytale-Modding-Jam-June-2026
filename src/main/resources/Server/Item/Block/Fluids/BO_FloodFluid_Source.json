@@ -1,0 +1,24 @@
+{
+  "Parent": "Water_Source",
+  "Ticker": {
+    "CanDemote": false,
+    "SpreadFluid": "BO_FloodFluid"
+  },
+  "Interactions": {
+    "Collision": {
+      "Cooldown": {
+        "Id": "BurnEffect",
+        "Cooldown": 1
+      },
+      "Interactions": [
+        {
+          "Type": "BlackoutPhaseGate",
+          "Next": {
+            "Type": "ApplyEffect",
+            "EffectId": "BO_Flood_Burn"
+          }
+        }
+      ]
+    }
+  }
+}
