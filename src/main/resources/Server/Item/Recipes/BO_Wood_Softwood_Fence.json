@@ -1,0 +1,25 @@
+{
+  "Input": [
+    {
+      "ItemId": "Ingredient_Stick",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Wood_Softwood_Fence",
+    "Quantity": 2
+  },
+  "Output": [
+    {
+      "ItemId": "Wood_Softwood_Fence",
+      "Quantity": 2
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "BlackoutSalvagebench"
+    }
+  ],
+  "TimeSeconds": 15
+}
