@@ -228,22 +228,25 @@ public final class WaveGameManager {
         });
     }
 
-    /** A player broke the crafting machine: despawn its NPC. The break itself returns the item. */
+    /** A player broke the crafting machine: despawn its NPC and drop the bench item. */
     public void onBenchBroken(World world, Vector3i blockPos) {
         WaveGame game = games.get(world);
-        if (game == null || !game.hasBench()) {
-            return;
-        }
-        Vector3i benchPos = game.getBenchBlockPos();
-        if (benchPos == null || benchPos.x != blockPos.x || benchPos.y != blockPos.y || benchPos.z != blockPos.z) {
-            return;
-        }
-        Ref<EntityStore> npc = game.getBenchNpcRef();
-        game.clearBench();
-        world.execute(() -> {
-            if (npc != null && npc.isValid()) {
-                world.getEntityStore().getStore().removeEntity(npc, RemoveReason.REMOVE);
+        Ref<EntityStore> npc = null;
+        if (game != null && game.hasBench()) {
+            Vector3i benchPos = game.getBenchBlockPos();
+            if (benchPos != null && benchPos.x == blockPos.x && benchPos.y == blockPos.y && benchPos.z == blockPos.z) {
+                npc = game.getBenchNpcRef();
+                game.clearBench();
             }
+        }
+
+        Ref<EntityStore> benchNpc = npc;
+        world.execute(() -> {
+            Store<EntityStore> store = world.getEntityStore().getStore();
+            if (benchNpc != null && benchNpc.isValid()) {
+                store.removeEntity(benchNpc, RemoveReason.REMOVE);
+            }
+            dropBenchItem(store, blockPos);
         });
     }
 
@@ -251,13 +254,17 @@ public final class WaveGameManager {
     private void breakAndDropBench(World world, Vector3i blockPos) {
         world.setBlock(blockPos.x, blockPos.y, blockPos.z, EMPTY_BLOCK, 0);
         Store<EntityStore> store = world.getEntityStore().getStore();
+        dropBenchItem(store, blockPos);
+        WaveMessages.broadcast(world, "Workbench Destroyed", "Pick it back up and re-place it!", false);
+    }
+
+    private void dropBenchItem(Store<EntityStore> store, Vector3i blockPos) {
         Vector3d dropPos = new Vector3d(blockPos.x + 0.5, blockPos.y + 0.5, blockPos.z + 0.5);
         Holder<EntityStore>[] holders = ItemComponent.generateItemDrops(
                 store, List.of(new ItemStack(BENCH_BLOCK_ID, 1)), dropPos, Rotation3f.ZERO);
         if (holders.length > 0) {
             store.addEntities(holders, AddReason.SPAWN);
         }
-        WaveMessages.broadcast(world, "Workbench Destroyed", "Pick it back up and re-place it!", false);
     }
 
     // ── Helpers ──
