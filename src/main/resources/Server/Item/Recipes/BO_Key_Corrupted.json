@@ -1,0 +1,26 @@
+{
+  "Input": [
+    {
+      "ItemId": "BO_Key",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "BO_Key_Corrupted",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "BO_Key_Corrupted",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "BlackoutSalvagebench"
+    }
+  ],
+  "TimeSeconds": 20,
+  "OutputQuantity": 1
+}

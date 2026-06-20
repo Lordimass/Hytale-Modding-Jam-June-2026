@@ -1,13 +1,13 @@
 {
   "$Comment": "Placeholder Key crafted at the BO_CraftingMachine bench. No behaviour yet; reserved for unlocking deeper Backrooms levels. Placeholder icon reused from an existing asset.",
   "TranslationProperties": {
-    "Name": "Key"
+    "Name": "Corrupted Key"
   },
-  "Icon": "Icons/ItemsGenerated/BO_Key.png",
+  "Icon": "Icons/ItemsGenerated/BO_Key_Corrupted.png",
   "MaxStack": 1,
   "ItemLevel": 1,
   "Model": "Items/Key/Key.blockymodel",
-  "Texture": "Items/Key/Key_Texture.png",
+  "Texture": "Items/Key/Corrupted_Key_Texture.png",
   "IconProperties": {
     "Scale": 1.5,
     "Rotation": [
@@ -19,5 +19,20 @@
       -4,
       -8
     ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Effect_Poison",
+      "TargetEntityPart": "PrimaryItem",
+      "Color": "#6e199a",
+      "Scale": 0.1,
+      "PositionOffset": {
+        "Z": 0
+      }
+    }
+  ],
+  "Light": {
+    "Color": "#308",
+    "Radius": 0
   }
 }
