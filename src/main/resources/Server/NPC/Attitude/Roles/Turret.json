@@ -9,7 +9,8 @@
     ],
     "Hostile": [
       "Aggressive",
-      "Seeker"
+      "Seeker",
+      "BO_WatchedDummy"
     ]
   }
 }

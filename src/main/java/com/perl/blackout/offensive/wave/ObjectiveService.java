@@ -95,6 +95,9 @@ final class ObjectiveService {
             if (npc == null) {
                 continue;
             }
+            if (WaveGameManager.WATCHED_DUMMY_ROLE.equals(npc.getRoleName())) {
+                continue;
+            }
             Role role = npc.getRole();
             if (role == null) {
                 continue;

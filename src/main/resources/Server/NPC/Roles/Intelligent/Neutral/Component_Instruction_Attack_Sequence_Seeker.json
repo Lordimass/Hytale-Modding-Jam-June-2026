@@ -1,33 +1,31 @@
 {
+  "$Comment": "Looping melee attack driver shared by the Seeker and Watched Dummy. Uses the engine's Hytale.Instruction.AttackSequence instruction, which re-arms/cycles its Attack actions each combat cycle. A plain instruction with a single Type:Attack action only fires once per activation (one swing per state entry); this instruction is what makes the NPC keep attacking while the target stays in range. Reads the LockedTarget slot, which is both the wave force-marked slot (ObjectiveService) and the default target slot self-acquired NPCs lock onto.",
   "Class": "Instruction",
   "Interface": "Hytale.Instruction.AttackSequence",
   "Parameters": {
     "AttackDistance": {
       "Value": 2.5,
-      "Description": "The distance at which an NPC will execute attacks"
+      "Description": "The distance at which the NPC executes attacks"
     },
     "CombatRelativeTurnSpeed": {
       "Value": 1.5,
       "Description": "Modifier that decides turn speed difference in combat"
     },
     "Attack": {
-      "Value": "NPC_Attack_Melee_Damage",
-      "Description": "The melee attack interaction to use"
+      "Value": "Root_NPC_Attack_Melee",
+      "Description": "Root melee interaction; runs the role's Melee_Start (swing) and Melee_Damage vars"
     }
   },
   "Content": {
+    "$Comment": "Range is AttackDistance+1 (not AttackDistance) because the Seek that closes the gap uses StopDistance=AttackDistance; gating the swing at exactly the stop distance leaves the NPC parked just outside the sensor and it never swings. No LineOfSight filter: force-marked objectives (workbench/fence altars) sit at/behind barrier blocks, so requiring LOS stopped the NPC from ever attacking them.",
     "Sensor": {
       "Type": "Target",
+      "TargetSlot": "LockedTarget",
       "Range": {
-        "Compute": "AttackDistance"
-      },
-      "Filters": [
-        {
-          "Type": "LineOfSight"
-        }
-      ]
+        "Compute": "AttackDistance + 1"
+      }
     },
-    "Continue": true,
+    "ActionsBlocking": true,
     "Actions": [
       {
         "Type": "Attack",
@@ -35,8 +33,8 @@
           "Compute": "Attack"
         },
         "AttackPauseRange": [
-          1,
-          2
+          0.6,
+          1.0
         ]
       }
     ],

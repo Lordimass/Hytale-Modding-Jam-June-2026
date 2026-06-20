@@ -1,6 +1,5 @@
 {
   "IncludeRoles": [
-    "Seeker",
-    "SCP_3008"
+    "Seeker"
   ]
 }

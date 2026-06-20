@@ -25,6 +25,7 @@ public final class WaveConfig {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final String FILE_NAME = "waves.json";
+    private static final String WATCHED_DUMMY_ROLE = "BO_WatchedDummy";
 
     /** Substring matched case-insensitively against a world's name to detect a Backrooms instance. */
     public String instanceWorldMatch = "Backrooms";
@@ -36,6 +37,14 @@ public final class WaveConfig {
     public double enemySpawnDistance = 20.0;
     /** Random +/- variation (blocks) applied to {@link #enemySpawnDistance} per enemy. */
     public double enemySpawnDistanceJitter = 6.0;
+    /** Minimum distance from each player for persistent enemies that are maintained around them. */
+    public double persistentEnemySpawnMinDistance = 24.0;
+    /** Maximum distance from each player for persistent enemies that are maintained around them. */
+    public double persistentEnemySpawnMaxDistance = 64.0;
+    /** Distance used to decide if enough persistent enemies are close to a player. */
+    public double persistentEnemyNearbyDistance = 72.0;
+    /** Persistent enemies farther than this from every player are despawned and replaced nearby. */
+    public double persistentEnemyDespawnDistance = 96.0;
     /**
      * Fallback anchor used only to preload a chunk while the instance finishes loading, and to
      * place enemies when no players can be located. Real spawns are relative to players.
@@ -84,6 +93,10 @@ public final class WaveConfig {
     public static final class EnemyGroup {
         public String type = "Seeker";
         public int count = 6;
+        /** True for this specific enemy type when it should survive daybreak. */
+        public boolean persistent = false;
+        /** True when this persistent enemy type should seed as soon as the instance starts. */
+        public boolean spawnOnInitialize = false;
 
         public EnemyGroup() {
         }
@@ -92,15 +105,22 @@ public final class WaveConfig {
             this.type = type;
             this.count = count;
         }
+
+        public EnemyGroup(String type, int count, boolean persistent, boolean spawnOnInitialize) {
+            this.type = type;
+            this.count = count;
+            this.persistent = persistent;
+            this.spawnOnInitialize = spawnOnInitialize;
+        }
     }
 
     private static List<Floor> defaultFloors() {
         Floor floor0 = new Floor();
         floor0.floor = 0;
-        floor0.floorY = 22.0;
-        floor0.persistentEnemies = true;
+        floor0.floorY = 23.0;
         floor0.spawnEnemiesOnInitialize = true;
-        floor0.enemies.add(new EnemyGroup("SCP_3008", 6));
+        floor0.enemies.add(new EnemyGroup("Seeker", 6));
+        floor0.enemies.add(new EnemyGroup("BO_WatchedDummy", 4, true, true));
 
         Floor floor1 = new Floor();
         floor1.floor = 1;
@@ -180,7 +200,30 @@ public final class WaveConfig {
             if (floor.enemies == null) {
                 floor.enemies = new ArrayList<>();
             }
+            if (floor.persistentEnemies) {
+                for (EnemyGroup enemy : floor.enemies) {
+                    enemy.persistent = true;
+                    enemy.spawnOnInitialize = floor.spawnEnemiesOnInitialize;
+                }
+            }
+            if (floor.floor == 0) {
+                ensureWatchedDummyGroup(floor);
+            }
         }
+    }
+
+    private static void ensureWatchedDummyGroup(Floor floor) {
+        for (EnemyGroup enemy : floor.enemies) {
+            if (enemy != null && WATCHED_DUMMY_ROLE.equals(enemy.type)) {
+                enemy.persistent = true;
+                enemy.spawnOnInitialize = true;
+                if (enemy.count <= 0) {
+                    enemy.count = 4;
+                }
+                return;
+            }
+        }
+        floor.enemies.add(new EnemyGroup(WATCHED_DUMMY_ROLE, 4, true, true));
     }
 
     private static boolean isLegacyDefaultFloorList(List<Floor> floors) {

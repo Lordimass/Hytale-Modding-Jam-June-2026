@@ -30,9 +30,8 @@ import com.hypixel.hytale.server.npc.role.support.MarkedEntitySupport;
  * role flag (slot {@link #FLASHLIGHT_FLAG_SLOT}) that the role's FSM reads through {@code Flag}
  * sensors to enter and leave its Scared state.
  *
- * <p>The role also reads {@link #NIGHT_MODE_FLAG_SLOT}. Persistent SCP-3008 enemies follow the
- * wave phase, while normal spawned Seekers force this flag on so they attack their marked target
- * regardless of local light level until they are despawned.
+ * <p>The role also reads {@link #NIGHT_MODE_FLAG_SLOT}. Spawned Seekers force this flag on so they
+ * attack their marked target regardless of local light level until they are despawned.
  *
  * <p>"Lit flashlight" = the held item id belongs to the flashlight family and its resolved item emits
  * light. Only the On state variant carries a {@code Light}, so {@code getItem().getLight() != null}
@@ -94,12 +93,15 @@ final class FlashlightScareService {
             if (npc == null) {
                 continue;
             }
+            if (!SEEKER_ROLE.equals(npc.getRoleName())) {
+                continue;
+            }
             Role role = npc.getRole();
             if (role == null) {
                 continue;
             }
             total++;
-            boolean forceAggressive = SEEKER_ROLE.equals(npc.getRoleName()) || waveAttack;
+            boolean forceAggressive = waveAttack || SEEKER_ROLE.equals(npc.getRoleName());
             boolean scared = forceAggressive && isNearAny(WavePlayers.positionOf(store, enemy), litPlayers);
             if (scared) {
                 flagged++;
