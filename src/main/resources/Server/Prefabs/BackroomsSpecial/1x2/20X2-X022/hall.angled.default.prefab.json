@@ -334,15 +334,13 @@
       "y": 9,
       "z": -3,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -4,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
@@ -368,15 +366,13 @@
       "y": 9,
       "z": -2,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -4,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
@@ -393,13 +389,6 @@
     {
       "x": -4,
       "y": 0,
-      "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": -4,
-      "y": 1,
       "z": -1,
       "name": "BO_Pool_Surface00",
       "rotation": 4
@@ -408,15 +397,13 @@
       "x": -4,
       "y": 9,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
@@ -433,13 +420,6 @@
     {
       "x": -4,
       "y": 0,
-      "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": -4,
-      "y": 1,
       "z": 0,
       "name": "BO_Pool_Surface00",
       "rotation": 4
@@ -448,64 +428,55 @@
       "x": -4,
       "y": 2,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 3,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 4,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 5,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 6,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 7,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 8,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 9,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
@@ -522,13 +493,6 @@
     {
       "x": -4,
       "y": 0,
-      "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": -4,
-      "y": 1,
       "z": 1,
       "name": "BO_Pool_Surface00",
       "rotation": 4
@@ -537,64 +501,55 @@
       "x": -4,
       "y": 2,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 3,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 4,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 5,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 6,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 7,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 8,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 9,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
@@ -617,24 +572,15 @@
     },
     {
       "x": -4,
-      "y": 1,
-      "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": -4,
       "y": 9,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
@@ -660,15 +606,13 @@
       "y": 9,
       "z": 3,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -4,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
@@ -694,15 +638,13 @@
       "y": 9,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -4,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -4,
@@ -827,7 +769,7 @@
       "y": 1,
       "z": 8,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 5
     },
     {
       "x": -4,
@@ -1362,15 +1304,13 @@
       "y": 9,
       "z": -3,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -3,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
@@ -1396,15 +1336,13 @@
       "y": 9,
       "z": -2,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -3,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
@@ -1427,24 +1365,15 @@
     },
     {
       "x": -3,
-      "y": 1,
-      "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": -3,
       "y": 9,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
@@ -1467,24 +1396,15 @@
     },
     {
       "x": -3,
-      "y": 1,
-      "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": -3,
       "y": 9,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
@@ -1507,24 +1427,15 @@
     },
     {
       "x": -3,
-      "y": 1,
-      "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": -3,
       "y": 9,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
@@ -1547,24 +1458,15 @@
     },
     {
       "x": -3,
-      "y": 1,
-      "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": -3,
       "y": 9,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
@@ -1590,15 +1492,13 @@
       "y": 9,
       "z": 3,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -3,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
@@ -1624,15 +1524,13 @@
       "y": 9,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -3,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": -3,
@@ -1757,7 +1655,7 @@
       "y": 1,
       "z": 8,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 5
     },
     {
       "x": -3,
@@ -3997,8 +3895,7 @@
       "y": 8,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
@@ -4038,8 +3935,7 @@
       "y": 8,
       "z": -8,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
@@ -4078,8 +3974,7 @@
       "x": 1,
       "y": 8,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4118,23 +4013,20 @@
       "x": 1,
       "y": 8,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
       "y": 9,
       "z": -6,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 10,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4159,23 +4051,20 @@
       "x": 1,
       "y": 8,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
       "y": 9,
       "z": -5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 10,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4200,23 +4089,20 @@
       "x": 1,
       "y": 8,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
       "y": 9,
       "z": -4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4241,23 +4127,20 @@
       "x": 1,
       "y": 8,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
       "y": 9,
       "z": -3,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4282,8 +4165,7 @@
       "x": 1,
       "y": 8,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4482,8 +4364,7 @@
       "x": 1,
       "y": 8,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4522,23 +4403,20 @@
       "x": 1,
       "y": 8,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
       "y": 9,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4563,23 +4441,20 @@
       "x": 1,
       "y": 8,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
       "y": 9,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4604,23 +4479,20 @@
       "x": 1,
       "y": 8,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
       "y": 9,
       "z": 6,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 10,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4645,23 +4517,20 @@
       "x": 1,
       "y": 8,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
       "y": 9,
       "z": 7,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 10,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4686,8 +4555,7 @@
       "x": 1,
       "y": 8,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 1,
@@ -4727,8 +4595,7 @@
       "y": 8,
       "z": 9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
@@ -4768,8 +4635,7 @@
       "y": 8,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
@@ -4809,24 +4675,21 @@
       "y": 6,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 7,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 8,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
@@ -4880,8 +4743,7 @@
       "y": 8,
       "z": -8,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
@@ -4920,15 +4782,13 @@
       "x": 2,
       "y": 6,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -4967,30 +4827,26 @@
       "x": 2,
       "y": 6,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 9,
       "z": -6,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 10,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5015,30 +4871,26 @@
       "x": 2,
       "y": 6,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 9,
       "z": -5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 10,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5063,30 +4915,26 @@
       "x": 2,
       "y": 6,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 9,
       "z": -4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5111,30 +4959,26 @@
       "x": 2,
       "y": 6,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 9,
       "z": -3,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5159,15 +5003,13 @@
       "x": 2,
       "y": 6,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5268,7 +5110,7 @@
       "y": 8,
       "z": 0,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 2,
@@ -5322,7 +5164,7 @@
       "y": 8,
       "z": 1,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 2,
@@ -5408,15 +5250,13 @@
       "x": 2,
       "y": 6,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5455,30 +5295,26 @@
       "x": 2,
       "y": 6,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 9,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5503,30 +5339,26 @@
       "x": 2,
       "y": 6,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 9,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5551,30 +5383,26 @@
       "x": 2,
       "y": 6,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 9,
       "z": 6,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 10,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5599,30 +5427,26 @@
       "x": 2,
       "y": 6,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 9,
       "z": 7,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 10,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5647,15 +5471,13 @@
       "x": 2,
       "y": 6,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 7,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5709,8 +5531,7 @@
       "y": 8,
       "z": 9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
@@ -5750,24 +5571,21 @@
       "y": 6,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 7,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
       "y": 8,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 2,
@@ -5814,40 +5632,35 @@
       "y": 4,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
       "y": 5,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
       "y": 6,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
       "y": 7,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
       "y": 8,
       "z": -9,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
@@ -5940,22 +5753,19 @@
       "x": 3,
       "y": 1,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -5994,22 +5804,19 @@
       "x": 3,
       "y": 1,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6048,22 +5855,19 @@
       "x": 3,
       "y": 1,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6102,22 +5906,19 @@
       "x": 3,
       "y": 1,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6156,22 +5957,19 @@
       "x": 3,
       "y": 1,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6210,22 +6008,19 @@
       "x": 3,
       "y": 1,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6264,8 +6059,7 @@
       "x": 3,
       "y": 1,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6286,7 +6080,7 @@
       "y": 8,
       "z": -1,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 3,
@@ -6325,8 +6119,7 @@
       "x": 3,
       "y": 1,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6347,21 +6140,21 @@
       "y": 6,
       "z": 0,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 3,
       "y": 7,
       "z": 0,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 3,
       "y": 8,
       "z": 0,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 3,
@@ -6400,8 +6193,7 @@
       "x": 3,
       "y": 1,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6422,21 +6214,21 @@
       "y": 6,
       "z": 1,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 3,
       "y": 7,
       "z": 1,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 3,
       "y": 8,
       "z": 1,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 3,
@@ -6475,8 +6267,7 @@
       "x": 3,
       "y": 1,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6497,7 +6288,7 @@
       "y": 8,
       "z": 2,
       "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "rotation": 2
     },
     {
       "x": 3,
@@ -6536,22 +6327,19 @@
       "x": 3,
       "y": 1,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6590,22 +6378,19 @@
       "x": 3,
       "y": 1,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6644,22 +6429,19 @@
       "x": 3,
       "y": 1,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6698,22 +6480,19 @@
       "x": 3,
       "y": 1,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6752,22 +6531,19 @@
       "x": 3,
       "y": 1,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6806,22 +6582,19 @@
       "x": 3,
       "y": 1,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 4,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
       "y": 5,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 3,
@@ -6922,40 +6695,35 @@
       "y": 4,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
       "y": 5,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
       "y": 6,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
       "y": 7,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
       "y": 8,
       "z": 10,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 3,
@@ -7172,23 +6940,20 @@
       "x": 4,
       "y": 1,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": -7,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7227,23 +6992,20 @@
       "x": 4,
       "y": 1,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": -6,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7282,23 +7044,20 @@
       "x": 4,
       "y": 1,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": -5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7337,23 +7096,20 @@
       "x": 4,
       "y": 1,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": -4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7392,23 +7148,20 @@
       "x": 4,
       "y": 1,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": -3,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7447,23 +7200,20 @@
       "x": 4,
       "y": 1,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": -2,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7502,8 +7252,7 @@
       "x": 4,
       "y": 1,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7591,8 +7340,7 @@
       "x": 4,
       "y": 1,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7680,8 +7428,7 @@
       "x": 4,
       "y": 1,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7769,8 +7516,7 @@
       "x": 4,
       "y": 1,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7858,23 +7604,20 @@
       "x": 4,
       "y": 1,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": 3,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7913,23 +7656,20 @@
       "x": 4,
       "y": 1,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -7968,23 +7708,20 @@
       "x": 4,
       "y": 1,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -8023,23 +7760,20 @@
       "x": 4,
       "y": 1,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": 6,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -8078,23 +7812,20 @@
       "x": 4,
       "y": 1,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": 7,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -8133,23 +7864,20 @@
       "x": 4,
       "y": 1,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
       "y": 2,
       "z": 8,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 4,
       "y": 3,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 4,
@@ -8544,8 +8272,7 @@
       "x": 5,
       "y": 1,
       "z": -7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -8584,8 +8311,7 @@
       "x": 5,
       "y": 1,
       "z": -6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -8624,8 +8350,7 @@
       "x": 5,
       "y": 1,
       "z": -5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -8664,8 +8389,7 @@
       "x": 5,
       "y": 1,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -8704,8 +8428,7 @@
       "x": 5,
       "y": 1,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -8744,8 +8467,7 @@
       "x": 5,
       "y": 1,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -8784,8 +8506,7 @@
       "x": 5,
       "y": 1,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -8873,8 +8594,7 @@
       "x": 5,
       "y": 1,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -8962,8 +8682,7 @@
       "x": 5,
       "y": 1,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -9051,8 +8770,7 @@
       "x": 5,
       "y": 1,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -9140,8 +8858,7 @@
       "x": 5,
       "y": 1,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -9180,8 +8897,7 @@
       "x": 5,
       "y": 1,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -9220,8 +8936,7 @@
       "x": 5,
       "y": 1,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -9260,8 +8975,7 @@
       "x": 5,
       "y": 1,
       "z": 6,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -9300,8 +9014,7 @@
       "x": 5,
       "y": 1,
       "z": 7,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -9340,8 +9053,7 @@
       "x": 5,
       "y": 1,
       "z": 8,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 5,
@@ -9587,6 +9299,34 @@
     {
       "x": -4,
       "y": 1,
+      "z": -1,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 0,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 1,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 2,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -4,
+      "y": 1,
       "z": 3,
       "name": "BO_FloodFluid_Source",
       "level": 1
@@ -9651,6 +9391,34 @@
       "x": -3,
       "y": 1,
       "z": -2,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -1,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 0,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 1,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 2,
       "name": "BO_FloodFluid_Source",
       "level": 1
     },

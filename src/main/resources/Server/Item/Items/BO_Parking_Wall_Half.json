@@ -9,14 +9,12 @@
     "HitSoundLayer": "SFX_Wood_Break"
   },
   "BlockType": {
-    "DrawType": "Model",
     "PlacementSettings": {
       "RotationMode": "FacingPlayer",
       "BlockPreviewVisibility": "AlwaysVisible"
     },
     "IgnoreSupportWhenPlaced": true,
     "Material": "Solid",
-    "Parent": "Rock_Bedrock",
     "CustomModelTexture": [
       {
         "Texture": "Blocks/bo_parking_wall/bo_parking_wall_03.png"
@@ -41,5 +39,5 @@
   "TranslationProperties": {
     "Name": "Parking_Wall_Half"
   },
-  "Parent": "Rock_Bedrock"
+  "Parent": "Build_Black_Half"
 }

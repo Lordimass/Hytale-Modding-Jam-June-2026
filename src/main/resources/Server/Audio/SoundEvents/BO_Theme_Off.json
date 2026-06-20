@@ -2,20 +2,14 @@
   "Parent": "SFX_Torch_On_Loop",
   "Layers": [
     {
-      "Looping": false,
+      "Looping": true,
       "Files": [
         "Sounds/BO_Theme_InActive.ogg"
-      ],
-      "StartDelay": 1,
-      "RandomSettings": {
-        "MinPitch": -0.384,
-        "MaxVolume": 0.36
-      },
-      "Volume": -11.12
+      ]
     }
   ],
-  "MaxDistance": 9,
+  "MaxDistance": 18,
   "SpatialBlend": 0.124,
-  "MaxInstance": 8,
+  "MaxInstance": 3,
   "StartAttenuationDistance": 2
 }

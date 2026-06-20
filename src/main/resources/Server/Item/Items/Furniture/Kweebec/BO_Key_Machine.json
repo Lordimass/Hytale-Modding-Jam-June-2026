@@ -66,10 +66,10 @@
         ]
       }
     },
-    "CustomModel": "Items/Icons/ItemsGenerated/bo_wallpaper_00.blockymodel",
+    "CustomModel": "Blocks/bo_wallpaper/bo_wallpaper_00.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Items/Icons/ItemsGenerated/bo_floor_00_cube_texture.png",
+        "Texture": "Blocks/bo_floor/bo_floor_00_cube_texture.png",
         "Weight": 1
       }
     ],

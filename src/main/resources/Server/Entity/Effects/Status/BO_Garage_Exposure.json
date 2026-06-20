@@ -4,12 +4,7 @@
     "EntityTopTint": "#400000",
     "EntityAnimationId": "Hurt",
     "WorldSoundEventId": "SFX_Effect_Poison_World",
-    "LocalSoundEventId": "SFX_Effect_Poison_Local",
-    "Particles": [
-      {
-        "SystemId": "Effect_Poison"
-      }
-    ]
+    "LocalSoundEventId": "SFX_Effect_Poison_Local"
   },
   "DamageCalculatorCooldown": 1,
   "DamageCalculator": {

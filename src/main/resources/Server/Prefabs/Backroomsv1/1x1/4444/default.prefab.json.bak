@@ -107,7 +107,8 @@
       "x": -4,
       "y": 9,
       "z": -3,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -4,
@@ -153,7 +154,8 @@
       "x": -4,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -4,
@@ -193,7 +195,8 @@
       "x": -4,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -4,
@@ -233,7 +236,8 @@
       "x": -4,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -4,
@@ -273,7 +277,8 @@
       "x": -4,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -4,
@@ -313,7 +318,8 @@
       "x": -4,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -4,
@@ -353,7 +359,8 @@
       "x": -4,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -4,
@@ -393,7 +400,8 @@
       "x": -4,
       "y": 9,
       "z": 4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -4,
@@ -509,7 +517,8 @@
       "x": -3,
       "y": 9,
       "z": -4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -3,
@@ -555,7 +564,7 @@
       "x": -3,
       "y": 9,
       "z": -3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -602,7 +611,7 @@
       "x": -3,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -643,7 +652,7 @@
       "x": -3,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -684,7 +693,7 @@
       "x": -3,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -725,7 +734,7 @@
       "x": -3,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -766,7 +775,7 @@
       "x": -3,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -807,7 +816,7 @@
       "x": -3,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -910,7 +919,8 @@
       "x": -3,
       "y": 9,
       "z": 5,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -3,
@@ -956,7 +966,8 @@
       "x": -2,
       "y": 9,
       "z": -4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -2,
@@ -996,7 +1007,7 @@
       "x": -2,
       "y": 9,
       "z": -3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1037,7 +1048,7 @@
       "x": -2,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1078,7 +1089,7 @@
       "x": -2,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1119,7 +1130,7 @@
       "x": -2,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1160,7 +1171,7 @@
       "x": -2,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1201,7 +1212,7 @@
       "x": -2,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1242,7 +1253,7 @@
       "x": -2,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1298,8 +1309,7 @@
             }
           }
         }
-      },
-      "rotation": 4
+      }
     },
     {
       "x": -2,
@@ -1339,7 +1349,8 @@
       "x": -2,
       "y": 9,
       "z": 5,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -2,
@@ -1379,7 +1390,8 @@
       "x": -1,
       "y": 9,
       "z": -4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -1,
@@ -1419,7 +1431,7 @@
       "x": -1,
       "y": 9,
       "z": -3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1460,7 +1472,7 @@
       "x": -1,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1501,7 +1513,7 @@
       "x": -1,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1542,7 +1554,7 @@
       "x": -1,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1583,7 +1595,7 @@
       "x": -1,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1624,7 +1636,7 @@
       "x": -1,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1665,7 +1677,7 @@
       "x": -1,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1705,7 +1717,7 @@
       "x": -1,
       "y": 9,
       "z": 4,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1746,7 +1758,8 @@
       "x": -1,
       "y": 9,
       "z": 5,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": -1,
@@ -1787,7 +1800,8 @@
       "x": 0,
       "y": 9,
       "z": -4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 0,
@@ -1827,7 +1841,7 @@
       "x": 0,
       "y": 9,
       "z": -3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1868,7 +1882,7 @@
       "x": 0,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1908,7 +1922,7 @@
       "x": 0,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1949,7 +1963,7 @@
       "x": 0,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -1990,7 +2004,7 @@
       "x": 0,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2031,7 +2045,7 @@
       "x": 0,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2072,7 +2086,7 @@
       "x": 0,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2112,7 +2126,7 @@
       "x": 0,
       "y": 9,
       "z": 4,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2153,7 +2167,8 @@
       "x": 0,
       "y": 9,
       "z": 5,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 0,
@@ -2194,7 +2209,8 @@
       "x": 1,
       "y": 9,
       "z": -4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 1,
@@ -2234,7 +2250,7 @@
       "x": 1,
       "y": 9,
       "z": -3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2275,7 +2291,7 @@
       "x": 1,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2315,7 +2331,7 @@
       "x": 1,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2356,7 +2372,7 @@
       "x": 1,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2397,7 +2413,7 @@
       "x": 1,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2438,7 +2454,7 @@
       "x": 1,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2479,7 +2495,7 @@
       "x": 1,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2519,7 +2535,7 @@
       "x": 1,
       "y": 9,
       "z": 4,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2561,7 +2577,8 @@
       "x": 1,
       "y": 9,
       "z": 5,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 1,
@@ -2602,7 +2619,8 @@
       "x": 2,
       "y": 9,
       "z": -4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 2,
@@ -2642,7 +2660,7 @@
       "x": 2,
       "y": 9,
       "z": -3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2683,7 +2701,7 @@
       "x": 2,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2720,7 +2738,7 @@
       "x": 2,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2757,7 +2775,7 @@
       "x": 2,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2794,7 +2812,7 @@
       "x": 2,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2835,7 +2853,7 @@
       "x": 2,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2876,7 +2894,7 @@
       "x": 2,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2916,7 +2934,7 @@
       "x": 2,
       "y": 9,
       "z": 4,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -2958,7 +2976,8 @@
       "x": 2,
       "y": 9,
       "z": 5,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 2,
@@ -2998,7 +3017,8 @@
       "x": 3,
       "y": 9,
       "z": -4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 3,
@@ -3053,8 +3073,7 @@
             }
           }
         }
-      },
-      "rotation": 5
+      }
     },
     {
       "x": 3,
@@ -3094,7 +3113,7 @@
       "x": 3,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3135,7 +3154,7 @@
       "x": 3,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3176,7 +3195,7 @@
       "x": 3,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3217,7 +3236,7 @@
       "x": 3,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3258,7 +3277,7 @@
       "x": 3,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3299,7 +3318,7 @@
       "x": 3,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3340,7 +3359,7 @@
       "x": 3,
       "y": 9,
       "z": 4,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3381,7 +3400,8 @@
       "x": 3,
       "y": 9,
       "z": 5,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 3,
@@ -3421,7 +3441,8 @@
       "x": 4,
       "y": 9,
       "z": -4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 4,
@@ -3482,8 +3503,7 @@
             }
           }
         }
-      },
-      "rotation": 5
+      }
     },
     {
       "x": 4,
@@ -3529,7 +3549,7 @@
       "x": 4,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3570,7 +3590,7 @@
       "x": 4,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3611,7 +3631,7 @@
       "x": 4,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3652,7 +3672,7 @@
       "x": 4,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3693,7 +3713,7 @@
       "x": 4,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3734,7 +3754,7 @@
       "x": 4,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3775,7 +3795,7 @@
       "x": 4,
       "y": 9,
       "z": 4,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 8
     },
     {
@@ -3822,7 +3842,8 @@
       "x": 4,
       "y": 9,
       "z": 5,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 4,
@@ -3938,7 +3959,8 @@
       "x": 5,
       "y": 9,
       "z": -3,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
@@ -3984,7 +4006,8 @@
       "x": 5,
       "y": 9,
       "z": -2,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
@@ -4024,7 +4047,8 @@
       "x": 5,
       "y": 9,
       "z": -1,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
@@ -4064,7 +4088,8 @@
       "x": 5,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
@@ -4104,13 +4129,15 @@
       "x": 5,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
       "y": 10,
       "z": 1,
-      "name": "BO_Parking_Wall00"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
@@ -4144,7 +4171,8 @@
       "x": 5,
       "y": 9,
       "z": 2,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
@@ -4184,7 +4212,8 @@
       "x": 5,
       "y": 9,
       "z": 3,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
@@ -4211,20 +4240,23 @@
       "y": 2,
       "z": 4,
       "name": "BO_Parking_Blacktop",
-      "rotation": 4
+      "support": 15,
+      "rotation": 2
     },
     {
       "x": 5,
       "y": 3,
       "z": 4,
       "name": "BO_Parking_Blacktop",
-      "rotation": 4
+      "support": 15,
+      "rotation": 2
     },
     {
       "x": 5,
       "y": 9,
       "z": 4,
-      "name": "Prototype_Rock_Concrete_Brick_Half"
+      "name": "BO_Parking_Wall03",
+      "support": 15
     },
     {
       "x": 5,
@@ -4307,6 +4339,15 @@
       "y": 10,
       "z": 5,
       "name": "BO_Parking_Wall00"
+    }
+  ],
+  "fluids": [
+    {
+      "x": 5,
+      "y": 2,
+      "z": 4,
+      "name": "Slime_Source",
+      "level": 1
     }
   ]
 }

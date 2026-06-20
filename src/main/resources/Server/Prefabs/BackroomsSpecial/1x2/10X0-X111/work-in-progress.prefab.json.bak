@@ -2105,6 +2105,26 @@
     },
     {
       "x": -3,
+      "y": 11,
+      "z": -2,
+      "name": "*BO_PA_State_Definitions_Active",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Active",
+            "OffState": "Inactive"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      }
+    },
+    {
+      "x": -3,
       "y": 13,
       "z": -2,
       "name": "BO_Ceiling00"

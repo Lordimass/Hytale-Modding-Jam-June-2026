@@ -1443,13 +1443,15 @@
       "x": -9,
       "y": 11,
       "z": 7,
-      "name": "*BO_Wallpaper00_State_Definitions_Wallpaper_Scratched_01"
+      "name": "BO_Wallpaper00",
+      "rotation": 1
     },
     {
       "x": -9,
       "y": 12,
       "z": 7,
-      "name": "*BO_Wallpaper00_State_Definitions_Wallpaper_Scratched_01"
+      "name": "BO_Wallpaper00",
+      "rotation": 1
     },
     {
       "x": -9,
@@ -1527,13 +1529,15 @@
       "x": -9,
       "y": 11,
       "z": 8,
-      "name": "*BO_Wallpaper00_State_Definitions_Wallpaper_Scratched_01"
+      "name": "BO_Wallpaper00",
+      "rotation": 1
     },
     {
       "x": -9,
       "y": 12,
       "z": 8,
-      "name": "*BO_Wallpaper00_State_Definitions_Wallpaper_Scratched_01"
+      "name": "BO_Wallpaper00",
+      "rotation": 1
     },
     {
       "x": -9,
@@ -3664,6 +3668,27 @@
       "y": 6,
       "z": 9,
       "name": "BO_Floor00"
+    },
+    {
+      "x": -7,
+      "y": 11,
+      "z": 9,
+      "name": "*BO_PA_State_Definitions_Active",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Active",
+            "OffState": "Inactive"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -7,
@@ -4161,6 +4186,20 @@
       "y": 0,
       "z": 7,
       "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -6,
+      "y": 1,
+      "z": 7,
+      "name": "*BO_Speaker_State_Definitions_Active",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Active",
+            "OffState": "Inactive"
+          }
+        }
+      }
     },
     {
       "x": -6,
@@ -14312,6 +14351,27 @@
       "y": 6,
       "z": -8,
       "name": "BO_Floor00"
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "z": -8,
+      "name": "*BO_PA_State_Definitions_Active",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Active",
+            "OffState": "Inactive"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 3
     },
     {
       "x": 9,

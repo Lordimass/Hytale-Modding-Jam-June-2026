@@ -11426,9 +11426,29 @@
     },
     {
       "x": -1,
+      "y": 40,
+      "z": 0,
+      "name": "Empty"
+    },
+    {
+      "x": -1,
+      "y": 41,
+      "z": 0,
+      "name": "Empty"
+    },
+    {
+      "x": -1,
       "y": 42,
       "z": 0,
       "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -11723,6 +11743,12 @@
     {
       "x": -1,
       "y": 39,
+      "z": 1,
+      "name": "Empty"
+    },
+    {
+      "x": -1,
+      "y": 40,
       "z": 1,
       "name": "Empty"
     },
@@ -12032,6 +12058,12 @@
     {
       "x": -1,
       "y": 39,
+      "z": 2,
+      "name": "Empty"
+    },
+    {
+      "x": -1,
+      "y": 40,
       "z": 2,
       "name": "Empty"
     },
@@ -12663,9 +12695,29 @@
     },
     {
       "x": -1,
+      "y": 40,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": -1,
+      "y": 41,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": -1,
       "y": 42,
       "z": 4,
       "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -14582,9 +14634,29 @@
     },
     {
       "x": 0,
+      "y": 40,
+      "z": 0,
+      "name": "Empty"
+    },
+    {
+      "x": 0,
+      "y": 41,
+      "z": 0,
+      "name": "Empty"
+    },
+    {
+      "x": 0,
       "y": 42,
       "z": 0,
       "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -15775,9 +15847,29 @@
     },
     {
       "x": 0,
+      "y": 40,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": 0,
+      "y": 41,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": 0,
       "y": 42,
       "z": 4,
       "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -17697,9 +17789,23 @@
     },
     {
       "x": 1,
+      "y": 41,
+      "z": 0,
+      "name": "Empty"
+    },
+    {
+      "x": 1,
       "y": 42,
       "z": 0,
       "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -18891,9 +18997,29 @@
     },
     {
       "x": 1,
+      "y": 40,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": 1,
+      "y": 41,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": 1,
       "y": 42,
       "z": 4,
       "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -20812,9 +20938,23 @@
     },
     {
       "x": 2,
+      "y": 41,
+      "z": 0,
+      "name": "Empty"
+    },
+    {
+      "x": 2,
       "y": 42,
       "z": 0,
       "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -22061,9 +22201,29 @@
     },
     {
       "x": 2,
+      "y": 40,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": 2,
+      "y": 41,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": 2,
       "y": 42,
       "z": 4,
       "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 1
     },
     {
@@ -25266,6 +25426,12 @@
     {
       "x": 3,
       "y": 39,
+      "z": 4,
+      "name": "Empty"
+    },
+    {
+      "x": 3,
+      "y": 40,
       "z": 4,
       "name": "Empty"
     },

@@ -17,7 +17,55 @@
     "IgnoreSupportWhenPlaced": true,
     "Parent": "Rock_Bedrock",
     "Material": "Solid",
-    "VariantRotation": "NESW"
+    "VariantRotation": "NESW",
+    "State": {
+      "Definitions": {
+        "Active": {
+          "BlockType": {
+            "Parent": "Rock_Bedrock",
+            "CustomModel": "Blocks/bo_parking_media/bo_pa.blockymodel",
+            "CustomModelTexture": [
+              {
+                "Texture": "Blocks/bo_parking_media/bo_pa_texture.png"
+              }
+            ],
+            "CustomModelAnimation": "Blocks/bo_parking_media/bo_speaker_active.blockyanim",
+            "Looping": true,
+            "MaxSupportDistance": 14,
+            "IgnoreSupportWhenPlaced": true,
+            "Material": "Solid",
+            "DrawType": "Model"
+          },
+          "AmbientSoundEventId": "BO_Theme_On"
+        },
+        "Inactive": {
+          "BlockType": {
+            "Parent": "Rock_Bedrock",
+            "CustomModel": "Blocks/bo_parking_media/bo_pa.blockymodel",
+            "CustomModelTexture": [
+              {
+                "Texture": "Blocks/bo_parking_media/bo_pa_texture.png"
+              }
+            ],
+            "CustomModelAnimation": "Blocks/bo_parking_media/bo_speaker_active.blockyanim",
+            "AmbientSoundEventId": "BO_Theme_On",
+            "Looping": true,
+            "MaxSupportDistance": 14,
+            "IgnoreSupportWhenPlaced": true,
+            "Material": "Solid"
+          },
+          "AmbientSoundEventId": "BO_Theme_Off"
+        }
+      }
+    },
+    "BlockEntity": {
+      "Components": {
+        "BlackoutCycleState": {
+          "OnState": "Active",
+          "OffState": "Inactive"
+        }
+      }
+    }
   },
   "Icon": "Icons/ItemsGenerated/BO_Speaker.png",
   "IconProperties": {

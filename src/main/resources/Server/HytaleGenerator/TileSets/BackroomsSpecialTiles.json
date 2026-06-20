@@ -13,7 +13,7 @@
 			"Type":	"Auto",
 			"Features":	[],
 			"FolderPath":	"BackroomsSpecial/1x2/10X0-X111",
-			"Weight":	0.25,
+			"Weight":	1,
 			"MinimizeVariants":	false
 		}, {
 			"$NodeId":	"Auto.TileSet.GridWave-bspec000-0000-4000-8000-000000000003",
@@ -61,7 +61,25 @@
 			"$NodeId":	"Auto.TileSet.GridWave-dbb2a6cf-5fee-40fa-85dc-37915e94ab55",
 			"Type":	"Auto",
 			"FolderPath":	"BackroomsSpecial/2x2/44XX-X44X-4XX4-XX44",
-			"Weight":	0.25,
+			"Weight":	1,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-9ceffe6c-f661-429e-a419-2cde34e48383",
+			"Type":	"Auto",
+			"FolderPath":	"BackroomsSpecial/1x2/404X-4X44\n    -50,\n    40\n    -50,\n    40\n    -50,\n    40\n    -50,\n    40",
+			"Weight":	0.75,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-ea4acf88-1357-41ad-925e-2dac5deff2b2",
+			"Type":	"Auto",
+			"FolderPath":	"BackroomsSpecial/1x1/4044\nThe issue is *not everything is configurable* in a mod \n﻿\n﻿\nLike hexcode is *configurable* kinda but it's strewn across the entire \nThe issue is *not everything is configurable* in a mod \n﻿\n﻿\nLike hexcode is *configurable* kinda but it's strewn across the entire \nThe issue is *not everything is configurable* in a mod \n﻿\n﻿\nLike hexcode is *configurable* kinda but it's strewn across the entire \nThe issue is *not everything is configurable* in a mod \n﻿\n﻿\nLike hexcode is *configurable* kinda but it's strewn across the entire \nThe issue is *not everything is configurable* in a mod \n﻿\n﻿\nLike hexcode is *configurable* kinda but it's strewn across the entire ",
+			"Weight":	0.5,
+			"MinimizeVariants":	false
+		}, {
+			"$NodeId":	"Auto.TileSet.GridWave-34056d70-6023-4d19-9dee-77d8023280d3",
+			"Type":	"Auto",
+			"FolderPath":	"BackroomsSpecial/1x1/4004",
+			"Weight":	0.5,
 			"MinimizeVariants":	false
 		}],
 	"ExportAs":	"BackroomsSpecialTiles",
@@ -126,6 +144,24 @@
 				"$Position":	{
 					"$x":	4101,
 					"$y":	2444
+				}
+			},
+			"Auto.TileSet.GridWave-9ceffe6c-f661-429e-a419-2cde34e48383":	{
+				"$Position":	{
+					"$x":	4119,
+					"$y":	2644
+				}
+			},
+			"Auto.TileSet.GridWave-ea4acf88-1357-41ad-925e-2dac5deff2b2":	{
+				"$Position":	{
+					"$x":	4120,
+					"$y":	2850
+				}
+			},
+			"Auto.TileSet.GridWave-34056d70-6023-4d19-9dee-77d8023280d3":	{
+				"$Position":	{
+					"$x":	4104,
+					"$y":	3051
 				}
 			}
 		},

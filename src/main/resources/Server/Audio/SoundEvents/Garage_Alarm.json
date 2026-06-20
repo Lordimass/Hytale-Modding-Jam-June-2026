@@ -10,6 +10,11 @@
       ],
       "RoundRobinHistorySize": 0,
       "Looping": true
+    },
+    {
+      "Files": [
+        "Sounds/Creature_Audio.ogg"
+      ]
     }
   ],
   "MaxDistance": 8

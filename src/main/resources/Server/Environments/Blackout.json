@@ -493,7 +493,7 @@
   },
   "WeatherForecastSeed": "1",
   "SpawnDensity": 1,
-  "BlockModificationAllowed": false,
+  "BlockModificationAllowed": true,
   "WeatherForecasts": {
     "0": [
       {

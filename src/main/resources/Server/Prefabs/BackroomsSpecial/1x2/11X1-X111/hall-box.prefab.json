@@ -7095,7 +7095,8 @@
       "y": 7,
       "z": 0,
       "name": "Deco_Moving_Box1x2",
-      "rotation": 3
+      "filler": 992,
+      "rotation": 1
     },
     {
       "x": 2,
@@ -7161,8 +7162,7 @@
       "y": 7,
       "z": 1,
       "name": "Deco_Moving_Box1x2",
-      "filler": 32,
-      "rotation": 3
+      "rotation": 1
     },
     {
       "x": 2,
