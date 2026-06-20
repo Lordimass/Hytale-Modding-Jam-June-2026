@@ -28,14 +28,14 @@
       }
     ]
   },
-  "Icon": "Icons/ItemsGenerated/Furniture_Kweebec_Bed.png",
+  "Icon": "Icons/ItemsGenerated/BO_Key_Machine.png",
   "IconProperties": {
+    "Scale": 0.385,
     "Rotation": [
       22.5,
       45,
       22.5
     ],
-    "Scale": 0.385,
     "Translation": [
       10.9,
       -7.1

@@ -23707,8 +23707,7 @@
             }
           }
         }
-      },
-      "support": 15
+      }
     },
     {
       "x": -1,
@@ -26521,8 +26520,7 @@
             }
           }
         }
-      },
-      "support": 15
+      }
     },
     {
       "x": 0,
@@ -26793,8 +26791,7 @@
             }
           }
         }
-      },
-      "support": 15
+      }
     },
     {
       "x": 0,
@@ -29624,8 +29621,7 @@
             }
           }
         }
-      },
-      "support": 15
+      }
     },
     {
       "x": 1,
@@ -48875,6 +48871,7 @@
             "Roll": 0.0
           }
         },
+        "FromPrefab": {},
         "PrefabCopyable": {},
         "SpawnSuppression": {
           "SpawnSuppression": "Spawn_Camp"
@@ -48888,7 +48885,7 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "zp2J3mblPpmehj+vCsP1Ig==",
+            "$binary": "Kku7sjODOuW3c0vxrwyZ2A==",
             "$type": "04"
           }
         }

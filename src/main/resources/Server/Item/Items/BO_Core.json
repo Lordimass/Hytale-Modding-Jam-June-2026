@@ -22,12 +22,10 @@
     "VariantRotation": "NESW",
     "Bench": {
       "Type": "Processing",
-      "LocalOpenSoundEventId": "SFX_Unbreakable_Block"
-    },
-    "BlockEntity": {
-      "Components": {
-        "BenchBlock": {}
-      }
+      "LocalOpenSoundEventId": "SFX_Unbreakable_Block",
+      "Input": [
+        {}
+      ]
     },
     "State": {
       "Definitions": {

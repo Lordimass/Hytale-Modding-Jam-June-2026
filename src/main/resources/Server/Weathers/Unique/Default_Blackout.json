@@ -175,19 +175,19 @@
   "FogColors": [
     {
       "Hour": 3,
-      "Color": "#222305"
+      "Color": "#000000"
     },
     {
       "Hour": 5,
-      "Color": "#747550"
+      "Color": "#000000"
     },
     {
       "Hour": 7,
-      "Color": "#535119"
+      "Color": "#000000"
     },
     {
       "Hour": 17,
-      "Color": "#99946c"
+      "Color": "#000000"
     },
     {
       "Hour": 19,
@@ -196,6 +196,10 @@
     {
       "Hour": 21,
       "Color": "#616916"
+    },
+    {
+      "Hour": 10,
+      "Color": "#000000"
     }
   ],
   "SunColors": [
@@ -484,7 +488,7 @@
   ],
   "FogDistance": [
     -50,
-    40
+    80
   ],
   "Tags": {
     "Blackout": [
@@ -494,7 +498,7 @@
   "ScreenEffectColors": [
     {
       "Hour": 0,
-      "Color": "#b5a85bff"
+      "Color": "#ffffffff"
     }
   ],
   "Particle": {

@@ -23,6 +23,9 @@ import com.hypixel.hytale.server.core.modules.entity.item.ItemComponent;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import com.hypixel.hytale.server.npc.entities.NPCEntity;
+import com.hypixel.hytale.server.npc.role.Role;
+import com.hypixel.hytale.server.npc.role.support.MarkedEntitySupport;
 import com.perl.blackout.offensive.OffensivePlugin;
 import com.perl.blackout.world.resources.WorldCycleStateResource;
 import com.perl.blackout.world.systems.CyclePhase;
@@ -30,7 +33,7 @@ import com.perl.blackout.world.systems.CyclePhase;
 /**
  * Owns the wave games (one per Backrooms instance world) and drives their phase transitions.
  *
- * <p>The loop is endless: REST (day) and ATTACK (night) alternate purely on their timers — there is
+ * <p>The loop is endless: REST (day) and ATTACK (night) alternate purely on their timers; there is
  * no win or loss. A player-placed crafting machine spawns an optional bench NPC that enemies prefer
  * to target; if it is destroyed the bench reverts to a re-placeable item and enemies fall back to
  * hunting players, but the waves keep coming.
@@ -54,10 +57,14 @@ public final class WaveGameManager {
     public static final String FENCE_BLOCK_ID = "Wood_Softwood_Fence";
     /** NPC role spawned inside a fence so enemies can destroy it when it blocks the bench route. */
     public static final String FENCE_NPC_ROLE = "BO_FenceTarget";
+    /** Persistent level-0 weeping-angel style enemy. */
+    public static final String WATCHED_DUMMY_ROLE = "BO_WatchedDummy";
     /** Block id used to clear (break) a block in the world. */
     public static final String EMPTY_BLOCK_ID = "Empty";
     /** Blocks within which a player's lit flashlight scares a Seeker (~the Seeker's view range). */
     private static final double FLASHLIGHT_SCARE_RANGE = 16.0;
+    private static final int WATCHED_DUMMY_NIGHT_MODE_FLAG_SLOT = 0;
+    private static final String WATCHED_DUMMY_TARGET_SLOT = MarkedEntitySupport.DEFAULT_TARGET_SLOT;
 
     private final WaveConfig config;
     private final EnemySpawnService enemySpawnService = new EnemySpawnService();
@@ -75,7 +82,7 @@ public final class WaveGameManager {
         return games.get(world);
     }
 
-    // ── Lifecycle wiring (called from OffensivePlugin event handlers) ──
+    // Lifecycle wiring.
 
     /** Starts a wave game when a player first enters a matching Backrooms instance world. */
     public void onPlayerAddedToWorld(PlayerRef playerRef, World world) {
@@ -84,11 +91,8 @@ public final class WaveGameManager {
             world.execute(() -> {
                 Store<EntityStore> store = world.getEntityStore().getStore();
                 WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
-                if (floor != null && floor.spawnEnemiesOnInitialize) {
-                    enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
-                    objectiveService.applyTargeting(game, store, world);
-                    flashlightScareService.apply(game, store, world);
-                }
+                enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+                applyEnemyBehaviors(game, store, world);
             });
         }
     }
@@ -111,7 +115,7 @@ public final class WaveGameManager {
         games.clear();
     }
 
-    // ── Game creation ──
+    // Game creation.
 
     /** Creates (once) the wave game for a Backrooms instance world. No-op for non-instance worlds. */
     public WaveGame ensureGame(World world) {
@@ -151,11 +155,8 @@ public final class WaveGameManager {
 
         setLightPhase(world, store, PHASE_LIT);
         WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
-        if (floor != null && floor.spawnEnemiesOnInitialize) {
-            enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
-            objectiveService.applyTargeting(game, store, world);
-            flashlightScareService.apply(game, store, world);
-        }
+        enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+        applyEnemyBehaviors(game, store, world);
 
         game.startPhase(WavePhase.REST, System.currentTimeMillis());
         game.setInitialized(true);
@@ -164,7 +165,7 @@ public final class WaveGameManager {
         LOGGER.atInfo().log("Started wave game in world %s", world.getName());
     }
 
-    // ── Per-tick driver (called from WaveSystem) ──
+    // Per-tick driver.
 
     public void advance(World world, Store<EntityStore> store, long now) {
         WaveGame game = games.get(world);
@@ -190,9 +191,9 @@ public final class WaveGameManager {
                 } else {
                     world.execute(() -> {
                         Store<EntityStore> restStore = world.getEntityStore().getStore();
-                        enemySpawnService.pruneDeadPersistentEnemies(game, restStore);
-                        objectiveService.applyTargeting(game, restStore, world);
-                        flashlightScareService.apply(game, restStore, world);
+                        WaveConfig.Floor floor = resolveCurrentFloor(world, restStore, game);
+                        enemySpawnService.ensurePersistentFloorEnemies(game, restStore, world, config, floor);
+                        applyEnemyBehaviors(game, restStore, world);
                     });
                 }
             }
@@ -202,9 +203,9 @@ public final class WaveGameManager {
                 } else {
                     world.execute(() -> {
                         Store<EntityStore> attackStore = world.getEntityStore().getStore();
-                        enemySpawnService.pruneDeadPersistentEnemies(game, attackStore);
-                        objectiveService.applyTargeting(game, attackStore, world);
-                        flashlightScareService.apply(game, attackStore, world);
+                        WaveConfig.Floor floor = resolveCurrentFloor(world, attackStore, game);
+                        enemySpawnService.ensurePersistentFloorEnemies(game, attackStore, world, config, floor);
+                        applyEnemyBehaviors(game, attackStore, world);
                         garageHazardService.apply(game, world, attackStore, config, elapsed);
                     });
                 }
@@ -225,8 +226,7 @@ public final class WaveGameManager {
             WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
             setLightPhase(world, store, PHASE_DARK);
             enemySpawnService.spawnFloorEnemies(game, store, world, config, floor);
-            objectiveService.applyTargeting(game, store, world);
-            flashlightScareService.apply(game, store, world);
+            applyEnemyBehaviors(game, store, world);
         });
     }
 
@@ -240,11 +240,8 @@ public final class WaveGameManager {
             WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
             setLightPhase(world, store, PHASE_LIT);
             enemySpawnService.despawnAll(game, store);
-            if (floor != null && floor.persistentEnemies) {
-                enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
-            }
-            objectiveService.applyTargeting(game, store, world);
-            flashlightScareService.apply(game, store, world);
+            enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+            applyEnemyBehaviors(game, store, world);
         });
     }
 
@@ -256,7 +253,38 @@ public final class WaveGameManager {
         LOGGER.atInfo().log("Ended wave game in world %s (no players left)", world.getName());
     }
 
-    // ── Bench (crafting machine) ──
+    private void applyEnemyBehaviors(WaveGame game, Store<EntityStore> store, World world) {
+        objectiveService.applyTargeting(game, store, world);
+        syncWatchedDummyPhase(game, store);
+        flashlightScareService.apply(game, store, world);
+    }
+
+    private void syncWatchedDummyPhase(WaveGame game, Store<EntityStore> store) {
+        boolean night = game.getPhase() == WavePhase.ATTACK;
+        for (Ref<EntityStore> enemy : game.getAllEnemiesSnapshot()) {
+            if (enemy == null || !enemy.isValid()) {
+                continue;
+            }
+            NPCEntity npc = store.getComponent(enemy, NPCEntity.getComponentType());
+            if (npc == null || !WATCHED_DUMMY_ROLE.equals(npc.getRoleName())) {
+                continue;
+            }
+            Role role = npc.getRole();
+            if (role == null) {
+                continue;
+            }
+            try {
+                role.setFlag(WATCHED_DUMMY_NIGHT_MODE_FLAG_SLOT, night);
+                if (!night) {
+                    role.getMarkedEntitySupport().setMarkedEntity(WATCHED_DUMMY_TARGET_SLOT, null);
+                }
+            } catch (RuntimeException ex) {
+                LOGGER.atWarning().withCause(ex).log("Failed to update watched dummy phase flag");
+            }
+        }
+    }
+
+    // Bench and barriers.
 
     /** Spawns the bench NPC for a placed crafting machine and registers it as the preferred target. */
     public void onBenchPlaced(World world, Vector3i blockPos) {
@@ -267,13 +295,13 @@ public final class WaveGameManager {
         world.execute(() -> {
             Store<EntityStore> store = world.getEntityStore().getStore();
             if (game.hasBench()) {
-                return; // one bench at a time
+                return;
             }
             Vector3d npcPos = new Vector3d(blockPos.x + 0.5, blockPos.y, blockPos.z + 0.5);
             Ref<EntityStore> ref = objectiveService.spawnBench(store, npcPos);
             if (ref != null) {
                 game.setBench(ref, new Vector3i(blockPos));
-                objectiveService.applyTargeting(game, store, world);
+                applyEnemyBehaviors(game, store, world);
                 WaveMessages.broadcast(world, "Workbench Online", "The Seekers will hunt it now.", false);
             }
         });
@@ -314,7 +342,7 @@ public final class WaveGameManager {
             Ref<EntityStore> ref = fenceTargetService.spawnFenceTarget(store, blockPos);
             if (ref != null) {
                 game.setFenceTarget(blockPos, ref);
-                objectiveService.applyTargeting(game, store, world);
+                applyEnemyBehaviors(game, store, world);
             }
         });
     }
@@ -346,7 +374,7 @@ public final class WaveGameManager {
         }
     }
 
-    // ── Helpers ──
+    // Helpers.
 
     /**
      * Drives the world blackout phase (the new world light system): {@code dark=true} switches all

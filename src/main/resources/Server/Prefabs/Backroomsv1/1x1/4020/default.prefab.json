@@ -1251,7 +1251,7 @@
       "x": -4,
       "y": 9,
       "z": 0,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 2
     },
     {
@@ -1543,7 +1543,7 @@
       "x": -4,
       "y": 9,
       "z": 1,
-      "name": "Prototype_Rock_Concrete_Brick_Half",
+      "name": "BO_Parking_Wall_Half",
       "rotation": 2
     },
     {

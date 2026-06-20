@@ -13,6 +13,7 @@
         "Interactions": [
           {
             "Type": "Selector",
+            "$Comment": "Omnidirectional AOE sweep around the Seeker. A directional Horizontal selector has a narrow vertical band (ExtendTop/Bottom) tuned for humanoid hitboxes and misses the short static objective NPCs (workbench/fence altars), so they took no damage. AOECircle reliably hits both players and objectives. (The one-attack-only bug was the instruction type, not this selector.)",
             "RunTime": 0.18,
             "Selector": {
               "Id": "AOECircle",
@@ -22,6 +23,7 @@
               "Interactions": [
                 {
                   "Type": "Replace",
+                  "DefaultOk": true,
                   "DefaultValue": {
                     "Interactions": [
                       "BO_Seeker_Damage"

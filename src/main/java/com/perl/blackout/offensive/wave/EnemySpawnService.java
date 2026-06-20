@@ -11,9 +11,11 @@ import com.hypixel.hytale.server.core.modules.entitystats.asset.DefaultEntitySta
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.npc.NPCPlugin;
+import com.hypixel.hytale.server.npc.entities.NPCEntity;
 import org.joml.Vector3d;
 
 import javax.annotation.Nullable;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -42,26 +44,52 @@ final class EnemySpawnService {
             LOGGER.atWarning().log("No floor config for floor %s; no enemies spawned", game.getFloor());
             return;
         }
-        if (floor.persistentEnemies) {
-            ensurePersistentFloorEnemies(game, store, world, config, floor);
-            return;
-        }
         spawnConfiguredEnemies(game, store, world, config, floor, false);
+        ensurePersistentFloorEnemies(game, store, world, config, floor);
     }
 
-    /** Spawns persistent enemies for a floor only when none of its tracked persistent enemies are alive. */
+    /** Refills persistent enemy groups for a floor without despawning already-living instances. */
     void ensurePersistentFloorEnemies(WaveGame game, Store<EntityStore> store, World world,
                                       WaveConfig config, @Nullable WaveConfig.Floor floor) {
-        if (floor == null || !floor.persistentEnemies) {
+        if (floor == null || floor.enemies == null || floor.enemies.isEmpty()) {
             return;
         }
         pruneDeadPersistentEnemies(game, store);
-        synchronized (game.getPersistentEnemies()) {
-            if (!game.getPersistentEnemies().isEmpty()) {
-                return;
+        List<Vector3d> players = WavePlayers.positions(world, store);
+        if (!players.isEmpty()) {
+            despawnPersistentEnemiesFarFromPlayers(game, store, players, config.persistentEnemyDespawnDistance);
+        }
+        double minRadius = Math.max(1.0, Math.min(config.persistentEnemySpawnMinDistance,
+                config.persistentEnemySpawnMaxDistance));
+        double maxRadius = Math.max(minRadius, config.persistentEnemySpawnMaxDistance);
+
+        int spawned = 0;
+        for (WaveConfig.EnemyGroup group : floor.enemies) {
+            if (!isPersistentGroup(floor, group) || group.type == null || group.type.isBlank()) {
+                continue;
+            }
+            if (players.isEmpty()) {
+                int alive = countLivePersistentEnemiesByRole(game, store, group.type);
+                int missing = Math.max(0, group.count - alive);
+                if (missing > 0) {
+                    spawned += spawnGroup(game, store, world, config, floor, group.type, missing, true,
+                            players, minRadius, maxRadius);
+                }
+                continue;
+            }
+            for (Vector3d player : players) {
+                int nearby = countLivePersistentEnemiesByRoleNear(game, store, group.type, player,
+                        config.persistentEnemyNearbyDistance);
+                int missing = Math.max(0, group.count - nearby);
+                if (missing > 0) {
+                    spawned += spawnGroupAroundAnchor(game, store, world, group.type, missing, player,
+                            minRadius, maxRadius);
+                }
             }
         }
-        spawnConfiguredEnemies(game, store, world, config, floor, true);
+        if (spawned > 0) {
+            LOGGER.atInfo().log("Spawned %s persistent enemies for floor %s", spawned, game.getFloor());
+        }
     }
 
     void pruneDeadPersistentEnemies(WaveGame game, Store<EntityStore> store) {
@@ -70,52 +98,162 @@ final class EnemySpawnService {
         }
     }
 
+    private int countLivePersistentEnemiesByRole(WaveGame game, Store<EntityStore> store, String roleName) {
+        int alive = 0;
+        synchronized (game.getPersistentEnemies()) {
+            for (Ref<EntityStore> ref : game.getPersistentEnemies()) {
+                if (!isAlive(store, ref)) {
+                    continue;
+                }
+                NPCEntity npc = store.getComponent(ref, NPCEntity.getComponentType());
+                if (npc != null && roleName.equals(npc.getRoleName())) {
+                    alive++;
+                }
+            }
+        }
+        return alive;
+    }
+
+    private int countLivePersistentEnemiesByRoleNear(WaveGame game, Store<EntityStore> store, String roleName,
+                                                     Vector3d anchor, double radius) {
+        double radiusSq = radius * radius;
+        int alive = 0;
+        synchronized (game.getPersistentEnemies()) {
+            for (Ref<EntityStore> ref : game.getPersistentEnemies()) {
+                if (!isAlive(store, ref)) {
+                    continue;
+                }
+                NPCEntity npc = store.getComponent(ref, NPCEntity.getComponentType());
+                if (npc == null || !roleName.equals(npc.getRoleName())) {
+                    continue;
+                }
+                Vector3d pos = WavePlayers.positionOf(store, ref);
+                if (pos != null && pos.distanceSquared(anchor) <= radiusSq) {
+                    alive++;
+                }
+            }
+        }
+        return alive;
+    }
+
+    private void despawnPersistentEnemiesFarFromPlayers(WaveGame game, Store<EntityStore> store,
+                                                       List<Vector3d> players, double despawnDistance) {
+        double despawnDistanceSq = despawnDistance * despawnDistance;
+        synchronized (game.getPersistentEnemies()) {
+            Iterator<Ref<EntityStore>> iterator = game.getPersistentEnemies().iterator();
+            while (iterator.hasNext()) {
+                Ref<EntityStore> ref = iterator.next();
+                if (!isAlive(store, ref)) {
+                    iterator.remove();
+                    continue;
+                }
+                Vector3d pos = WavePlayers.positionOf(store, ref);
+                if (pos == null) {
+                    continue;
+                }
+                boolean closeToAnyPlayer = false;
+                for (Vector3d player : players) {
+                    if (pos.distanceSquared(player) <= despawnDistanceSq) {
+                        closeToAnyPlayer = true;
+                        break;
+                    }
+                }
+                if (!closeToAnyPlayer) {
+                    store.removeEntity(ref, RemoveReason.REMOVE);
+                    iterator.remove();
+                }
+            }
+        }
+    }
+
+    private boolean isPersistentGroup(WaveConfig.Floor floor, @Nullable WaveConfig.EnemyGroup group) {
+        return group != null && (floor.persistentEnemies || group.persistent);
+    }
+
     private void spawnConfiguredEnemies(WaveGame game, Store<EntityStore> store, World world,
                                         WaveConfig config, WaveConfig.Floor floor, boolean persistent) {
+        if (floor.enemies == null || floor.enemies.isEmpty()) {
+            return;
+        }
         List<Vector3d> players = WavePlayers.positions(world, store);
         double minRadius = Math.max(1.0, config.enemySpawnDistance - config.enemySpawnDistanceJitter);
         double maxRadius = config.enemySpawnDistance + config.enemySpawnDistanceJitter;
 
         int spawned = 0;
         for (WaveConfig.EnemyGroup group : floor.enemies) {
-            if (group.type == null || group.type.isBlank()) {
+            if (group == null || group.type == null || group.type.isBlank()) {
                 continue;
             }
-            for (int i = 0; i < group.count; i++) {
-                Ref<EntityStore> ref = null;
-                // Each enemy picks its own anchor + ring position, retrying so it reliably spawns.
-                for (int attempt = 0; attempt < SPAWN_ATTEMPTS && ref == null; attempt++) {
-                    double anchorX;
-                    double anchorZ;
-                    double y;
-                    if (players.isEmpty()) {
-                        anchorX = config.playerSpawn.x;
-                        anchorZ = config.playerSpawn.z;
-                        y = floor.floorY;
-                    } else {
-                        Vector3d anchor = players.get(random.nextInt(players.size()));
-                        anchorX = anchor.x;
-                        anchorZ = anchor.z;
-                        y = anchor.y;
-                    }
-                    Vector3d position = WavePositions.findOpenRing(
-                            world, anchorX, anchorZ, y, minRadius, maxRadius, random);
-                    ref = spawnEnemy(store, group.type, position);
-                }
-                if (ref != null) {
-                    if (persistent) {
-                        game.addPersistentEnemy(ref);
-                    } else {
-                        game.addEnemy(ref);
-                    }
-                    spawned++;
+            if (isPersistentGroup(floor, group) != persistent) {
+                continue;
+            }
+            spawned += spawnGroup(game, store, world, config, floor, group.type, group.count, persistent,
+                    players, minRadius, maxRadius);
+        }
+        if (spawned > 0) {
+            LOGGER.atInfo().log("Spawned %s %s enemies for floor %s",
+                    spawned, persistent ? "persistent" : "wave", game.getFloor());
+        }
+    }
+
+    private int spawnGroup(WaveGame game, Store<EntityStore> store, World world, WaveConfig config,
+                           WaveConfig.Floor floor, String role, int count, boolean persistent,
+                           List<Vector3d> players, double minRadius, double maxRadius) {
+        int spawned = 0;
+        for (int i = 0; i < count; i++) {
+            Ref<EntityStore> ref = null;
+            // Each enemy picks its own anchor + ring position, retrying so it reliably spawns.
+            for (int attempt = 0; attempt < SPAWN_ATTEMPTS && ref == null; attempt++) {
+                double anchorX;
+                double anchorZ;
+                double y;
+                if (players.isEmpty()) {
+                    anchorX = config.playerSpawn.x;
+                    anchorZ = config.playerSpawn.z;
+                    y = floor.floorY;
                 } else {
-                    LOGGER.atWarning().log("Gave up spawning a '%s' after %s attempts", group.type, SPAWN_ATTEMPTS);
+                    Vector3d anchor = players.get(random.nextInt(players.size()));
+                    anchorX = anchor.x;
+                    anchorZ = anchor.z;
+                    y = anchor.y;
                 }
+                Vector3d position = WavePositions.findOpenRing(
+                        world, anchorX, anchorZ, y, minRadius, maxRadius, random);
+                ref = spawnEnemy(store, role, position);
+            }
+            if (ref != null) {
+                if (persistent) {
+                    game.addPersistentEnemy(ref);
+                } else {
+                    game.addEnemy(ref);
+                }
+                spawned++;
+            } else {
+                LOGGER.atWarning().log("Gave up spawning a '%s' after %s attempts", role, SPAWN_ATTEMPTS);
             }
         }
-        LOGGER.atInfo().log("Spawned %s %s enemies for floor %s",
-                spawned, persistent ? "persistent" : "wave", game.getFloor());
+        return spawned;
+    }
+
+    private int spawnGroupAroundAnchor(WaveGame game, Store<EntityStore> store, World world, String role, int count,
+                                       Vector3d anchor, double minRadius, double maxRadius) {
+        int spawned = 0;
+        for (int i = 0; i < count; i++) {
+            Ref<EntityStore> ref = null;
+            for (int attempt = 0; attempt < SPAWN_ATTEMPTS && ref == null; attempt++) {
+                Vector3d position = WavePositions.findOpenRing(
+                        world, anchor.x, anchor.z, anchor.y, minRadius, maxRadius, random);
+                ref = spawnEnemy(store, role, position);
+            }
+            if (ref != null) {
+                game.addPersistentEnemy(ref);
+                spawned++;
+            } else {
+                LOGGER.atWarning().log("Gave up spawning a persistent '%s' after %s attempts",
+                        role, SPAWN_ATTEMPTS);
+            }
+        }
+        return spawned;
     }
 
     @Nullable

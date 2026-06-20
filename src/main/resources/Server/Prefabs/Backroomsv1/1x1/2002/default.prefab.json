@@ -197,8 +197,7 @@
       "y": 1,
       "z": -2,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -4,
@@ -777,8 +776,7 @@
       "y": 1,
       "z": -2,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -3,
@@ -1258,8 +1256,7 @@
       "y": 1,
       "z": -2,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -2,
@@ -1947,16 +1944,14 @@
       "y": 2,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -1,
       "y": 3,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -1,
@@ -2040,16 +2035,14 @@
       "y": 2,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -1,
       "y": 3,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": -1,
@@ -2414,16 +2407,14 @@
       "y": 2,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 0,
       "y": 3,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 0,
@@ -2507,16 +2498,14 @@
       "y": 2,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 0,
       "y": 3,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 0,
@@ -2881,16 +2870,14 @@
       "y": 2,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 3,
       "z": 4,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
@@ -2974,16 +2961,14 @@
       "y": 2,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
       "y": 3,
       "z": 5,
       "name": "BO_Pool_Surface00",
-      "support": 15,
-      "rotation": 4
+      "support": 15
     },
     {
       "x": 1,
@@ -3160,15 +3145,13 @@
       "x": 2,
       "y": 9,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -3194,15 +3177,13 @@
       "x": 2,
       "y": 9,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -3228,15 +3209,13 @@
       "x": 2,
       "y": 9,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "BO_Pool_Surface00"
     },
     {
       "x": 2,
@@ -5823,6 +5802,13 @@
     {
       "x": -4,
       "y": 1,
+      "z": -2,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -4,
+      "y": 1,
       "z": -1,
       "name": "BO_FloodFluid_Source",
       "level": 1
@@ -5851,6 +5837,13 @@
     {
       "x": -3,
       "y": 1,
+      "z": -2,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -3,
+      "y": 1,
       "z": -1,
       "name": "BO_FloodFluid_Source",
       "level": 1
@@ -5873,6 +5866,13 @@
       "x": -3,
       "y": 1,
       "z": 2,
+      "name": "BO_FloodFluid_Source",
+      "level": 1
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -2,
       "name": "BO_FloodFluid_Source",
       "level": 1
     },

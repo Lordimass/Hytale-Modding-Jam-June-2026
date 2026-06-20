@@ -1,0 +1,349 @@
+{
+  "Debug": "DisplayState",
+  "Type": "Abstract",
+  "Appearance": "BO_WatchedDummy",
+  "Parameters": {
+    "DropList": {
+      "Value": "Empty",
+      "Description": "Drop items"
+    },
+    "Appearance": {
+      "Value": "BO_WatchedDummy",
+      "Description": "Model to use"
+    },
+    "MaxHealth": {
+      "Value": 120,
+      "Description": "Max health for the NPC"
+    },
+    "ViewRange": {
+      "Value": 15,
+      "Description": "Range within which the dummy can detect and keep a player target"
+    },
+    "ViewSector": {
+      "Value": 180,
+      "Description": "View sector used when finding a player target"
+    },
+    "HearingRange": {
+      "Value": 15,
+      "Description": "Range within which the dummy can detect a nearby uncrouched player"
+    },
+    "AttackDistance": {
+      "Value": 2.3,
+      "Description": "Distance at which the dummy attacks"
+    },
+    "RelativeChaseSpeed": {
+      "Value": 1,
+      "Description": "Relative movement speed while chasing a detected player"
+    },
+    "NameTranslationKey": {
+      "Value": "npcRoles.BO_WatchedDummy.name",
+      "Description": "Translation key for NPC name display"
+    }
+  },
+  "DropList": {
+    "Compute": "DropList"
+  },
+  "MaxHealth": {
+    "Compute": "MaxHealth"
+  },
+  "Appearance": {
+    "Compute": "Appearance"
+  },
+  "NameTranslationKey": {
+    "Compute": "NameTranslationKey"
+  },
+  "DisableDamageGroups": [
+    "Self"
+  ],
+  "StartState": "Peaceful",
+  "DefaultPlayerAttitude": "Hostile",
+  "DefaultNPCAttitude": "Ignore",
+  "KnockbackScale": 0.4,
+  "MotionControllerList": [
+    {
+      "Type": "Walk",
+      "MaxWalkSpeed": 2.4,
+      "Gravity": 10,
+      "MaxFallSpeed": 8,
+      "Acceleration": 10
+    }
+  ],
+  "InteractionVars": {
+    "Melee_Start": {
+      "Interactions": [
+        {
+          "Parent": "BO_Seeker_Swing"
+        }
+      ]
+    },
+    "Melee_Damage": {
+      "Interactions": [
+        {
+          "Parent": "BO_Seeker_Damage"
+        }
+      ]
+    }
+  },
+  "Instructions": [
+    {
+      "Instructions": [
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Peaceful"
+          },
+          "Instructions": [
+            {
+              "Reference": "Component_Instruction_Clear_Status_Animation"
+            },
+            {
+              "Sensor": {
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Flag",
+                    "Name": "NightMode",
+                    "Set": true
+                  },
+                  {
+                    "Type": "Or",
+                    "Sensors": [
+                      {
+                        "Type": "Player",
+                        "Range": 2,
+                        "LockOnTarget": true,
+                        "Filters": [
+                          {
+                            "Type": "LineOfSight"
+                          }
+                        ]
+                      },
+                      {
+                        "Reference": "Component_Sensor_Sight_By_Attitude",
+                        "Modify": {
+                          "ViewRange": {
+                            "Compute": "ViewRange"
+                          },
+                          "ViewSector": {
+                            "Compute": "ViewSector"
+                          },
+                          "Attitudes": [
+                            "Hostile"
+                          ],
+                          "GetNPCs": false
+                        }
+                      },
+                      {
+                        "Reference": "Component_Sensor_Sound_By_Attitude",
+                        "Modify": {
+                          "HearingRange": {
+                            "Compute": "HearingRange"
+                          },
+                          "ThroughWalls": false,
+                          "Attitudes": [
+                            "Hostile"
+                          ],
+                          "GetNPCs": false
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "Actions": [
+                {
+                  "Type": "State",
+                  "State": "Chase"
+                }
+              ]
+            },
+            {
+              "Sensor": {
+                "Type": "Any"
+              }
+            }
+          ]
+        },
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Frozen"
+          },
+          "Instructions": [
+            {
+              "Sensor": {
+                "Type": "Flag",
+                "Name": "NightMode",
+                "Set": false
+              },
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Peaceful"
+                }
+              ]
+            },
+            {
+              "Sensor": {
+                "Type": "Target",
+                "Range": {
+                  "Compute": "ViewRange"
+                },
+                "AutoUnlockTarget": true,
+                "Filters": [
+                  {
+                    "Type": "SpotsMe",
+                    "ViewAngle": 60
+                  }
+                ]
+              },
+              "ActionsBlocking": true,
+              "Actions": [
+                {
+                  "Type": "Timeout",
+                  "Delay": [
+                    0.05,
+                    0.05
+                  ]
+                }
+              ],
+              "HeadMotion": {
+                "Type": "Watch"
+              }
+            },
+            {
+              "Sensor": {
+                "Type": "Target",
+                "Range": {
+                  "Compute": "ViewRange"
+                }
+              },
+              "Actions": [
+                {
+                  "Type": "State",
+                  "State": "Chase"
+                }
+              ]
+            },
+            {
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Peaceful"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Chase"
+          },
+          "Instructions": [
+            {
+              "Sensor": {
+                "Type": "Flag",
+                "Name": "NightMode",
+                "Set": false
+              },
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Peaceful"
+                }
+              ]
+            },
+            {
+              "Reference": "Component_Instruction_Clear_Status_Animation"
+            },
+            {
+              "Sensor": {
+                "Type": "Target",
+                "Range": {
+                  "Compute": "ViewRange"
+                },
+                "AutoUnlockTarget": true
+              },
+              "Instructions": [
+                {
+                  "Sensor": {
+                    "Type": "Target",
+                    "Range": {
+                      "Compute": "ViewRange"
+                    },
+                    "Filters": [
+                      {
+                        "Type": "SpotsMe",
+                        "ViewAngle": 60
+                      }
+                    ]
+                  },
+                  "Actions": [
+                    {
+                      "Type": "State",
+                      "State": "Frozen"
+                    }
+                  ]
+                },
+                {
+                  "$Comment": "Loop melee swings while the player is in reach. Uses the AttackSequence instruction so the dummy keeps attacking; a hand-rolled Type:Attack action in a plain instruction only fired once per Chase entry. Falls through to the Seek below when the player is out of attack range.",
+                  "Reference": "Component_Instruction_Attack_Sequence_Seeker",
+                  "Modify": {
+                    "AttackDistance": {
+                      "Compute": "AttackDistance"
+                    },
+                    "CombatRelativeTurnSpeed": 1.5
+                  }
+                },
+                {
+                  "Sensor": {
+                    "Type": "Target",
+                    "Range": {
+                      "Compute": "ViewRange"
+                    }
+                  },
+                  "BodyMotion": {
+                    "Type": "Seek",
+                    "SlowDownDistance": {
+                      "Compute": "AttackDistance + 2"
+                    },
+                    "StopDistance": {
+                      "Compute": "AttackDistance"
+                    },
+                    "RelativeSpeed": {
+                      "Compute": "RelativeChaseSpeed"
+                    }
+                  },
+                  "HeadMotion": {
+                    "Type": "Watch"
+                  }
+                }
+              ]
+            },
+            {
+              "Actions": [
+                {
+                  "Type": "ReleaseTarget"
+                },
+                {
+                  "Type": "State",
+                  "State": "Peaceful"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

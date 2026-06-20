@@ -79,8 +79,16 @@
       "x": -4,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -169,8 +177,16 @@
       "x": -4,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -259,8 +275,16 @@
       "x": -4,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -335,8 +359,16 @@
       "x": -4,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -411,8 +443,16 @@
       "x": -4,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -487,8 +527,16 @@
       "x": -4,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -563,8 +611,16 @@
       "x": -4,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -653,8 +709,16 @@
       "x": -4,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -743,8 +807,16 @@
       "x": -4,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -833,8 +905,16 @@
       "x": -4,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -4,
@@ -923,8 +1003,16 @@
       "x": -3,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1014,8 +1102,16 @@
       "x": -3,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1105,8 +1201,16 @@
       "x": -3,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1182,8 +1286,16 @@
       "x": -3,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1259,8 +1371,16 @@
       "x": -3,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1336,8 +1456,16 @@
       "x": -3,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1413,8 +1541,16 @@
       "x": -3,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1504,8 +1640,16 @@
       "x": -3,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1595,8 +1739,16 @@
       "x": -3,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1686,8 +1838,16 @@
       "x": -3,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -3,
@@ -1728,8 +1888,16 @@
       "x": -2,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -1769,8 +1937,16 @@
       "x": -2,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -1810,8 +1986,16 @@
       "x": -2,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -1851,8 +2035,16 @@
       "x": -2,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -1892,8 +2084,16 @@
       "x": -2,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -1933,8 +2133,16 @@
       "x": -2,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -1974,8 +2182,16 @@
       "x": -2,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -2015,8 +2231,16 @@
       "x": -2,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -2056,8 +2280,16 @@
       "x": -2,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -2097,8 +2329,16 @@
       "x": -2,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -2,
@@ -2131,8 +2371,16 @@
       "x": -1,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2165,8 +2413,16 @@
       "x": -1,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2199,8 +2455,16 @@
       "x": -1,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2233,8 +2497,16 @@
       "x": -1,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2267,8 +2539,16 @@
       "x": -1,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2301,8 +2581,16 @@
       "x": -1,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2335,8 +2623,16 @@
       "x": -1,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2369,8 +2665,16 @@
       "x": -1,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2403,8 +2707,16 @@
       "x": -1,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2437,8 +2749,16 @@
       "x": -1,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": -1,
@@ -2471,8 +2791,16 @@
       "x": 0,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 0,
@@ -2505,8 +2833,16 @@
       "x": 0,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 0,
@@ -2609,8 +2945,16 @@
       "x": 0,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 0,
@@ -2643,8 +2987,16 @@
       "x": 0,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 0,
@@ -2747,8 +3099,16 @@
       "x": 0,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 0,
@@ -2781,8 +3141,16 @@
       "x": 0,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 0,
@@ -2815,8 +3183,16 @@
       "x": 1,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 1,
@@ -2849,8 +3225,16 @@
       "x": 1,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 1,
@@ -2953,8 +3337,16 @@
       "x": 1,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 1,
@@ -2987,8 +3379,16 @@
       "x": 1,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 1,
@@ -3091,53 +3491,69 @@
       "x": 1,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": 1,
-      "y": 14,
-      "z": 4,
-      "name": "BO_Pool_Surface00",
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
       "rotation": 2
     },
     {
       "x": 1,
-      "y": 15,
-      "z": 4,
-      "name": "Build_Black_Cube"
-    },
-    {
-      "x": 1,
-      "y": 0,
-      "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": 1,
-      "y": 9,
-      "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": 1,
-      "y": 10,
-      "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
-    },
-    {
-      "x": 1,
       "y": 14,
-      "z": 5,
+      "z": 4,
       "name": "BO_Pool_Surface00",
       "rotation": 2
     },
     {
       "x": 1,
       "y": 15,
+      "z": 4,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Pool_Surface00",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Pool_Surface00",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 5,
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": 5,
+      "name": "BO_Pool_Surface00",
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 15,
       "z": 5,
       "name": "Build_Black_Cube"
     },
@@ -3159,8 +3575,16 @@
       "x": 2,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3193,8 +3617,16 @@
       "x": 2,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3227,8 +3659,16 @@
       "x": 2,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3261,8 +3701,16 @@
       "x": 2,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3295,8 +3743,16 @@
       "x": 2,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3329,8 +3785,16 @@
       "x": 2,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3363,8 +3827,16 @@
       "x": 2,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3397,8 +3869,16 @@
       "x": 2,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3431,8 +3911,16 @@
       "x": 2,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3465,8 +3953,16 @@
       "x": 2,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 2,
@@ -3506,8 +4002,16 @@
       "x": 3,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3547,8 +4051,16 @@
       "x": 3,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3588,8 +4100,16 @@
       "x": 3,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3629,8 +4149,16 @@
       "x": 3,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3670,8 +4198,16 @@
       "x": 3,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3711,8 +4247,16 @@
       "x": 3,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3752,8 +4296,16 @@
       "x": 3,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3793,8 +4345,16 @@
       "x": 3,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3834,8 +4394,16 @@
       "x": 3,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3875,8 +4443,16 @@
       "x": 3,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 3,
@@ -3965,8 +4541,16 @@
       "x": 4,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4056,8 +4640,16 @@
       "x": 4,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4147,8 +4739,16 @@
       "x": 4,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4237,8 +4837,16 @@
       "x": 4,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4327,8 +4935,16 @@
       "x": 4,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4417,8 +5033,16 @@
       "x": 4,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4507,8 +5131,16 @@
       "x": 4,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4597,8 +5229,16 @@
       "x": 4,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4687,8 +5327,16 @@
       "x": 4,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4778,8 +5426,16 @@
       "x": 4,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 4,
@@ -4869,8 +5525,16 @@
       "x": 5,
       "y": 10,
       "z": -4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -4959,8 +5623,16 @@
       "x": 5,
       "y": 10,
       "z": -3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -5049,8 +5721,16 @@
       "x": 5,
       "y": 10,
       "z": -2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -5139,8 +5819,16 @@
       "x": 5,
       "y": 10,
       "z": -1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -5229,8 +5917,16 @@
       "x": 5,
       "y": 10,
       "z": 0,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -5319,8 +6015,16 @@
       "x": 5,
       "y": 10,
       "z": 1,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -5409,8 +6113,16 @@
       "x": 5,
       "y": 10,
       "z": 2,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -5499,8 +6211,16 @@
       "x": 5,
       "y": 10,
       "z": 3,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -5589,8 +6309,16 @@
       "x": 5,
       "y": 10,
       "z": 4,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,
@@ -5679,8 +6407,16 @@
       "x": 5,
       "y": 10,
       "z": 5,
-      "name": "BO_Pool_Surface00",
-      "rotation": 4
+      "name": "*BO_Lightsource_Cycle_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          }
+        }
+      },
+      "rotation": 2
     },
     {
       "x": 5,

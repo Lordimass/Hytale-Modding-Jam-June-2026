@@ -85,18 +85,18 @@ final class GarageHazardService {
         NotificationStyle style;
         switch (milestone) {
             case 0 -> {
-                title = "The lights are red";
-                subtitle = "Get into a bunker and shut your hatch.";
+                title = "GO UNDER GROUND!";
+                subtitle = "I don't have time to explain";
                 style = NotificationStyle.Warning;
             }
             case 1 -> {
-                title = "Exposure";
-                subtitle = "The surface is poisoning you. Get inside now.";
+                title = "It's getting closer";
+                subtitle = "";
                 style = NotificationStyle.Danger;
             }
             default -> {
-                title = "Lethal";
-                subtitle = "The surface is killing anyone exposed.";
+                title = "I think this is it";
+                subtitle = "The killing spree has begun...";
                 style = NotificationStyle.Danger;
             }
         }

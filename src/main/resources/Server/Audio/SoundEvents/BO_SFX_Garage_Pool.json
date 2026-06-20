@@ -1,0 +1,37 @@
+{
+  "Layers": [
+    {
+      "RandomSettings": {
+        "MinPitch": 0,
+        "MaxVolume": 0
+      },
+      "RoundRobinHistorySize": 0,
+      "Looping": true,
+      "Files": [
+        "Sounds/Heartbeat.ogg"
+      ]
+    },
+    {
+      "Files": [
+        "Sounds/Monster_Scream_1.ogg",
+        "Sounds/Monster_Scream_2.ogg",
+        "Sounds/Garage_Alarm_3.ogg"
+      ],
+      "Looping": true,
+      "RandomSettings": {
+        "MinPitch": -10.272
+      },
+      "StartDelay": 5,
+      "Probability": 75
+    },
+    {
+      "Files": [
+        "Sounds/Creature_Walk_Past.ogg"
+      ],
+      "ProbabilityRerollDelay": 30,
+      "Probability": 50
+    }
+  ],
+  "MaxDistance": 8,
+  "SpatialBlend": 0
+}

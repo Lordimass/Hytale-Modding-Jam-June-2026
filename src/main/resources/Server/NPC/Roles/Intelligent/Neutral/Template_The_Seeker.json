@@ -233,7 +233,7 @@
           },
           "Instructions": [
             {
-              "$Comment": "Lights-on/rest mode immediately makes persistent SCP-3008 style variants passive again.",
+              "$Comment": "Lights-on/rest mode immediately makes persistent variants passive again.",
               "Sensor": {
                 "Type": "Flag",
                 "Name": "NightMode",
@@ -336,7 +336,7 @@
           },
           "Instructions": [
             {
-              "$Comment": "Lights-on/rest mode calms persistent SCP-3008 style variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
+              "$Comment": "Lights-on/rest mode calms persistent variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
               "Sensor": {
                 "Type": "Flag",
                 "Name": "NightMode",
@@ -487,7 +487,7 @@
           },
           "Instructions": [
             {
-              "$Comment": "Lights-on/rest mode calms persistent SCP-3008 style variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
+              "$Comment": "Lights-on/rest mode calms persistent variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
               "Sensor": {
                 "Type": "Flag",
                 "Name": "NightMode",
@@ -534,48 +534,13 @@
               "Reference": "Component_Instruction_Clear_Status_Animation"
             },
             {
-              "$Comment": "Commit to the swing once the target is in reach. Blocking with a pre/post delay (like the wolf) so the attack animation and damage actually resolve instead of being cut short by the seek motion below.",
-              "Continue": true,
-              "Sensor": {
-                "Type": "Target",
-                "TargetSlot": "LockedTarget",
-                "Range": {
-                  "Compute": "AttackDistance + 1"
-                }
-              },
-              "ActionsBlocking": true,
-              "Actions": [
-                {
-                  "Type": "PlaySound",
-                  "Once": true,
-                  "SoundEventId": "BO_SFX_Monster_Attack"
+              "$Comment": "Loop melee swings while the target is in reach. Uses the AttackSequence instruction so the NPC re-arms and keeps attacking; a hand-rolled Type:Attack action in a plain instruction only fires once per state entry. Falls through to the Seek below when the target is out of attack range.",
+              "Reference": "Component_Instruction_Attack_Sequence_Seeker",
+              "Modify": {
+                "AttackDistance": {
+                  "Compute": "AttackDistance"
                 },
-                {
-                  "Type": "Timeout",
-                  "Delay": [
-                    0.3,
-                    0.3
-                  ]
-                },
-                {
-                  "Type": "Attack",
-                  "Attack": "Root_NPC_Attack_Melee",
-                  "AttackPauseRange": [
-                    0.6,
-                    1
-                  ]
-                },
-                {
-                  "Type": "Timeout",
-                  "Delay": [
-                    0.4,
-                    0.4
-                  ]
-                }
-              ],
-              "HeadMotion": {
-                "Type": "Aim",
-                "RelativeTurnSpeed": 1.5
+                "CombatRelativeTurnSpeed": 1.5
               }
             },
             {

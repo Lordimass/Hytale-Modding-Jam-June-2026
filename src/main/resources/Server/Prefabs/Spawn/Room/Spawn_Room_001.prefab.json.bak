@@ -15015,6 +15015,42 @@
     },
     {
       "x": -4,
+      "y": 2,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
       "y": 8,
       "z": 16,
       "name": "BO_Wallpaper00",
@@ -15086,6 +15122,42 @@
       "z": 17,
       "name": "BO_Floor00",
       "support": 15
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 17,
+      "name": "Empty"
     },
     {
       "x": -4,
@@ -15164,6 +15236,42 @@
     },
     {
       "x": -4,
+      "y": 2,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
       "y": 8,
       "z": 18,
       "name": "BO_Wallpaper00",
@@ -15238,6 +15346,42 @@
     },
     {
       "x": -4,
+      "y": 2,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
       "y": 8,
       "z": 19,
       "name": "BO_Wallpaper00",
@@ -15297,6 +15441,42 @@
       "z": 20,
       "name": "BO_Floor00",
       "support": 15
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 20,
+      "name": "Empty"
     },
     {
       "x": -4,
@@ -15365,6 +15545,36 @@
       "z": 21,
       "name": "BO_Floor00",
       "support": 15
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 21,
+      "name": "Empty"
     },
     {
       "x": -4,
@@ -17494,6 +17704,42 @@
     },
     {
       "x": -3,
+      "y": 2,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 16,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
       "y": 8,
       "z": 16,
       "name": "BO_Wallpaper00",
@@ -17568,6 +17814,42 @@
     },
     {
       "x": -3,
+      "y": 2,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 17,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
       "y": 8,
       "z": 17,
       "name": "BO_Wallpaper00",
@@ -17633,6 +17915,42 @@
       "z": 18,
       "name": "BO_Floor00",
       "support": 15
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 18,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 18,
+      "name": "Empty"
     },
     {
       "x": -3,
@@ -17717,6 +18035,42 @@
     },
     {
       "x": -3,
+      "y": 2,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 19,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
       "y": 8,
       "z": 19,
       "name": "BO_Wallpaper00",
@@ -17798,6 +18152,42 @@
     },
     {
       "x": -3,
+      "y": 2,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 20,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
       "y": 8,
       "z": 20,
       "name": "BO_Wallpaper00",
@@ -17857,6 +18247,42 @@
       "z": 21,
       "name": "BO_Floor00",
       "support": 15
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 21,
+      "name": "Empty"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 21,
+      "name": "Empty"
     },
     {
       "x": -3,
@@ -23265,7 +23691,7 @@
       "x": -1,
       "y": 8,
       "z": 18,
-      "name": "*BO_Ceiling_Light00_State_Definitions_Off",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
       "components": {
         "Components": {
           "BlackoutCycleState": {
@@ -23281,8 +23707,7 @@
             }
           }
         }
-      },
-      "support": 15
+      }
     },
     {
       "x": -1,
@@ -26079,7 +26504,7 @@
       "x": 0,
       "y": 8,
       "z": 17,
-      "name": "*BO_Ceiling_Light00_State_Definitions_Off",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
       "components": {
         "Components": {
           "BlackoutCycleState": {
@@ -26095,8 +26520,7 @@
             }
           }
         }
-      },
-      "support": 15
+      }
     },
     {
       "x": 0,
@@ -26351,7 +26775,7 @@
       "x": 0,
       "y": 8,
       "z": 19,
-      "name": "*BO_Ceiling_Light00_State_Definitions_Off",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
       "components": {
         "Components": {
           "BlackoutCycleState": {
@@ -26367,8 +26791,7 @@
             }
           }
         }
-      },
-      "support": 15
+      }
     },
     {
       "x": 0,
@@ -29182,7 +29605,7 @@
       "x": 1,
       "y": 8,
       "z": 18,
-      "name": "*BO_Ceiling_Light00_State_Definitions_Off",
+      "name": "*BO_Ceiling_Light00_State_Definitions_On",
       "components": {
         "Components": {
           "BlackoutCycleState": {
@@ -29198,8 +29621,7 @@
             }
           }
         }
-      },
-      "support": 15
+      }
     },
     {
       "x": 1,
@@ -35832,14 +36254,14 @@
       "x": 3,
       "y": 4,
       "z": 23,
-      "name": "BO_Wallpaper00",
+      "name": "BO_Wallpaper00_Portal",
       "rotation": 3
     },
     {
       "x": 3,
       "y": 5,
       "z": 23,
-      "name": "BO_Wallpaper00",
+      "name": "BO_Wallpaper00_Portal",
       "rotation": 3
     },
     {
@@ -35958,6 +36380,17 @@
       "y": 3,
       "z": 24,
       "name": "BO_Wallpaper00_Portal",
+      "components": {
+        "Components": {
+          "Instance": {
+            "WorldName": {
+              "$binary": "AErQ0UhCRROexRdA5KXK8w==",
+              "$type": "04"
+            },
+            "CloseOnBlockRemove": false
+          }
+        }
+      },
       "rotation": 3
     },
     {
@@ -35965,6 +36398,17 @@
       "y": 4,
       "z": 24,
       "name": "BO_Wallpaper00_Portal",
+      "components": {
+        "Components": {
+          "Instance": {
+            "WorldName": {
+              "$binary": "WS/4h92nQXO61YiCAvh5Ng==",
+              "$type": "04"
+            },
+            "CloseOnBlockRemove": false
+          }
+        }
+      },
       "rotation": 3
     },
     {
@@ -36096,6 +36540,17 @@
       "y": 3,
       "z": 25,
       "name": "BO_Wallpaper00_Portal",
+      "components": {
+        "Components": {
+          "Instance": {
+            "WorldName": {
+              "$binary": "bHr/SD1ES9e9aGcu7RCHrA==",
+              "$type": "04"
+            },
+            "CloseOnBlockRemove": false
+          }
+        }
+      },
       "rotation": 3
     },
     {
@@ -36103,6 +36558,17 @@
       "y": 4,
       "z": 25,
       "name": "BO_Wallpaper00_Portal",
+      "components": {
+        "Components": {
+          "Instance": {
+            "WorldName": {
+              "$binary": "GEUYoVQhR3i4uhgGQ4Uh/Q==",
+              "$type": "04"
+            },
+            "CloseOnBlockRemove": false
+          }
+        }
+      },
       "rotation": 3
     },
     {
@@ -36228,14 +36694,14 @@
       "x": 3,
       "y": 4,
       "z": 26,
-      "name": "BO_Wallpaper00",
-      "rotation": 3
+      "name": "BO_Wallpaper02",
+      "support": 15
     },
     {
       "x": 3,
       "y": 5,
       "z": 26,
-      "name": "BO_Wallpaper00",
+      "name": "BO_Wallpaper00_Portal",
       "rotation": 3
     },
     {
@@ -48418,7 +48884,7 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "MVgQkxH1O3qynzIA4RmBLQ==",
+            "$binary": "+unUcvG7NH+jVJGOVzs5Qw==",
             "$type": "04"
           }
         }

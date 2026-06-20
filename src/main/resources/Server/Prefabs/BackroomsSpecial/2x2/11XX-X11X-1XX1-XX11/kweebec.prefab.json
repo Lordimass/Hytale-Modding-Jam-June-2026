@@ -1799,6 +1799,27 @@
     },
     {
       "x": -8,
+      "y": 11,
+      "z": 1,
+      "name": "*BO_PA_State_Definitions_Active",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Active",
+            "OffState": "Inactive"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 1
+    },
+    {
+      "x": -8,
       "y": 13,
       "z": 1,
       "name": "BO_Ceiling00"
@@ -20325,6 +20346,27 @@
       "y": 6,
       "z": 1,
       "name": "BO_Floor00"
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "z": 1,
+      "name": "*BO_PA_State_Definitions_Active",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Active",
+            "OffState": "Inactive"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 3
     },
     {
       "x": 9,

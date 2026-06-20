@@ -1,0 +1,35 @@
+{
+  "Model": "NPC/Intelligent/WatchedDummy/TrainingDummy.blockymodel",
+  "Texture": "NPC/Intelligent/WatchedDummy/TrainingDummy_Default.png",
+  "MinScale": 2,
+  "MaxScale": 2,
+  "HitBox": {
+    "Min": {
+      "X": -0.35,
+      "Y": 0,
+      "Z": -0.35
+    },
+    "Max": {
+      "X": 0.35,
+      "Y": 2,
+      "Z": 0.35
+    }
+  },
+  "EyeHeight": 1.5,
+  "Icon": "Icons/ModelsGenerated/BO_WatchedDummy.png",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      0,
+      -45,
+      0
+    ],
+    "Translation": [
+      0,
+      -40
+    ]
+  },
+  "PhysicsValues": {
+    "Mass": 2
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_BO_WatchedDummy",
+  "Modify": {
+    "DropList": "Empty",
+    "Appearance": "BO_WatchedDummy",
+    "MaxHealth": 120,
+    "ViewRange": 15,
+    "ViewSector": 180,
+    "HearingRange": 15,
+    "AttackDistance": 2.3,
+    "RelativeChaseSpeed": 1,
+    "NameTranslationKey": "npcRoles.BO_WatchedDummy.name"
+  }
+}

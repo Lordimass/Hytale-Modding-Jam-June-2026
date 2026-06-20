@@ -13,7 +13,7 @@
 			"Type":	"Auto",
 			"Features":	[],
 			"FolderPath":	"Backroomsv1/1x1/4044",
-			"Weight":	1,
+			"Weight":	0.5,
 			"MinimizeVariants":	false
 		}, {
 			"$NodeId":	"Auto.TileSet.GridWave-00000000000000000000000000000004",

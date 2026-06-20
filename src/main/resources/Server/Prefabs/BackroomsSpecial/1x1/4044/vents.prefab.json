@@ -1,0 +1,4563 @@
+{
+  "version": 8,
+  "blockIdVersion": 11,
+  "anchorX": 0,
+  "anchorY": 0,
+  "anchorZ": 0,
+  "blocks": [
+    {
+      "x": -4,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": -4,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": -3,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": -3,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": 4,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 5,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": -4,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": -3,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 4,
+      "name": "*BO_Garage_Overhead_Lights_State_Definitions_Inactive",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Inactive",
+            "OffState": "Active",
+            "OnSound": "Garage_Alarm_Disable"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": 4,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": 5,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 4,
+      "name": "*BO_Garage_Overhead_Lights_State_Definitions_Inactive",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Inactive",
+            "OffState": "Active",
+            "OnSound": "Garage_Alarm_Disable"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 4,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop01",
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 5
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 5
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 5
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 3
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop01"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 4,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop01",
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "name": "Rock_Stone_Brick",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop01"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 4,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -3,
+      "name": "*BO_Garage_Overhead_Lights_State_Definitions_Inactive",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Inactive",
+            "OffState": "Active",
+            "OnSound": "Garage_Alarm_Disable"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 5
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop01",
+      "rotation": 2
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -1,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": -1,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -1,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 0,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 0,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 1,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 1,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 1,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop01"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 4,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -3,
+      "name": "*BO_Garage_Overhead_Lights_State_Definitions_Inactive",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Inactive",
+            "OffState": "Active",
+            "OnSound": "Garage_Alarm_Disable"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop01",
+      "rotation": 2
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop01"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 3
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 4,
+      "name": "BO_Parking_Wall_Half",
+      "rotation": 8
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": -4,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -3,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": -3,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -2,
+      "name": "BO_Parking_Blacktop01",
+      "rotation": 2
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": -2,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": -1,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 0,
+      "name": "*BO_Iron_Trapdoor_State_Definitions_CloseDoorOut",
+      "components": {
+        "Components": {
+          "BlackoutBunkerHatch": {},
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 3
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 0,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 1,
+      "name": "*Garage_Slime_Light_State_Definitions_Day",
+      "components": {
+        "Components": {
+          "BlackoutCycleState": {
+            "OnState": "Day",
+            "OffState": "Night"
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      }
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 1,
+      "name": "*BO_Iron_Trapdoor_State_Definitions_CloseDoorOut",
+      "components": {
+        "Components": {
+          "BlackoutBunkerHatch": {},
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "KMPE5JWxSQGC8WI/IkVLQQ==",
+              "$type": "04"
+            }
+          }
+        }
+      },
+      "rotation": 3
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 1,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 3
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 2,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop01"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 3,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 4,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 4,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall03"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 5,
+      "name": "Build_Black_Cube"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": -4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": -4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": -4,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": -4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": -3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": -3,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": -3,
+      "name": "BO_Parking_Wall_Half"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": -3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": -2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": -2,
+      "name": "Build_White_Cube"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": -2,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": -2,
+      "name": "BO_Parking_Wall_Half"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": -2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": -1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": -1,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": -1,
+      "name": "BO_Parking_Wall_Half"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": -1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 0,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 0,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 0,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 0,
+      "name": "BO_Parking_Wall_Half"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 0,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 1,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 1,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 1,
+      "name": "BO_Parking_Wall_Half"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 1,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 2,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 2,
+      "name": "Build_White_Cube"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 2,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 2,
+      "name": "BO_Parking_Wall_Half"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 2,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 3,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 3,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 3,
+      "name": "BO_Parking_Wall_Half"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 3,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 4,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 4,
+      "name": "BO_Parking_Blacktop"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 4,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 4,
+      "name": "BO_Parking_Wall_Half"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 4,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 5,
+      "name": "BO_Parking_Blacktop",
+      "rotation": 4
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 5,
+      "name": "BO_Parking_Wall02"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 5,
+      "name": "BO_Parking_Wall00"
+    }
+  ],
+  "fluids": [
+    {
+      "x": 4,
+      "y": 2,
+      "z": 0,
+      "name": "Slime_Source",
+      "level": 1
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 1,
+      "name": "Slime_Source",
+      "level": 1
+    }
+  ]
+}

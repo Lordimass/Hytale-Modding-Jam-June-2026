@@ -1,0 +1,89 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Build_Lightsource_Cyan.name"
+  },
+  "ItemLevel": 10,
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/Build_Lightsource_Cyan.png",
+  "Categories": [
+    "Tool.TechnicalBlocks"
+  ],
+  "SubCategory": "LightSources",
+  "PlayerAnimationsId": "Block",
+  "Set": "Build",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Opacity": "Transparent",
+    "Group": "Dev",
+    "HitboxType": "Full",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "BlockParticleSetId": "Crystal",
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "BlockTextures/Dev_Lightsource_Cyan_Side.png"
+      }
+    ],
+    "ParticleColor": "#44dddd",
+    "BlockSoundSetId": "Crystal",
+    "PhysicalMaterialId": "Stone",
+    "CubeShadingMode": "Fullbright",
+    "VariantRotation": "Pipe",
+    "TextureComputedColor": "#17BEC0",
+    "State": {
+      "Definitions": {
+        "Day": {
+          "DrawType": "Cube"
+        },
+        "Night": {
+          "Light": {
+            "Color": "#599"
+          },
+          "DrawType": "Cube",
+          "Textures": [
+            {
+              "All": "BlockTextures/Dev_Lightsource_Blue_Side.png"
+            }
+          ],
+          "AmbientSoundEventId": "BO_SFX_Garage_Pool"
+        }
+      }
+    },
+    "BlockEntity": {
+      "Components": {
+        "BlackoutCycleState": {
+          "OnState": "Day",
+          "OffState": "Night"
+        }
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ],
+    "Family": [
+      "Build"
+    ]
+  },
+  "Quality": "Technical",
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}
