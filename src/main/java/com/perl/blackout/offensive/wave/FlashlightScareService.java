@@ -119,11 +119,6 @@ final class FlashlightScareService {
                 }
             }
         }
-
-        if (diag) {
-            LOGGER.atInfo().log("[FlashlightScare] litPlayers=%s enemies=%s flashlightFlagged=%s nightFlagged=%s",
-                    litPlayers.size(), total, flagged, aggressive);
-        }
     }
 
     private List<Vector3d> litFlashlightPlayerPositions(Store<EntityStore> store, World world, boolean diag) {
@@ -143,19 +138,13 @@ final class FlashlightScareService {
     private boolean isHoldingLitFlashlight(Store<EntityStore> store, Ref<EntityStore> playerRef, boolean diag) {
         ItemStack held = InventoryComponent.getItemInHand(store, playerRef);
         if (held == null) {
-            if (diag) {
-                LOGGER.atInfo().log("[FlashlightScare] held=<none>");
-            }
             return false;
         }
         String id = held.getItemId();
         Item item = held.getItem();
         boolean hasLight = item != null && item.getLight() != null;
         boolean flashlightFamily = isFlashlightItemId(id);
-        if (diag) {
-            LOGGER.atInfo().log("[FlashlightScare] held id=%s durability=%s flashlightFamily=%s hasLight=%s",
-                    id, held.getDurability(), flashlightFamily, hasLight);
-        }
+
         if (!flashlightFamily) {
             return false;
         }
