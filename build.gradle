@@ -33,6 +33,7 @@ dependencies {
     compileOnly libs.jetbrains.annotations
     compileOnly libs.jspecify
     shadowBundle('curse.maven:patchly-1550889:8282627')
+    shadowBundle('curse.maven:creditor-1560961:8187845')
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.3'
 }
