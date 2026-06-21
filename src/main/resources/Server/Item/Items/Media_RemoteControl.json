@@ -1,11 +1,11 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Media_RemoteControl.name"
+    "Name": "Garage Door Remote"
   },
   "Icon": "Icons/ItemsGenerated/Media_RemoteControl.png",
   "Model": "Items/Remote_Controller.blockymodel",
   "Texture": "Items/Remote_Controller_Texture.png",
-  "PlayerAnimationsId": "Torch",
+  "PlayerAnimationsId": "Item",
   "IconProperties": {
     "Scale": 0.83,
     "Translation": [
