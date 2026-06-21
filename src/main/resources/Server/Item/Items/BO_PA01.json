@@ -1,0 +1,93 @@
+{
+  "BlockType": {
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_parking_media/bo_pa_texture.png",
+        "Weight": 1
+      }
+    ],
+    "CustomModel": "Blocks/bo_parking_media/bo_pa.blockymodel",
+    "PlacementSettings": {
+      "RotationMode": "StairFacingPlayer",
+      "BlockPreviewVisibility": "AlwaysVisible",
+      "AllowRotationKey": true
+    },
+    "HitboxType": "Block_Seven_Eighth",
+    "IgnoreSupportWhenPlaced": true,
+    "Parent": "Rock_Bedrock",
+    "Material": "Solid",
+    "VariantRotation": "NESW",
+    "BlockEntity": {
+      "Components": {
+        "BlackoutCycleState": {
+          "OffState": "Inactive",
+          "OnState": "Active"
+        }
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Active": {
+          "BlockType": {
+            "Parent": "Rock_Bedrock",
+            "CustomModel": "Blocks/bo_parking_media/bo_pa.blockymodel",
+            "CustomModelTexture": [
+              {
+                "Texture": "Blocks/bo_parking_media/bo_pa_texture.png"
+              }
+            ],
+            "CustomModelAnimation": "Blocks/bo_parking_media/bo_speaker_active.blockyanim",
+            "Looping": true,
+            "MaxSupportDistance": 14,
+            "IgnoreSupportWhenPlaced": true,
+            "Material": "Solid",
+            "DrawType": "Model"
+          },
+          "AmbientSoundEventId": "BO_Theme_Off"
+        },
+        "Inactive": {
+          "BlockType": {
+            "Parent": "Rock_Bedrock",
+            "CustomModel": "Blocks/bo_parking_media/bo_pa.blockymodel",
+            "CustomModelTexture": [
+              {
+                "Texture": "Blocks/bo_parking_media/bo_pa_texture.png"
+              }
+            ],
+            "CustomModelAnimation": "Blocks/bo_parking_media/bo_speaker_active.blockyanim",
+            "AmbientSoundEventId": "BO_Theme_On",
+            "Looping": true,
+            "MaxSupportDistance": 14,
+            "IgnoreSupportWhenPlaced": true,
+            "Material": "Solid"
+          },
+          "AmbientSoundEventId": "BO_Garage_Theme_ON"
+        }
+      }
+    },
+    "Gathering": {
+      "Soft": {
+        "ItemId": "Ingredient_Stud_Iron"
+      }
+    }
+  },
+  "Icon": "Icons/ItemsGenerated/BO_PA.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      0,
+      313,
+      0
+    ],
+    "Translation": [
+      -17,
+      -32
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Garage PA",
+    "Description": "Unobtainium"
+  },
+  "Parent": "Rock_Bedrock"
+}

@@ -1,2 +1,6 @@
 Weapon_Shiv_Crude.name=Crude Shiv
 Weapon_Shiv_Crude.description=<i>What did you expect? you made this in your pocket</i>
+Bench_Crude.name=Crude Bench
+Bench_Crude.description=You made it with your own two hands and a pile of scraps. It will do, but you may need something more capable later...
+Bench_Generator.name=<color is="#790081">Strange Machine</color>
+Bench_Generator.description=A strange device infused with the powers of the backrooms. Corrupts items inputted into them.\n<color is="#e7bd00">Creative-Only item</color>

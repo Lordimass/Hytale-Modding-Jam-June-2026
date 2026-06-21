@@ -16,11 +16,6 @@
         "Texture": "Blocks/bo_parking_bumper/bo_parking_bumper_texture.png"
       }
     ],
-    "Gathering": {
-      "Breaking": {
-        "GatherType": "Unbreakable"
-      }
-    },
     "PlacementSettings": {
       "RotationMode": "FacingPlayer",
       "BlockPreviewVisibility": "AlwaysVisible"
@@ -28,7 +23,12 @@
     "BlockListAssetId": "BO_WallpaperType",
     "IgnoreSupportWhenPlaced": true,
     "VariantRotation": "NESW",
-    "HitboxType": "BO_Parking_Bumper_BB"
+    "HitboxType": "BO_Parking_Bumper_BB",
+    "Gathering": {
+      "Harvest": {
+        "ItemId": "Ingredient_Stud_Iron"
+      }
+    }
   },
   "Icon": "Icons/ItemsGenerated/BO_Parking_Bumper.png",
   "IconProperties": {

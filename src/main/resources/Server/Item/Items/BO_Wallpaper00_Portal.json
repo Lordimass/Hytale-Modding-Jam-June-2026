@@ -50,29 +50,13 @@
       "CollisionEnter": {
         "Interactions": [
           {
-            "Type": "TeleportInstance",
-            "InstanceName": "Backrooms",
-            "PersonalReturnPoint": true,
-            "CloseOnBlockRemove": false,
-            "Next": {
-              "Type": "Simple",
-              "Effects": {
-                "LocalSoundEventId": "SFX_Portal_Neutral_Teleport_Local"
-              }
-            },
-            "OriginSource": "Block",
-            "Rules": {
-              "BlockedBy": [
-                "Dodge"
-              ]
-            }
+            "Type": "HubPortal",
+            "WorldName": "Backrooms",
+            "InstanceTemplate": "Backrooms"
           }
         ]
       }
     }
-  },
-  "Tags": {
-    "Wallpaper": []
   },
   "Parent": "Rock_Bedrock"
 }

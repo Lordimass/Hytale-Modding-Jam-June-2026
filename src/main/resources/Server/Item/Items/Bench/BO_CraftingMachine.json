@@ -13,7 +13,8 @@
     ]
   },
   "TranslationProperties": {
-    "Name": "Crafting Machine"
+    "Name": "Corrupted Machine",
+    "Description": "Tends to cause inputted items to be corrupted"
   },
   "BlockType": {
     "DrawType": "Model",
@@ -96,9 +97,9 @@
   "Recipe": {
     "BenchRequirement": [
       {
-        "Id": "Fieldcraft",
+        "Id": "BO_Workbench",
         "Categories": [
-          "Tools"
+          "BO_Workbench"
         ]
       }
     ],
@@ -108,13 +109,14 @@
         "Quantity": 5
       },
       {
-        "ItemId": "Ingredient_Hide_Light",
-        "Quantity": 5
+        "ItemId": "Ingredient_Leather_Light",
+        "Quantity": 10
       },
       {
         "ItemId": "Ingredient_Bolt_Linen",
         "Quantity": 20
       }
     ]
-  }
+  },
+  "Quality": "Epic"
 }

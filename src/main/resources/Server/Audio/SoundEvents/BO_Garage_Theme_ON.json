@@ -1,0 +1,18 @@
+{
+  "Parent": "SFX_Torch_On_Loop",
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/BO_Stasis_Chamber.ogg"
+      ],
+      "Volume": -8.92,
+      "Looping": true
+    }
+  ],
+  "MaxDistance": 28,
+  "SpatialBlend": 0.748,
+  "MaxInstance": 3,
+  "StartAttenuationDistance": 2,
+  "Volume": -1,
+  "AudioCategory": "AudioCat_SFX"
+}

@@ -1,0 +1,238 @@
+{
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "BlockType": {
+    "DrawType": "Model",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Unbreakable"
+      }
+    },
+    "PlacementSettings": {
+      "RotationMode": "StairFacingPlayer",
+      "BlockPreviewVisibility": "AlwaysVisible",
+      "PlaceInEmptyBlocks": false,
+      "AllowRotationKey": true
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "Material": "Solid",
+    "RequiresAlphaBlending": true,
+    "Textures": [
+      {
+        "Sides": "Blocks/bo_pool_surface/bo_pool_surface_cube_texture.png",
+        "UpDown": "Blocks/bo_pool_surface/bo_pool_surface_cube_texture.png"
+      }
+    ],
+    "CubeShadingMode": "Reflective",
+    "CustomModel": "Blocks/bo_pool_surface/BO_Tile_Door.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_pool_surface/bo_pool_surface_door_texture.png"
+      }
+    ],
+    "HitboxType": "Door",
+    "State": {
+      "Definitions": {
+        "unlocked": {
+          "Tool": {
+            "Specs": [
+              {
+                "Parent": "Branches"
+              }
+            ],
+            "Speed": 5,
+            "HitSoundLayer": "SFX_Wood_Break"
+          },
+          "BlockType": {
+            "DrawType": "Empty",
+            "Gathering": {
+              "Breaking": {
+                "GatherType": "Unbreakable"
+              }
+            },
+            "PlacementSettings": {
+              "RotationMode": "Default",
+              "BlockPreviewVisibility": "AlwaysVisible",
+              "PlaceInEmptyBlocks": false
+            },
+            "IgnoreSupportWhenPlaced": true,
+            "Material": "Empty",
+            "RequiresAlphaBlending": false,
+            "Textures": [
+              {
+                "Sides": "Blocks/bo_pool_surface/bo_pool_surface_cube_texture.png",
+                "UpDown": "Blocks/bo_pool_surface/bo_pool_surface_cube_texture.png"
+              }
+            ],
+            "CubeShadingMode": "Standard",
+            "Opacity": "Transparent"
+          },
+          "Icon": "Icons/ItemsGenerated/BO_Pool_Surface00.png",
+          "IconProperties": {
+            "Scale": 0.5,
+            "Rotation": [
+              0,
+              52,
+              24
+            ],
+            "Translation": [
+              4,
+              -12
+            ]
+          },
+          "TranslationProperties": {
+            "Name": "Pool Tiles"
+          },
+          "Parent": "Filter_Air_Block",
+          "DrawType": "Empty",
+          "Opacity": "Transparent",
+          "HitboxType": "Block_Flat",
+          "CustomModel": "Blocks/bo_pool_surface/BO_Tile_Door.blockymodel"
+        }
+      }
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ModifyInventory",
+            "RequiredGameMode": "Adventure",
+            "ItemToRemove": {
+              "Id": "BO_Key_Corrupted",
+              "Quantity": 1
+            },
+            "Next": {
+              "Type": "ApplyEffect",
+              "Entity": "Owner",
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "VoidImpact",
+                    "TargetEntityPart": "Self",
+                    "TargetNodeName": "bone2",
+                    "Color": "#4d10d2",
+                    "Scale": 5,
+                    "DetachedFromModel": true
+                  }
+                ]
+              },
+              "EffectId": "HealthRegen_Buff_T1",
+              "Next": {
+                "Type": "ChangeState",
+                "UseLatestTarget": true,
+                "Changes": {
+                  "default": "unlocked"
+                },
+                "UpdateBlockState": true,
+                "Effects": {
+                  "Particles": [
+                    {
+                      "SystemId": "VoidImpact",
+                      "TargetEntityPart": "Self",
+                      "Color": "#810ba6",
+                      "Scale": 5,
+                      "DetachedFromModel": true,
+                      "PositionOffset": {
+                        "Z": 1
+                      }
+                    }
+                  ],
+                  "FirstPersonParticles": [
+                    {
+                      "SystemId": "VoidImpact",
+                      "TargetEntityPart": "Self",
+                      "Color": "#810ba6",
+                      "Scale": 5,
+                      "DetachedFromModel": true,
+                      "PositionOffset": {
+                        "Z": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "CustomModelAnimation": "Blocks/bo_pool_surface/BO_Tile_Door_Idle.blockyanim",
+    "Looping": true,
+    "VariantRotation": "NESW"
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Pool_Surface00.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      52,
+      24
+    ],
+    "Translation": [
+      4,
+      -12
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Pool Tiles"
+  },
+  "Parent": "Rock_Bedrock",
+  "State": {
+    "unlocked": {
+      "Tool": {
+        "Specs": [
+          {
+            "Parent": "Branches"
+          }
+        ],
+        "Speed": 5,
+        "HitSoundLayer": "SFX_Wood_Break"
+      },
+      "BlockType": {
+        "DrawType": "Model",
+        "Gathering": {
+          "Breaking": {
+            "GatherType": "Unbreakable"
+          }
+        },
+        "PlacementSettings": {
+          "RotationMode": "Default",
+          "BlockPreviewVisibility": "AlwaysVisible",
+          "PlaceInEmptyBlocks": false
+        },
+        "IgnoreSupportWhenPlaced": true,
+        "Material": "Empty",
+        "RequiresAlphaBlending": false,
+        "CubeShadingMode": "Standard",
+        "Opacity": "Transparent",
+        "Interactions": {
+        },
+        "CustomModel": "Blocks/Decorative_Sets/Temple_Light/Door.blockymodel"
+      },
+      "Icon": "Icons/ItemsGenerated/BO_Pool_Surface00.png",
+      "IconProperties": {
+        "Scale": 0.5,
+        "Rotation": [
+          0,
+          52,
+          24
+        ],
+        "Translation": [
+          4,
+          -12
+        ]
+      },
+      "TranslationProperties": {
+        "Name": "Pool Tiles"
+      },
+      "Parent": "BO_Pool_Surface_Door"
+    }
+  }
+}

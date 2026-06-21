@@ -8,8 +8,8 @@
     "ViewRange": 15,
     "ViewSector": 180,
     "HearingRange": 15,
-    "AttackDistance": 2.3,
+    "AttackDistance": 3.3,
     "RelativeChaseSpeed": 2,
-    "NameTranslationKey": "npcRoles.BO_WatchedDummy.name"
+    "NameTranslationKey": "server.npcRoles.BO_WatchedDummy.name"
   }
 }

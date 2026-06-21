@@ -2,10 +2,10 @@
   "Parent": "SFX_Torch_On_Loop",
   "Layers": [
     {
-      "Looping": true,
       "Files": [
         "Sounds/BO_Theme.ogg"
-      ]
+      ],
+      "Looping": true
     }
   ],
   "MaxDistance": 18,

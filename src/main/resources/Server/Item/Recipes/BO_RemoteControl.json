@@ -1,0 +1,33 @@
+{
+  "Input": [
+    {
+      "ItemId": "Ingredient_Stud_Iron",
+      "Quantity": 32
+    },
+    {
+      "ItemId": "Rubble_Marble",
+      "Quantity": 8
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Media_RemoteControl",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "Media_RemoteControl",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Crafting",
+      "Id": "BO_GarageBench",
+      "Categories": [
+        "BO_GarageBench"
+      ]
+    }
+  ],
+  "TimeSeconds": 30,
+  "OutputQuantity": 1
+}

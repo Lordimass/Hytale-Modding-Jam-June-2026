@@ -82,6 +82,7 @@ final class ObjectiveService {
      * player. Roles that ignore the {@code LockedTarget} slot fall back to their own aggro. Must run
      * on the world thread.
      */
+    @Deprecated
     void applyTargeting(WaveGame game, Store<EntityStore> store, World world) {
         Ref<EntityStore> bench = game.getBenchNpcRef();
         boolean benchAlive = bench != null && !isDead(store, bench);

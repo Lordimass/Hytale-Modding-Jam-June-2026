@@ -1,0 +1,11 @@
+{
+  "Tags": {
+    "Carpet": [
+      "Carpet"
+    ]
+  },
+  "IncludeAll": false,
+  "IncludeBlockTypes": [
+    "BO_Floor00"
+  ]
+}

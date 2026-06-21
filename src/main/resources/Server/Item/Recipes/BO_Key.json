@@ -1,0 +1,32 @@
+{
+  "Input": [
+    {
+      "ItemId": "Ingredient_Stud_Iron",
+      "Quantity": 16
+    },
+    {
+      "ItemId": "Ingredient_Leather_Light",
+      "Quantity": 3
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "BO_Key",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "BO_Key",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Crafting",
+      "Id": "BO_Workbench",
+      "Categories": [
+        "BO_Workbench"
+      ]
+    }
+  ],
+  "TimeSeconds": 15
+}

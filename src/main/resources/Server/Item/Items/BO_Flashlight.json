@@ -40,27 +40,42 @@
               "Type": "SetState",
               "State": "On",
               "Next": {
-                "Type": "Charging",
+                "Type": "ApplyEffect",
+                "EffectId": "BO_Flashlit",
+                "Entity": "User",
                 "Next": {
-                  "0.0": {
-                    "Type": "SetState",
-                    "State": "Off",
-                    "Effects": {
-                      "LocalSoundEventId": "BO_Flashlight_Click"
+                  "Type": "Charging",
+                  "Next": {
+                    "0.0": {
+                      "Type": "SetState",
+                      "State": "Off",
+                      "Effects": {
+                        "LocalSoundEventId": "BO_Flashlight_Click"
+                      },
+                      "Next": {
+                        "Type": "ClearEntityEffect",
+                        "EntityEffectId": "BO_Flashlit",
+                        "Entity": "User"
+                      }
+                    },
+                    "10.0": {
+                      "Type": "SetState",
+                      "State": "Off",
+                      "Effects": {
+                        "LocalSoundEventId": "BO_Flashlight_Click"
+                      },
+                      "Next": {
+                        "Type": "ClearEntityEffect",
+                        "EntityEffectId": "BO_Flashlit",
+                        "Entity": "User"
+                      }
                     }
                   },
-                  "10.0": {
-                    "Type": "SetState",
-                    "State": "Off",
-                    "Effects": {
-                      "LocalSoundEventId": "BO_Flashlight_Click"
-                    }
-                  }
-                },
-                "HorizontalSpeedMultiplier": 0.3,
-                "Effects": {},
-                "RunTime": 5,
-                "DisplayProgress": true
+                  "HorizontalSpeedMultiplier": 0.3,
+                  "Effects": {},
+                  "RunTime": 5,
+                  "DisplayProgress": true
+                }
               }
             }
           }
@@ -92,5 +107,6 @@
     "Description": "blackout.items.flashlight.description"
   },
   "UsePlayerAnimations": true,
-  "PlayerAnimationsId": "Axe"
+  "PlayerAnimationsId": "Axe",
+  "ItemLevel": 20
 }

@@ -23,8 +23,8 @@
     "BlockEntity": {
       "Components": {
         "BlackoutCycleState": {
-          "OnState": "Day",
-          "OffState": "Night"
+          "OnState": "Night",
+          "OffState": "Day"
         }
       }
     },

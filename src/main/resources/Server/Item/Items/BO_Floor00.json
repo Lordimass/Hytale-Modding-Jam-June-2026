@@ -46,5 +46,10 @@
     ]
   },
   "ItemSoundSetId": "ISS_Blocks_Wood",
-  "MaxStack": 1
+  "MaxStack": 1,
+  "Tags": {
+    "Carpet": [
+      "Carpet"
+    ]
+  }
 }

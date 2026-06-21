@@ -25,7 +25,8 @@
         "BlackoutCycleState": {
           "OnState": "Inactive",
           "OffState": "Active",
-          "OnSound": "Garage_Alarm_Disable"
+          "OnSound": "Garage_Alarm_Disable",
+          "OffSound": "Garage_Alarm_Initial"
         }
       }
     },

@@ -1,0 +1,35 @@
+{
+  "Interactions": [
+    {
+      "Type": "Selector",
+      "RunTime": 0.18,
+      "Selector": {
+        "Id": "Stab",
+        "EndDistance": 2,
+        "ExtendTop": 1.1,
+        "ExtendBottom": 1.5,
+        "ExtendLeft": 1,
+        "ExtendRight": 1
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "BO_Seeker_Damage"
+              ]
+            },
+            "Var": "Melee_Damage"
+          }
+        ]
+      },
+      "Next": {
+        "Type": "Simple",
+        "RunTime": 0.2
+      },
+      "MaxTargets": 1
+    }
+  ]
+}

@@ -28,6 +28,7 @@ import com.hypixel.hytale.server.npc.role.Role;
 import com.hypixel.hytale.server.npc.role.support.MarkedEntitySupport;
 import com.perl.blackout.offensive.OffensivePlugin;
 import com.perl.blackout.world.resources.WorldCycleStateResource;
+import com.perl.blackout.world.systems.BlackoutCycleChangedEvent;
 import com.perl.blackout.world.systems.CyclePhase;
 
 /**
@@ -67,10 +68,12 @@ public final class WaveGameManager {
     private static final String WATCHED_DUMMY_TARGET_SLOT = MarkedEntitySupport.DEFAULT_TARGET_SLOT;
 
     private final WaveConfig config;
-    private final EnemySpawnService enemySpawnService = new EnemySpawnService();
+    // @deprecated replaced with async spawn assets BO_Spawns_Backrooms.json + BO_Spawns_Backrooms_Angel.json
+    // private final EnemySpawnService enemySpawnService = new EnemySpawnService();
     private final FenceTargetService fenceTargetService = new FenceTargetService();
     private final ObjectiveService objectiveService = new ObjectiveService(fenceTargetService);
-    private final FlashlightScareService flashlightScareService = new FlashlightScareService(FLASHLIGHT_SCARE_RANGE);
+    // @deprecated replaced with BO_Flashlit effect + Seeker role EntityEffect/Time sensors
+    // private final FlashlightScareService flashlightScareService = new FlashlightScareService(FLASHLIGHT_SCARE_RANGE);
     private final GarageHazardService garageHazardService = new GarageHazardService();
     private final Map<World, WaveGame> games = new ConcurrentHashMap<>();
 
@@ -91,7 +94,7 @@ public final class WaveGameManager {
             world.execute(() -> {
                 Store<EntityStore> store = world.getEntityStore().getStore();
                 WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
-                enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+                // enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
                 applyEnemyBehaviors(game, store, world);
             });
         }
@@ -155,7 +158,7 @@ public final class WaveGameManager {
 
         setLightPhase(world, store, PHASE_LIT);
         WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
-        enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+        // enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
         applyEnemyBehaviors(game, store, world);
 
         game.startPhase(WavePhase.REST, System.currentTimeMillis());
@@ -192,7 +195,7 @@ public final class WaveGameManager {
                     world.execute(() -> {
                         Store<EntityStore> restStore = world.getEntityStore().getStore();
                         WaveConfig.Floor floor = resolveCurrentFloor(world, restStore, game);
-                        enemySpawnService.ensurePersistentFloorEnemies(game, restStore, world, config, floor);
+                        // enemySpawnService.ensurePersistentFloorEnemies(game, restStore, world, config, floor);
                         applyEnemyBehaviors(game, restStore, world);
                     });
                 }
@@ -204,7 +207,7 @@ public final class WaveGameManager {
                     world.execute(() -> {
                         Store<EntityStore> attackStore = world.getEntityStore().getStore();
                         WaveConfig.Floor floor = resolveCurrentFloor(world, attackStore, game);
-                        enemySpawnService.ensurePersistentFloorEnemies(game, attackStore, world, config, floor);
+                        // enemySpawnService.ensurePersistentFloorEnemies(game, attackStore, world, config, floor);
                         applyEnemyBehaviors(game, attackStore, world);
                         garageHazardService.apply(game, world, attackStore, config, elapsed);
                     });
@@ -219,13 +222,13 @@ public final class WaveGameManager {
         game.startPhase(WavePhase.ATTACK, now);
         game.setHazardMilestone(-1);
         int round = game.incrementRound();
-        WaveMessages.broadcast(world, "Night " + round, "The lights are going out!", true);
+        WaveMessages.broadcast(world, "Outage #" + round, "Watch your back", true);
 
         world.execute(() -> {
             Store<EntityStore> store = world.getEntityStore().getStore();
             WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
             setLightPhase(world, store, PHASE_DARK);
-            enemySpawnService.spawnFloorEnemies(game, store, world, config, floor);
+            // enemySpawnService.spawnFloorEnemies(game, store, world, config, floor);
             applyEnemyBehaviors(game, store, world);
         });
     }
@@ -233,14 +236,13 @@ public final class WaveGameManager {
     private void beginRest(World world, WaveGame game, long now) {
         game.startPhase(WavePhase.REST, now);
         game.setHazardMilestone(-1);
-        WaveMessages.broadcast(world, "Daybreak",
-                "Rest " + config.restDurationSeconds + "s until the next night.", true);
+        WaveMessages.broadcast(world, "Power Restored","", true);
         world.execute(() -> {
             Store<EntityStore> store = world.getEntityStore().getStore();
             WaveConfig.Floor floor = resolveCurrentFloor(world, store, game);
             setLightPhase(world, store, PHASE_LIT);
-            enemySpawnService.despawnAll(game, store);
-            enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
+            // enemySpawnService.despawnAll(game, store);
+            // enemySpawnService.ensurePersistentFloorEnemies(game, store, world, config, floor);
             applyEnemyBehaviors(game, store, world);
         });
     }
@@ -248,15 +250,17 @@ public final class WaveGameManager {
     private void endGame(World world, WaveGame game) {
         game.startPhase(WavePhase.ENDED, System.currentTimeMillis());
         games.remove(world);
-        world.execute(() -> enemySpawnService.despawnAllIncludingPersistent(game, world.getEntityStore().getStore()));
+        // world.execute(() -> enemySpawnService.despawnAllIncludingPersistent(game, world.getEntityStore().getStore()));
         world.execute(() -> fenceTargetService.removeAllFenceTargets(game, world.getEntityStore().getStore()));
         LOGGER.atInfo().log("Ended wave game in world %s (no players left)", world.getName());
     }
 
     private void applyEnemyBehaviors(WaveGame game, Store<EntityStore> store, World world) {
-        objectiveService.applyTargeting(game, store, world);
+        // @deprecated replaced with Seeker role SensorEntity self-acquisition (NPCGroup) in Template_The_Seeker.json
+        // objectiveService.applyTargeting(game, store, world);
         syncWatchedDummyPhase(game, store);
-        flashlightScareService.apply(game, store, world);
+        // @deprecated replaced with BO_Flashlit effect + Seeker role EntityEffect/Time sensors
+        // flashlightScareService.apply(game, store, world);
     }
 
     private void syncWatchedDummyPhase(WaveGame game, Store<EntityStore> store) {
@@ -385,7 +389,7 @@ public final class WaveGameManager {
         if (state != null) {
             state.setOn(lit);
         }
-        CyclePhase.applyPhaseToWorld(world, lit);
+        store.invoke(new BlackoutCycleChangedEvent(world, lit));
     }
 
     @Nullable

@@ -1,0 +1,16 @@
+{
+  "MaxDistance": 0,
+  "SpatialBlend": 0,
+  "MaxInstance": 1,
+  "StartAttenuationDistance": 2,
+  "Volume": -100,
+  "Layers": [
+    {
+      "Volume": -12,
+      "Files": [
+        "Sounds/BO_Theme_InActive.ogg"
+      ],
+      "Looping": true
+    }
+  ]
+}

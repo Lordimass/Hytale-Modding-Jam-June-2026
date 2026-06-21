@@ -96,11 +96,13 @@ final class FenceTargetService {
         }
     }
 
+    @Deprecated
     RouteTarget resolveBenchRoute(WaveGame game, Store<EntityStore> store, World world,
                                   Vector3d enemyPos, Vector3i benchBlockPos) {
         return resolveRoute(game, store, world, enemyPos, benchBlockPos, 1);
     }
 
+    @Deprecated
     RouteTarget resolvePlayerRoute(WaveGame game, Store<EntityStore> store, World world,
                                    Vector3d enemyPos, Vector3i playerBlockPos) {
         return resolveRoute(game, store, world, enemyPos, playerBlockPos, 0);

@@ -14,12 +14,12 @@
         {
           "Type": "BlackoutPhaseGate",
           "Next": {
-            "Type": "ApplyEffect",
-            "EffectId": "BO_Flood_Burn"
-          },
-          "Failed": {
             "Type": "ClearEntityEffect",
             "EntityEffectId": "BO_Flood_Burn"
+          },
+          "Failed": {
+            "Type": "ApplyEffect",
+            "EffectId": "BO_Flood_Burn"
           }
         }
       ]

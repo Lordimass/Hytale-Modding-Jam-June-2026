@@ -2,7 +2,7 @@
   "Type": "Variant",
   "Reference": "Template_BO_Altar",
   "Modify": {
-    "MaxHealth": 80,
+    "MaxHealth": 320,
     "Appearance": "BO_FenceTarget",
     "NameTranslationKey": "npcRoles.BO_FenceTarget.name",
     "DisableDamageGroups": [

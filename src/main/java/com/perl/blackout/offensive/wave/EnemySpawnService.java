@@ -29,6 +29,7 @@ import java.util.Random;
  * <p>All mutating methods must be invoked on the world thread (i.e. inside {@code world.execute(...)}),
  * since entities cannot be added or removed during system tick processing.
  */
+@Deprecated
 final class EnemySpawnService {
 
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();

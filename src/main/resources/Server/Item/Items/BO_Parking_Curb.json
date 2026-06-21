@@ -17,7 +17,12 @@
         "Texture": "Blocks/bo_curb/bo_curb_texture.png"
       }
     ],
-    "HitboxType": "BO_Parking_Curb_BB"
+    "HitboxType": "BO_Parking_Curb_BB",
+    "Gathering": {
+      "Harvest": {
+        "ItemId": "Rubble_Marble"
+      }
+    }
   },
   "TranslationProperties": {
     "Name": "BO_Parking_Blacktop_01"

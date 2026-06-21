@@ -1,0 +1,54 @@
+{
+  "TranslationProperties": {
+    "Name": "Floor00"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "BlockType": {
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Unbreakable"
+      }
+    },
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer",
+      "BlockPreviewVisibility": "AlwaysVisible"
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "Material": "Solid",
+    "Parent": "Carpets",
+    "Textures": [
+      {
+        "All": "Blocks/bo_floor/bo_floor_00_cube_texture.png"
+      }
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Floor00.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      52,
+      24
+    ],
+    "Translation": [
+      4,
+      -12
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "MaxStack": 1,
+  "Tags": {
+    "Carpet": [
+      "Carpet"
+    ]
+  }
+}

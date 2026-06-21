@@ -86,17 +86,17 @@ final class GarageHazardService {
         switch (milestone) {
             case 0 -> {
                 title = "GO UNDER GROUND!";
-                subtitle = "I don't have time to explain";
+                subtitle = "- Async";
                 style = NotificationStyle.Warning;
             }
             case 1 -> {
                 title = "It's getting closer";
-                subtitle = "";
+                subtitle = "- Async";
                 style = NotificationStyle.Danger;
             }
             default -> {
                 title = "I think this is it";
-                subtitle = "The killing spree has begun...";
+                subtitle = "- Async";
                 style = NotificationStyle.Danger;
             }
         }

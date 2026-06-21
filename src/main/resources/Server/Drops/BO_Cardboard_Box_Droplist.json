@@ -6,7 +6,9 @@
         "Type": "Single",
         "Weight": 100,
         "Item": {
-          "ItemId": "Ingredient_Hide_Light"
+          "ItemId": "Ingredient_Hide_Light",
+          "QuantityMin": 0,
+          "QuantityMax": 2
         }
       },
       {
@@ -28,6 +30,15 @@
         "Weight": 1,
         "Item": {
           "ItemId": "Weapon_Shiv_Crude"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Stick",
+          "QuantityMin": 0,
+          "QuantityMax": 2
         }
       }
     ]

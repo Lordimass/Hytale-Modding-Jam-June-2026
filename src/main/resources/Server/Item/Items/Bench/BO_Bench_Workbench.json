@@ -1,17 +1,17 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Bench_WorkBench.name",
-    "Description": "server.items.Bench_WorkBench.description"
+    "Name": "server.items.Bench_Crude.name",
+    "Description": "server.items.Bench_Crude.description"
   },
   "Recipe": {
     "Input": [
       {
-        "Quantity": 4,
-        "ResourceTypeId": "Wood_Trunk"
+        "Quantity": 16,
+        "ItemId": "Ingredient_Hide_Light"
       },
       {
-        "Quantity": 3,
-        "ResourceTypeId": "Rock"
+        "Quantity": 5,
+        "ItemId": "Ingredient_Stud_Iron"
       }
     ],
     "BenchRequirement": [
@@ -151,5 +151,6 @@
   },
   "MaxStack": 1,
   "ItemLevel": 1,
-  "ItemSoundSetId": "ISS_Blocks_Wood"
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Quality": "Uncommon"
 }

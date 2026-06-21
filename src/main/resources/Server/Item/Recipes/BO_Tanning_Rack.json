@@ -1,0 +1,37 @@
+{
+  "Input": [
+    {
+      "ItemId": "Ingredient_Stud_Iron",
+      "Quantity": 10
+    },
+    {
+      "ItemId": "Ingredient_Stick",
+      "Quantity": 15
+    },
+    {
+      "ItemId": "Ingredient_Bolt_Linen",
+      "Quantity": 100
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Bench_Tannery",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "Bench_Tannery",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Crafting",
+      "Id": "BO_Workbench",
+      "Categories": [
+        "BO_Workbench"
+      ]
+    }
+  ],
+  "TimeSeconds": 15,
+  "OutputQuantity": 1
+}

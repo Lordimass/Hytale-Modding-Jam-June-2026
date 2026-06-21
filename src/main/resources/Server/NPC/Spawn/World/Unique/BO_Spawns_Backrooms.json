@@ -1,0 +1,41 @@
+{
+  "Environments": [
+    "Blackout"
+  ],
+  "NPCs": [
+    {
+      "Weight": 10000,
+      "Id": "Seeker",
+      "EnableSafeSpawning": false,
+      "MovementModes": {
+        "Walk": 1
+      },
+      "SpawnBlockSet": "BO_Carpet_Blockset"
+    }
+  ],
+  "LightRanges": {
+    "RedLight": [
+      0,
+      0
+    ],
+    "Light": [
+      0,
+      0
+    ]
+  },
+  "Tags": {
+    "Backrooms": [
+      "Backrooms"
+    ]
+  },
+  "Despawn": {
+    "DayTimeRange": [
+      6,
+      18
+    ]
+  },
+  "DayTimeRange": [
+    18,
+    6
+  ]
+}

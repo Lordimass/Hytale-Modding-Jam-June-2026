@@ -1,0 +1,238 @@
+{
+  "Tool": {
+    "Specs": [
+      {
+        "Parent": "Branches"
+      }
+    ],
+    "Speed": 5,
+    "HitSoundLayer": "SFX_Wood_Break"
+  },
+  "BlockType": {
+    "CustomModel": "Blocks/bo_garage_door/bo_parking_garage_door.blockymodel",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/bo_garage_door/bo_parking_garage_door_texture.png"
+      }
+    ],
+    "PlacementSettings": {
+      "RotationMode": "StairFacingPlayer",
+      "BlockPreviewVisibility": "AlwaysVisible",
+      "AllowRotationKey": true
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "Material": "Solid",
+    "Parent": "Rock_Bedrock",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ModifyInventory",
+            "RequiredGameMode": "Adventure",
+            "ItemToRemove": {
+              "Id": "Media_RemoteControl",
+              "Quantity": 1
+            },
+            "Next": {
+              "Type": "ApplyEffect",
+              "Entity": "Owner",
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "VoidImpact",
+                    "TargetEntityPart": "Self",
+                    "TargetNodeName": "bone2",
+                    "Color": "#4d10d2",
+                    "Scale": 5,
+                    "DetachedFromModel": true
+                  }
+                ]
+              },
+              "EffectId": "HealthRegen_Buff_T1",
+              "Next": {
+                "Type": "ChangeState",
+                "UseLatestTarget": true,
+                "Changes": {
+                  "default": "Open"
+                },
+                "UpdateBlockState": true,
+                "Effects": {
+                  "Particles": [
+                    {
+                      "SystemId": "VoidImpact",
+                      "TargetEntityPart": "Self",
+                      "Color": "#810ba6",
+                      "Scale": 5,
+                      "DetachedFromModel": true,
+                      "PositionOffset": {
+                        "Z": 1
+                      }
+                    }
+                  ],
+                  "FirstPersonParticles": [
+                    {
+                      "SystemId": "VoidImpact",
+                      "TargetEntityPart": "Self",
+                      "Color": "#810ba6",
+                      "Scale": 5,
+                      "DetachedFromModel": true,
+                      "PositionOffset": {
+                        "Z": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "VariantRotation": "NESW",
+    "HitboxType": "BO_Parking_Garage_Door_BB",
+    "State": {
+      "Definitions": {
+        "Open": {
+          "CustomModel": "Blocks/bo_garage_door/bo_parking_garage_door.blockymodel",
+          "DrawType": "Model",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/bo_garage_door/bo_parking_garage_door_texture.png"
+            }
+          ],
+          "PlacementSettings": {
+            "RotationMode": "FacingPlayer",
+            "BlockPreviewVisibility": "AlwaysVisible"
+          },
+          "IgnoreSupportWhenPlaced": true,
+          "Material": "Solid",
+          "Parent": "Rock_Bedrock",
+          "BlockType": {
+            "CustomModel": "Blocks/bo_garage_door/bo_parking_garage_door.blockymodel",
+            "CustomModelTexture": [
+              {
+                "Texture": "Blocks/bo_garage_door/bo_parking_garage_door_texture.png"
+              }
+            ],
+            "CustomModelAnimation": "Blocks/bo_garage_door/bo_garage_door_active.blockyanim",
+            "Material": "Solid"
+          },
+          "HitboxType": "Block_Flat",
+          "CustomModelAnimation": "Blocks/bo_garage_door/bo_garage_door_open.blockyanim"
+        }
+      }
+    }
+  },
+  "Icon": "Icons/ItemsGenerated/BO_Parking_Wall03.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      52,
+      24
+    ],
+    "Translation": [
+      4,
+      -12
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Parking_Wall_03"
+  },
+  "Parent": "Rock_Bedrock",
+  "State": {
+    "Open": {
+      "CustomModel": "Blocks/bo_garage_door/bo_parking_garage_door.blockymodel",
+      "DrawType": "Model",
+      "CustomModelTexture": [
+        {
+          "Texture": "Blocks/bo_garage_door/bo_parking_garage_door_texture.png"
+        }
+      ],
+      "PlacementSettings": {
+        "RotationMode": "FacingPlayer",
+        "BlockPreviewVisibility": "AlwaysVisible"
+      },
+      "IgnoreSupportWhenPlaced": true,
+      "Material": "Solid",
+      "Parent": "Rock_Bedrock",
+      "BlockType": {
+        "CustomModel": "Blocks/bo_garage_door/bo_parking_garage_door.blockymodel",
+        "CustomModelTexture": [
+          {
+            "Texture": "Blocks/bo_garage_door/bo_parking_garage_door_texture.png"
+          }
+        ],
+        "CustomModelAnimation": "Blocks/bo_garage_door/bo_garage_door_active.blockyanim",
+        "Material": "Solid",
+        "HitboxType": "Block_Flat"
+      }
+    }
+  },
+  "Interactions": {
+    "Use": {
+      "Interactions": [
+        {
+          "Type": "ModifyInventory",
+          "RequiredGameMode": "Adventure",
+          "ItemToRemove": {
+            "Id": "Media_RemoteControl",
+            "Quantity": 1
+          },
+          "Next": {
+            "Type": "ApplyEffect",
+            "Entity": "Owner",
+            "Effects": {
+              "Particles": [
+                {
+                  "SystemId": "VoidImpact",
+                  "TargetEntityPart": "Self",
+                  "TargetNodeName": "bone2",
+                  "Color": "#4d10d2",
+                  "Scale": 5,
+                  "DetachedFromModel": true
+                }
+              ]
+            },
+            "EffectId": "HealthRegen_Buff_T1",
+            "Next": {
+              "Type": "ChangeState",
+              "UseLatestTarget": true,
+              "Changes": {
+                "default": "Open"
+              },
+              "UpdateBlockState": true,
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "VoidImpact",
+                    "TargetEntityPart": "Self",
+                    "Color": "#810ba6",
+                    "Scale": 5,
+                    "DetachedFromModel": true,
+                    "PositionOffset": {
+                      "Z": 1
+                    }
+                  }
+                ],
+                "FirstPersonParticles": [
+                  {
+                    "SystemId": "VoidImpact",
+                    "TargetEntityPart": "Self",
+                    "Color": "#810ba6",
+                    "Scale": 5,
+                    "DetachedFromModel": true,
+                    "PositionOffset": {
+                      "Z": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

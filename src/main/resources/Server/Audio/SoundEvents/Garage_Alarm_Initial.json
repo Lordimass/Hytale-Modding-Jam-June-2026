@@ -1,0 +1,10 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Creature_Audio.ogg"
+      ]
+    }
+  ],
+  "MaxDistance": 16
+}

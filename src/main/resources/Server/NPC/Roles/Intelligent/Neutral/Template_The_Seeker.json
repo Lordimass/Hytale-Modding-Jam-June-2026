@@ -83,6 +83,7 @@
   "StartState": "Peaceful",
   "DefaultPlayerAttitude": "Neutral",
   "DefaultNPCAttitude": "Ignore",
+  "AttitudeGroup": "Seeker",
   "KnockbackScale": 0.5,
   "MotionControllerList": [
     {
@@ -144,19 +145,37 @@
           },
           "Instructions": [
             {
-              "$Comment": "A lit flashlight nearby scares the NPC only during wave night mode. FlashlightNear and NightMode are set each tick by the plugin's FlashlightScareService.",
               "Sensor": {
                 "Type": "And",
                 "Sensors": [
                   {
-                    "Type": "Flag",
-                    "Name": "FlashlightNear",
-                    "Set": true
+                    "Type": "Mob",
+                    "Range": {
+                      "Compute": "FleeRange"
+                    },
+                    "GetPlayers": true,
+                    "GetNPCs": false,
+                    "Filters": [
+                      {
+                        "Type": "EntityEffect",
+                        "EffectId": "BO_Flashlit"
+                      }
+                    ],
+                    "Prioritiser": {
+                      "Type": "Attitude",
+                      "AttitudesByPriority": [
+                        "Hostile",
+                        "Neutral"
+                      ]
+                    }
                   },
                   {
-                    "Type": "Flag",
-                    "Name": "NightMode",
-                    "Set": true
+                    "Type": "Time",
+                    "Period": [
+                      18,
+                      6
+                    ],
+                    "ScaleDayTimeRange": true
                   }
                 ]
               },
@@ -168,11 +187,13 @@
               ]
             },
             {
-              "$Comment": "Wave night mode makes the NPC angry regardless of local block light. The wave code sets NightMode from the world blackout state instead of relying on JSON Light sensors.",
               "Sensor": {
-                "Type": "Flag",
-                "Name": "NightMode",
-                "Set": true
+                "Type": "Time",
+                "Period": [
+                  18,
+                  6
+                ],
+                "ScaleDayTimeRange": true
               },
               "Actions": [
                 {
@@ -235,9 +256,15 @@
             {
               "$Comment": "Lights-on/rest mode immediately makes persistent variants passive again.",
               "Sensor": {
-                "Type": "Flag",
-                "Name": "NightMode",
-                "Set": false
+                "Type": "Not",
+                "Sensor": {
+                  "Type": "Time",
+                  "Period": [
+                    18,
+                    6
+                  ],
+                  "ScaleDayTimeRange": true
+                }
               },
               "Actions": [
                 {
@@ -273,11 +300,29 @@
               ]
             },
             {
-              "$Comment": "Stop being scared once no lit flashlight is near (FlashlightNear cleared). Wait out ScaredDuration first so it doesn't flip back the instant the light leaves range. The player-in-range Flee below drives the actual retreat while scared.",
               "Sensor": {
-                "Type": "Flag",
-                "Name": "FlashlightNear",
-                "Set": false
+                "Type": "Not",
+                "Sensor": {
+                  "Type": "Mob",
+                  "Range": {
+                    "Compute": "FleeRange"
+                  },
+                  "GetPlayers": true,
+                  "GetNPCs": false,
+                  "Filters": [
+                    {
+                      "Type": "EntityEffect",
+                      "EffectId": "BO_Flashlit"
+                    }
+                  ],
+                  "Prioritiser": {
+                    "Type": "Attitude",
+                    "AttitudesByPriority": [
+                      "Hostile",
+                      "Neutral"
+                    ]
+                  }
+                }
               },
               "ActionsAtomic": true,
               "Actions": [
@@ -288,11 +333,8 @@
                   }
                 },
                 {
-                  "Type": "ReleaseTarget"
-                },
-                {
                   "Type": "State",
-                  "State": "Peaceful"
+                  "State": "Angry"
                 }
               ]
             },
@@ -336,11 +378,16 @@
           },
           "Instructions": [
             {
-              "$Comment": "Lights-on/rest mode calms persistent variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
               "Sensor": {
-                "Type": "Flag",
-                "Name": "NightMode",
-                "Set": false
+                "Type": "Not",
+                "Sensor": {
+                  "Type": "Time",
+                  "Period": [
+                    18,
+                    6
+                  ],
+                  "ScaleDayTimeRange": true
+                }
               },
               "Actions": [
                 {
@@ -353,19 +400,37 @@
               ]
             },
             {
-              "$Comment": "A lit flashlight nearby (FlashlightNear flag) scares the NPC while night mode is active: drop the target and flee.",
               "Sensor": {
                 "Type": "And",
                 "Sensors": [
                   {
-                    "Type": "Flag",
-                    "Name": "FlashlightNear",
-                    "Set": true
+                    "Type": "Mob",
+                    "Range": {
+                      "Compute": "FleeRange"
+                    },
+                    "GetPlayers": true,
+                    "GetNPCs": false,
+                    "Filters": [
+                      {
+                        "Type": "EntityEffect",
+                        "EffectId": "BO_Flashlit"
+                      }
+                    ],
+                    "Prioritiser": {
+                      "Type": "Attitude",
+                      "AttitudesByPriority": [
+                        "Hostile",
+                        "Neutral"
+                      ]
+                    }
                   },
                   {
-                    "Type": "Flag",
-                    "Name": "NightMode",
-                    "Set": true
+                    "Type": "Time",
+                    "Period": [
+                      18,
+                      6
+                    ],
+                    "ScaleDayTimeRange": true
                   }
                 ]
               },
@@ -403,12 +468,47 @@
               ]
             },
             {
-              "$Comment": "Pursue a force-marked objective (e.g. the workbench) even though its attitude is Ignore and it can't be sensed by sight/sound.",
               "Sensor": {
-                "Type": "Target",
-                "TargetSlot": "LockedTarget",
+                "Type": "Damage",
+                "Combat": true,
+                "TargetSlot": "LockedTarget"
+              },
+              "Actions": [
+                {
+                  "Type": "OverrideAttitude",
+                  "Attitude": "Hostile",
+                  "Duration": 120
+                },
+                {
+                  "Type": "State",
+                  "State": "Attack"
+                }
+              ]
+            },
+            {
+              "Sensor": {
+                "Type": "Mob",
                 "Range": {
                   "Compute": "LockedTargetRange"
+                },
+                "GetPlayers": false,
+                "GetNPCs": true,
+                "ExcludeOwnType": true,
+                "LockOnTarget": true,
+                "LockedTargetSlot": "LockedTarget",
+                "Filters": [
+                  {
+                    "Type": "NPCGroup",
+                    "IncludeGroups": [
+                      "BO_FenceTarget"
+                    ]
+                  }
+                ],
+                "Prioritiser": {
+                  "Type": "Attitude",
+                  "AttitudesByPriority": [
+                    "Hostile"
+                  ]
                 }
               },
               "Actions": [
@@ -425,36 +525,102 @@
             },
             {
               "Sensor": {
-                "Type": "Or",
-                "Sensors": [
+                "Type": "Mob",
+                "Range": {
+                  "Compute": "LockedTargetRange"
+                },
+                "GetPlayers": false,
+                "GetNPCs": true,
+                "ExcludeOwnType": true,
+                "LockOnTarget": true,
+                "LockedTargetSlot": "LockedTarget",
+                "Filters": [
                   {
-                    "Reference": "Component_Sensor_Sight_By_Attitude",
-                    "Modify": {
-                      "ViewRange": {
-                        "Compute": "ViewRange"
-                      },
-                      "ViewSector": {
-                        "Compute": "ViewSector"
-                      },
-                      "Attitudes": [
-                        "Hostile",
-                        "Neutral"
-                      ]
-                    }
-                  },
-                  {
-                    "Reference": "Component_Sensor_Sound_By_Attitude",
-                    "Modify": {
-                      "HearingRange": {
-                        "Compute": "HearingRange"
-                      },
-                      "Attitudes": [
-                        "Hostile",
-                        "Neutral"
-                      ]
-                    }
+                    "Type": "NPCGroup",
+                    "IncludeGroups": [
+                      "BO_CraftingMachineTarget"
+                    ]
                   }
-                ]
+                ],
+                "Prioritiser": {
+                  "Type": "Attitude",
+                  "AttitudesByPriority": [
+                    "Hostile"
+                  ]
+                }
+              },
+              "Actions": [
+                {
+                  "Type": "OverrideAttitude",
+                  "Attitude": "Hostile",
+                  "Duration": 120
+                },
+                {
+                  "Type": "State",
+                  "State": "Attack"
+                }
+              ]
+            },
+            {
+              "Sensor": {
+                "Type": "Mob",
+                "Range": {
+                  "Compute": "ViewRange"
+                },
+                "GetPlayers": true,
+                "GetNPCs": false,
+                "LockOnTarget": true,
+                "LockedTargetSlot": "LockedTarget",
+                "Filters": [
+                  {
+                    "Type": "LineOfSight"
+                  }
+                ],
+                "Prioritiser": {
+                  "Type": "Attitude",
+                  "AttitudesByPriority": [
+                    "Hostile",
+                    "Neutral"
+                  ]
+                }
+              },
+              "Actions": [
+                {
+                  "Type": "OverrideAttitude",
+                  "Attitude": "Hostile",
+                  "Duration": 120
+                },
+                {
+                  "Type": "State",
+                  "State": "Attack"
+                }
+              ]
+            },
+            {
+              "Sensor": {
+                "Type": "Mob",
+                "Range": {
+                  "Compute": "LockedTargetRange"
+                },
+                "GetPlayers": false,
+                "GetNPCs": true,
+                "ExcludeOwnType": true,
+                "LockOnTarget": true,
+                "LockedTargetSlot": "LockedTarget",
+                "Filters": [
+                  {
+                    "Type": "NPCGroup",
+                    "IncludeGroups": [
+                      "Turret"
+                    ]
+                  }
+                ],
+                "Prioritiser": {
+                  "Type": "Attitude",
+                  "AttitudesByPriority": [
+                    "Hostile"
+                  ]
+                }
               },
               "Actions": [
                 {
@@ -487,11 +653,16 @@
           },
           "Instructions": [
             {
-              "$Comment": "Lights-on/rest mode calms persistent variants back to Peaceful. Normal Seekers have NightMode forced on by Java while alive.",
               "Sensor": {
-                "Type": "Flag",
-                "Name": "NightMode",
-                "Set": false
+                "Type": "Not",
+                "Sensor": {
+                  "Type": "Time",
+                  "Period": [
+                    18,
+                    6
+                  ],
+                  "ScaleDayTimeRange": true
+                }
               },
               "Actions": [
                 {
@@ -504,19 +675,37 @@
               ]
             },
             {
-              "$Comment": "A lit flashlight nearby (FlashlightNear flag) scares the NPC while night mode is active: drop the target and flee.",
               "Sensor": {
                 "Type": "And",
                 "Sensors": [
                   {
-                    "Type": "Flag",
-                    "Name": "FlashlightNear",
-                    "Set": true
+                    "Type": "Mob",
+                    "Range": {
+                      "Compute": "FleeRange"
+                    },
+                    "GetPlayers": true,
+                    "GetNPCs": false,
+                    "Filters": [
+                      {
+                        "Type": "EntityEffect",
+                        "EffectId": "BO_Flashlit"
+                      }
+                    ],
+                    "Prioritiser": {
+                      "Type": "Attitude",
+                      "AttitudesByPriority": [
+                        "Hostile",
+                        "Neutral"
+                      ]
+                    }
                   },
                   {
-                    "Type": "Flag",
-                    "Name": "NightMode",
-                    "Set": true
+                    "Type": "Time",
+                    "Period": [
+                      18,
+                      6
+                    ],
+                    "ScaleDayTimeRange": true
                   }
                 ]
               },
@@ -531,7 +720,63 @@
               ]
             },
             {
+              "Continue": true,
+              "Sensor": {
+                "Type": "Damage",
+                "Combat": true,
+                "TargetSlot": "LockedTarget"
+              },
+              "Actions": [
+                {
+                  "Type": "OverrideAttitude",
+                  "Attitude": "Hostile",
+                  "Duration": 120
+                }
+              ]
+            },
+            {
               "Reference": "Component_Instruction_Clear_Status_Animation"
+            },
+            {
+              "Continue": true,
+              "Sensor": {
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Nav",
+                    "NavStates": [
+                      "Defer",
+                      "Blocked",
+                      "Aborted"
+                    ],
+                    "ThrottleDuration": 1
+                  },
+                  {
+                    "Type": "Mob",
+                    "Range": 8,
+                    "GetPlayers": false,
+                    "GetNPCs": true,
+                    "ExcludeOwnType": true,
+                    "LockOnTarget": true,
+                    "LockedTargetSlot": "LockedTarget",
+                    "Filters": [
+                      {
+                        "Type": "NPCGroup",
+                        "IncludeGroups": [
+                          "BO_FenceTarget"
+                        ]
+                      }
+                    ],
+                    "Prioritiser": {
+                      "Type": "Attitude",
+                      "AttitudesByPriority": [
+                        "Hostile",
+                        "Ignore"
+                      ]
+                    }
+                  }
+                ]
+              }
             },
             {
               "$Comment": "Loop melee swings while the target is in reach. Uses the AttackSequence instruction so the NPC re-arms and keeps attacking; a hand-rolled Type:Attack action in a plain instruction only fires once per state entry. Falls through to the Seek below when the target is out of attack range.",

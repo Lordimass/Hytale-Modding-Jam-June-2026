@@ -17,7 +17,7 @@
     "Effects": {
       "WorldSoundEventId": "BO_SFX_Turret_Fire"
     },
-    "ProjectileId": "Skeleton_Archer_Arrow",
+    "ProjectileId": "Turret_Stone",
     "Tags": {
       "AimingReference": []
     }

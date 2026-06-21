@@ -342,7 +342,8 @@
           "HorizontalSpeedMultiplier": 0
         }
       ]
-    }
+    },
+    "Ability3": "BO_Seeker_Swing"
   },
   "Weapon": {
     "EntityStatsToClear": [

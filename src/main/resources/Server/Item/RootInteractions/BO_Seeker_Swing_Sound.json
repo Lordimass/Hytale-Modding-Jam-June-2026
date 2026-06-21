@@ -1,0 +1,11 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.18,
+      "Effects": {
+        "WorldSoundEventId": "BO_SFX_Monster_Attack"
+      }
+    }
+  ]
+}

@@ -10,10 +10,10 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Benches/Workbench.blockymodel",
+    "CustomModel": "Blocks/Benches/Workbench2.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Benches/Workbench_Texture.png",
+        "Texture": "Blocks/Benches/Workbench2_Texture.png",
         "Weight": 1
       }
     ],

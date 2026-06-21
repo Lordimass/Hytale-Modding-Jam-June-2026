@@ -26,7 +26,12 @@
     "IgnoreSupportWhenPlaced": true,
     "VariantRotation": "NESW",
     "HitboxType": "BO_Parking_Bollard_BB",
-    "Material": "Solid"
+    "Material": "Solid",
+    "Gathering": {
+      "Harvest": {
+        "ItemId": "Rubble_Marble"
+      }
+    }
   },
   "Icon": "Icons/ItemsGenerated/BO_Parking_Bollard.png",
   "IconProperties": {
@@ -44,5 +49,5 @@
   "TranslationProperties": {
     "Name": "Parking_Bollard"
   },
-  "Parent": "Rock_Bedrock"
+  "Parent": "Rock_Stone"
 }

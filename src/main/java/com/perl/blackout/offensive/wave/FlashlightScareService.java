@@ -38,7 +38,8 @@ import com.hypixel.hytale.server.npc.role.support.MarkedEntitySupport;
  * means the flashlight is switched on.
  *
  * <p>All methods must run on the world thread (they mutate role flags), same as {@link ObjectiveService}.
- */
+*/
+@Deprecated
 final class FlashlightScareService {
 
     /**

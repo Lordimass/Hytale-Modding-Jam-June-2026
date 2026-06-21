@@ -11,7 +11,7 @@ import com.hypixel.hytale.server.core.command.system.basecommands.AbstractWorldC
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.perl.blackout.world.resources.WorldCycleStateResource;
-import com.perl.blackout.world.systems.CyclePhase;
+import com.perl.blackout.world.systems.BlackoutCycleChangedEvent;
 
 public final class BlackoutToggleCommand extends AbstractWorldCommand {
 
@@ -42,7 +42,7 @@ public final class BlackoutToggleCommand extends AbstractWorldCommand {
             on = state.isOn();
         }
 
-        CyclePhase.applyPhaseToWorld(world, on);
+        store.invoke(new BlackoutCycleChangedEvent(world, on));
 
         context.sendMessage(Message.raw("Blackout phase for '" + world.getName() + "' is now " + (on ? "ON" : "OFF") + "."));
     }

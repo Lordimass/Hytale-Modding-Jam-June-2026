@@ -3,7 +3,7 @@
     "Name": "blackout.items.Egg_Spawner_Gun_Turret.name",
     "Description": "blackout.items.Egg_Spawner_Gun_Turret.description"
   },
-  "Quality": "Tool",
+  "Quality": "Epic",
   "PlayerAnimationsId": "Block",
   "Interactions": {
     "Secondary": {
