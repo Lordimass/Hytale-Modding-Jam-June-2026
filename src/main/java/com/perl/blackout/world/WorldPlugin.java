@@ -4,6 +4,7 @@ import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.component.ResourceType;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
+import com.hypixel.hytale.server.core.event.events.player.AddPlayerToWorldEvent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
@@ -15,21 +16,46 @@ import com.perl.blackout.world.craft.CraftAltarBreakHandler;
 import com.perl.blackout.world.craft.CraftAltarBreathingHandler;
 import com.perl.blackout.world.craft.CraftAltarPlacementHandler;
 import com.perl.blackout.world.interactions.BlackoutPhaseGateInteraction;
+import com.perl.blackout.world.interactions.BlackoutTimerInteraction;
 import com.perl.blackout.world.resources.WorldCycleStateResource;
 import com.perl.blackout.world.systems.CyclePhaseApplySystem;
 import com.perl.blackout.world.systems.CycleStateRefSystem;
 import com.perl.blackout.world.systems.CycleTimeSetSystem;
+import com.perl.blackout.world.timer.BlackoutTimerHeightSystem;
+import com.perl.blackout.world.timer.BlackoutTimerResource;
+import com.perl.blackout.world.timer.BlackoutTimerService;
+
+import javax.annotation.Nullable;
 
 public class WorldPlugin extends JavaPlugin {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
+
+    @Nullable
+    private static WorldPlugin instance;
+
+    @Nullable
+    private static BlackoutTimerService timerService;
 
     public WorldPlugin(JavaPluginInit init) {
         super(init);
         LOGGER.atInfo().log("Blackout World %s initializing...", init.getPluginManifest().getVersion());
     }
 
+    @Nullable
+    public static WorldPlugin getInstance() {
+        return instance;
+    }
+
+    @Nullable
+    public static BlackoutTimerService getTimerService() {
+        return timerService;
+    }
+
     @Override
     protected void setup() {
+        instance = this;
+        timerService = new BlackoutTimerService();
+
         getEntityStoreRegistry().registerSystem(new CraftAltarPlacementHandler());
         getEntityStoreRegistry().registerSystem(new CraftAltarBreakHandler());
         getEntityStoreRegistry().registerSystem(new CraftAltarBreathingHandler());
@@ -58,8 +84,15 @@ public class WorldPlugin extends JavaPlugin {
                         WorldCycleStateResource.CODEC);
         WorldCycleStateResource.setResourceType(cycleResourceType);
 
+        ResourceType<EntityStore, BlackoutTimerResource> timerResourceType = getEntityStoreRegistry()
+                .registerResource(BlackoutTimerResource.class, "BlackoutTimer", BlackoutTimerResource.CODEC);
+        BlackoutTimerResource.setResourceType(timerResourceType);
+
         getEntityStoreRegistry().registerSystem(new CyclePhaseApplySystem());
         getEntityStoreRegistry().registerSystem(new CycleTimeSetSystem());
+        getEntityStoreRegistry().registerSystem(new BlackoutTimerHeightSystem(timerService));
+
+        getEventRegistry().registerGlobal(AddPlayerToWorldEvent.class, timerService::onPlayerAddedToWorld);
 
         /**
          * Command Stuff
@@ -71,12 +104,16 @@ public class WorldPlugin extends JavaPlugin {
          */
         Interaction.CODEC.register("BlackoutPhaseGate", BlackoutPhaseGateInteraction.class,
                 BlackoutPhaseGateInteraction.CODEC);
+        Interaction.CODEC.register("BlackoutTimer", BlackoutTimerInteraction.class,
+                BlackoutTimerInteraction.CODEC);
 
         LOGGER.atInfo().log("World cycle state system ready.");
     }
 
     @Override
     protected void shutdown() {
+        timerService = null;
+        instance = null;
         super.shutdown();
     }
 }

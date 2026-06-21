@@ -52,7 +52,11 @@
           {
             "Type": "HubPortal",
             "WorldName": "Backrooms",
-            "InstanceTemplate": "Backrooms"
+            "InstanceTemplate": "Backrooms",
+            "Next": {
+              "Type": "BlackoutTimer",
+              "Action": "Start"
+            }
           }
         ]
       }

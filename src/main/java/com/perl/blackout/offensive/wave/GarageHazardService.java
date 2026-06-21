@@ -27,7 +27,7 @@ final class GarageHazardService {
 
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
     private static final String DAMAGE_CAUSE_ID = "Environment";
-    private static final String DAMAGE_SOURCE = "garage_blackout";
+    private static final String DAMAGE_SOURCE = "Deadly Poisonous Gas";
     private static final float LETHAL_DAMAGE = 1.0E9f;
     private static final int HATCH_SCAN_HEIGHT = 3;
 

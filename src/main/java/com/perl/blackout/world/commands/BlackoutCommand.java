@@ -15,11 +15,12 @@ public final class BlackoutCommand extends AbstractCommand {
         requirePermission("blackout.command.blackout");
         setPermissionGroups("hytale:Admin");
         addSubCommand(new BlackoutToggleCommand());
+        addSubCommand(new BlackoutTimerCommand());
     }
 
     @Override
     protected CompletableFuture<Void> execute(@Nonnull CommandContext context) {
-        context.sendMessage(Message.raw("Usage: /blackout toggle [--force on|off] [--world <world>]"));
+        context.sendMessage(Message.raw("Usage: /blackout toggle [--force on|off] [--world <world>] | /blackout timer reset [--world <world>]"));
         return null;
     }
 }
