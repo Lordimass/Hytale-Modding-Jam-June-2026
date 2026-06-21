@@ -82,6 +82,10 @@
                       }
                     }
                   ]
+                },
+                "Next": {
+                  "Type": "BlackoutTimer",
+                  "Action": "Stop"
                 }
               }
             }
@@ -230,6 +234,10 @@
                     }
                   }
                 ]
+              },
+              "Next": {
+                "Type": "BlackoutTimer",
+                "Action": "Stop"
               }
             }
           }

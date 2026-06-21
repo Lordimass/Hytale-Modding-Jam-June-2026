@@ -156,6 +156,10 @@
                       }
                     }
                   ]
+                },
+                "Next": {
+                  "Type": "BlackoutTimer",
+                  "Action": "ClearOffice"
                 }
               }
             }
