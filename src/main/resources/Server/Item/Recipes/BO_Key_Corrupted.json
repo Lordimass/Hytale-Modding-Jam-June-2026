@@ -21,6 +21,6 @@
       "Id": "BlackoutSalvagebench"
     }
   ],
-  "TimeSeconds": 240,
+  "TimeSeconds": 3000,
   "OutputQuantity": 1
 }
