@@ -29,7 +29,7 @@
         
     },
     "DisabledByDefault": false,
-    "IncludesAssetPack": false,
+    "IncludesAssetPack": true,
     "SubPlugins": [
         {
             "Name": "Defensive",
