@@ -59,7 +59,7 @@
     },
     "Gathering": {
       "Breaking": {
-        "GatherType": "Benches"
+        "GatherType": "Unbreakable"
       }
     },
     "BlockParticleSetId": "Wood",

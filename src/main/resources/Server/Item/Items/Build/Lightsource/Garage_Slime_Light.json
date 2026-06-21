@@ -20,7 +20,7 @@
     "Flags": {},
     "Gathering": {
       "Breaking": {
-        "GatherType": "Rocks"
+        "GatherType": "Unbreakable"
       }
     },
     "BlockParticleSetId": "Crystal",
