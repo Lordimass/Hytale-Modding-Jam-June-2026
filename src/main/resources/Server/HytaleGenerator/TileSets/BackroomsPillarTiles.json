@@ -32,7 +32,7 @@
 				}
 			},
 			"PrefabPath":	"BackroomsPillar/TopBottom/",
-			"Weight":	0.03,
+			"Weight":	0.1,
 			"MinimizeVariants":	false
 		}, {
 			"$NodeId":	"Single.TileSet.GridWave-pi00aaaa-0000-4000-8000-000000000003",
@@ -49,7 +49,7 @@
 			},
 			"Features":	[],
 			"PrefabPath":	"BackroomsPillar/MidTop/",
-			"Weight":	0.03,
+			"Weight":	0.1,
 			"MinimizeVariants":	true
 		}, {
 			"$NodeId":	"Single.TileSet.GridWave-a1859f1a-67b7-416d-a9d9-2e82c91d567b",
