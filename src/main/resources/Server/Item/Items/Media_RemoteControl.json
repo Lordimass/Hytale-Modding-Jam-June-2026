@@ -21,8 +21,8 @@
   },
   "InteractionConfig": {
     "UseDistance": {
-      "Adventure": 128,
-      "Creative": 128
+      "Adventure": 3,
+      "Creative": 3
     },
     "AllEntities": true
   },
